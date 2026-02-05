@@ -1365,7 +1365,7 @@ export default function LifeJourneyReport() {
             </div>
             {/* --- STICKY OFFER BAR --- */}
             <div className="fixed bottom-0 left-0 w-full bg-gradient-to-r from-yellow-300 to-yellow-500 z-50  transform transition-transform duration-300 translate-y-0">
-                <div className="max-w-[1400px] mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="max-w-[1400px] mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-center gap-6">
 
                     {/* Price Info (Hidden on very small screens if needed, but important) */}
                     <div className="flex items-center gap-4 text-black">
@@ -1374,12 +1374,12 @@ export default function LifeJourneyReport() {
                     </div>
 
                     {/* CTA Button */}
-                    <button className="bg-[#0f172a] hover:bg-[#1e293b] text-white text-lg font-bold py-3 px-8 rounded-full shadow-lg uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95 flex-grow md:flex-grow-0 min-w-[280px]">
+                    <button className="bg-[#0f172a] hover:bg-[#1e293b] text-yellow-300 text-lg font-bold py-3 px-8 rounded-md shadow-lg uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95 flex-grow md:flex-grow-0 min-w-[280px]">
                         Get Your Report Now
                     </button>
 
                     {/* Timer */}
-                    <div className="flex flex-col items-center md:items-end">
+                    <div className="flex flex-col items-start md:items-start">
                         <span className="text-[#991b1b] text-xs font-bold uppercase tracking-wider mb-0.5">Offer ends soon in:</span>
                         <div className="text-[#991b1b] text-2xl font-mono font-bold leading-none">
                             {formatTime(timeLeft)}
