@@ -190,12 +190,12 @@ export default function LifeJourneyReport() {
                         <div className="space-y-3">
                             <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#162032]/80 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
                                 <span className="text-yellow-500">👤</span>
-                                <span>Trusted by 2,50,000+ seekers worldwide | 100% Personalised | Secure Delivery</span>
+                                <span>Trusted by 1.1 crore+ Seekers Worldwide | 100% Personalized | Secure & Confidential Delivery</span>
                             </div>
                             <div className="flex">
                                 <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#162032]/80 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
                                     <span className="text-yellow-500">📅</span>
-                                    <span>... Detailed 5 Years Prediction Included</span>
+                                    <span>Detailed 5-Year Astrological Life Prediction Included</span>
                                 </div>
                             </div>
                         </div>
@@ -203,36 +203,37 @@ export default function LifeJourneyReport() {
                         {/* Headlines */}
                         <div className="space-y-2">
                             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                                Unlock Your <span className="text-yellow-400">Personalised Life</span><br />
-                                <span className="text-yellow-400">Journey Report</span>
+                                Unlock Your <br /><span className="text-yellow-400">Personalized Life Journey Report</span>
+                                {/* <span className="text-yellow-400"></span> */}
                             </h1>
                             <p className="text-lg text-gray-400 font-medium">
-                                By Acharya Luvbhushan (Celebrity Astrologer)
+                                By Dr. Vinay Bajrangi<br />
+                                (Internationally Renowned Astrologer & Karma Expert)
                             </p>
                         </div>
 
                         {/* CTA Button */}
                         <div className="pt-2">
                             <button className="bg-[#cc9933] hover:bg-[#b3862b] text-black font-bold py-3.5 px-8 rounded shadow-lg transition-transform transform hover:scale-105 flex items-center gap-3 text-sm md:text-base">
-                                <span>Get My Report Today</span>
-                                <span className="line-through text-black/60 text-xs">₹1996</span>
-                                <span className="text-black font-extrabold">₹996</span>
+                                <span>Get My Personalized Report Now</span>
+                                <span className="line-through text-black/60 text-xs">₹1999</span>
+                                <span className="text-black font-extrabold">₹699 Only</span>
                             </button>
                         </div>
 
                         {/* Stats */}
                         <div className="flex gap-8 lg:gap-14 pt-6 border-t border-gray-800/50 mt-4">
                             <div>
-                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">4.5L+</div>
-                                <div className="text-xs text-gray-400 uppercase tracking-wide">Report Generated</div>
+                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">⭐ 4.8 / 5</div>
+                                <div className="text-xs text-gray-400 uppercase tracking-wide">Customer Rating</div>
                             </div>
                             <div>
-                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">4.8/5</div>
-                                <div className="text-xs text-gray-400 uppercase tracking-wide">Customer Ratings</div>
-                            </div>
-                            <div>
-                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">400K</div>
+                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">👥 4.5L+</div>
                                 <div className="text-xs text-gray-400 uppercase tracking-wide">Trusted Users</div>
+                            </div>
+                            <div>
+                                <div className="text-2xl lg:text-3xl font-bold text-yellow-400">📄 Instant</div>
+                                <div className="text-xs text-gray-400 uppercase tracking-wide">Report Generation</div>
                             </div>
                         </div>
                     </div>
@@ -249,7 +250,7 @@ export default function LifeJourneyReport() {
                                 <div className="absolute -inset-4 bg-gradient-to-t from-yellow-600 to-transparent rounded-full opacity-50 blur-md"></div>
                                 <div className="w-48 h-48 lg:w-68 lg:h-68 rounded-full border-4 border-yellow-500 overflow-hidden shadow-[0_0_40px_rgba(234,179,8,0.4)] bg-gray-800 relative">
                                     {/* Placeholder for Astrologer Image */}
-                                    <img src="https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnumerologist-portrait.756fffec.jpg&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" alt="Acharya Lavbhushan" className="w-full h-full object-cover" />
+                                    <img src="https://content.vinaybajrangi.com/img/content/1760069123-channels4_profile.jpg" alt="Vinay bajrangi" className="w-full h-full object-cover" />
                                     {/* <div className="w-full h-full bg-gray-700 flex items-center justify-center text-xs text-center text-gray-400">Astrologer<br />Image</div> */}
                                 </div>
                             </div>
@@ -306,8 +307,12 @@ export default function LifeJourneyReport() {
                     {/* Subtle top separator */}
                     <div className="mx-auto w-24 h-1 bg-gradient-to-r from-transparent via-yellow-800 to-transparent opacity-50 mb-8"></div>
 
-                    <div className="text-center mb-8">
-                        <span className="text-yellow-500 font-medium tracking-widest uppercase text-sm drop-shadow-md">Featured in</span>
+                    <div className="text-center mb-12 max-w-4xl mx-auto px-4">
+                        <span className="text-yellow-500 font-medium tracking-widest uppercase text-sm drop-shadow-md block mb-2">FEATURED IN</span>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Recognized & Referenced Across Leading Media Platforms</h2>
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                            Dr. Vinay Bajrangi’s astrological insights, research, and predictions have been featured, discussed, and referenced across reputed media and knowledge platforms:
+                        </p>
                     </div>
 
                     <div className="relative px-0 lg:px-12 group">
@@ -326,27 +331,27 @@ export default function LifeJourneyReport() {
                             className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory justify-start px-4 scroll-smooth"
                         >
                             {[
-                                { name: 'Mid-day', color: 'text-blue-600', font: 'font-serif' },
-                                { name: 'crunchbase', color: 'text-blue-500', font: 'font-sans' },
-                                { name: 'Curly Tales', color: 'text-teal-500', font: 'font-cursive' },
-                                { name: 'Dainik Bhaskar', color: 'text-orange-600', font: 'font-serif' },
-                                { name: 'IMDb', color: 'text-black bg-yellow-400 px-2 rounded', font: 'font-bold' },
-                                { name: 'India News', color: 'text-red-600', font: 'font-sans' },
-                                { name: 'MENSXP', color: 'text-black', font: 'font-bold tracking-tighter' },
-                                { name: 'Mint', color: 'text-orange-500', font: 'font-serif' },
-                                { name: 'Hindustan Times', color: 'text-gray-800', font: 'font-serif' },
-                                { name: 'Mid-day', color: 'text-blue-600', font: 'font-serif' },
-                                { name: 'crunchbase', color: 'text-blue-500', font: 'font-sans' },
-                                { name: 'Curly Tales', color: 'text-teal-500', font: 'font-cursive' },
-                                { name: 'Dainik Bhaskar', color: 'text-orange-600', font: 'font-serif' },
-                                { name: 'IMDb', color: 'text-black bg-yellow-400 px-2 rounded', font: 'font-bold' },
-                                { name: 'India News', color: 'text-red-600', font: 'font-sans' },
-                                { name: 'MENSXP', color: 'text-black', font: 'font-bold tracking-tighter' },
-                                { name: 'Mint', color: 'text-orange-500', font: 'font-serif' },
-                                { name: 'Hindustan Times', color: 'text-gray-800', font: 'font-serif' },
+                                { name: 'Bharti TV', icon: '📺' },
+                                { name: 'Business Today', icon: '📈' },
+                                { name: 'Crunchbase', icon: '🏢' },
+                                { name: 'Curly Tales', icon: '🍜' },
+                                { name: 'Dainik Bhaskar', icon: '📰' },
+                                { name: 'IMDb', icon: '🎬' },
+                                { name: 'India News', icon: '🇮🇳' },
+                                { name: 'MensXP', icon: '👔' },
+                                { name: 'Mid-Day', icon: '🗞️' },
+                                { name: 'Mint', icon: '🌿' },
+                                { name: 'News India', icon: '📺' },
+                                { name: 'Outlook', icon: '👀' },
+                                { name: 'Rajasthan Patrika', icon: '📰' },
+                                { name: 'Sadhna TV', icon: '🕉️' },
+                                { name: 'TEDx', icon: '❌' },
+                                { name: 'YouTube', icon: '▶️' },
+                                { name: 'Zee Network', icon: '📺' },
                             ].map((brand, i) => (
-                                <div key={i} className="flex-none w-40 h-24 md:w-52 md:h-32 bg-white rounded-xl flex items-center justify-center p-6 shadow-lg snap-center transition-transform hover:-translate-y-1 duration-300 border border-gray-100">
-                                    <span className={`text-xl md:text-2xl ${brand.font} ${brand.color} font-bold text-center leading-tight`}>{brand.name}</span>
+                                <div key={i} className="flex-none w-40 h-24 md:w-52 md:h-32 bg-gray-900/50 rounded-xl flex flex-col items-center justify-center p-6 shadow-lg snap-center transition-transform hover:-translate-y-1 duration-300 border border-white/5 grayscale hover:grayscale-0 group">
+                                    <span className="text-3xl mb-2 filter grayscale group-hover:grayscale-0 transition-all duration-300">{brand.icon}</span>
+                                    <span className="text-lg md:text-xl font-bold text-gray-400 group-hover:text-white text-center leading-tight transition-colors">{brand.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -391,10 +396,10 @@ export default function LifeJourneyReport() {
 
                 <div className="max-w-[1920px] mx-auto px-4 lg:px-12 relative z-10">
                     <div className="text-center mb-16 space-y-4">
-                        <div className="text-yellow-600 font-bold tracking-[0.2em] text-xs uppercase">Trusted by Celebrities</div>
-                        <h2 className="text-4xl lg:text-5xl font-extrabold text-[#cc9933] drop-shadow-md pb-2">Celebrity Experiences</h2>
-                        <p className="text-gray-300/80 max-w-2xl mx-auto text-lg font-light leading-relaxed">
-                            Hear how top stars found clarity, guidance, and success through astrology.
+                        <div className="text-yellow-600 font-bold tracking-[0.2em] text-xs uppercase">TRUSTED BY CELEBRITIES & INDUSTRY LEADERS</div>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#cc9933] drop-shadow-md pb-2 leading-tight">When Life Decisions Matter, They Choose Precision</h2>
+                        <p className="text-gray-300/80 max-w-3xl mx-auto text-lg font-light leading-relaxed">
+                            Celebrities, business leaders, entrepreneurs, and public figures have consulted Dr. Vinay Bajrangi for clarity during critical life phases — career transitions, marriage decisions, financial planning, and karmic challenges.
                         </p>
                     </div>
 
@@ -451,6 +456,65 @@ export default function LifeJourneyReport() {
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
                         </button>
+                    </div>
+
+                    {/* NEW CONTENT BLOCKS BELOW CAROUSEL */}
+                    <div className="mt-20 max-w-5xl mx-auto space-y-20">
+
+                        {/* Celebrity Experiences Testimonials */}
+                        <div>
+                            <div className="text-center mb-10">
+                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">🎤 CELEBRITY EXPERIENCES</h3>
+                                <p className="text-yellow-500 text-lg font-medium">Real Guidance. Real Results.</p>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {[
+                                    "Astrology helped me understand my timing rather than fight it.",
+                                    "The predictions were direct, logical, and deeply accurate.",
+                                    "This was not superstition — it was strategic life planning."
+                                ].map((quote, idx) => (
+                                    <div key={idx} className="bg-[#0a0f1c] border border-white/5 rounded-xl p-6 relative">
+                                        <div className="absolute -top-3 left-6 text-4xl text-yellow-600/30">"</div>
+                                        <p className="text-gray-300 italic relative z-10">{quote}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="mt-8 bg-gray-900/50 rounded-xl p-8 border-l-4 border-yellow-500">
+                                <p className="text-gray-300 mb-4 text-lg">Through karmic astrology, dashā analysis, and precise transit mapping, Dr. Vinay Bajrangi has helped high-profile individuals:</p>
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        "Navigate fame-related pressures",
+                                        "Avoid career-damaging decisions",
+                                        "Understand delays, controversies & comebacks",
+                                        "Align actions with favorable planetary periods"
+                                    ].map((item, i) => (
+                                        <li key={i} className="flex items-center gap-3 text-gray-400">
+                                            <span className="text-yellow-500 font-bold">✔</span> {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Why Celebrities Trust Section */}
+                        <div className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-2xl p-8 md:p-12 border border-yellow-500/20 shadow-2xl">
+                            <h3 className="text-2xl md:text-3xl font-bold text-[#facc15] mb-8 text-center uppercase tracking-wide">🔮 WHY CELEBRITIES TRUST DR. VINAY BAJRANGI</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 max-w-3xl mx-auto leading-relaxed">
+                                {[
+                                    "Discretion & absolute confidentiality",
+                                    "No sensationalism or fear-based predictions",
+                                    "Practical guidance aligned with real-world outcomes",
+                                    "Deep focus on karma, timing & free will"
+                                ].map((point, idx) => (
+                                    <div key={idx} className="flex items-start gap-4">
+                                        <div className="w-6 h-6 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span className="text-yellow-500 text-sm">✔</span>
+                                        </div>
+                                        <span className="text-gray-200 text-lg">{point}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
