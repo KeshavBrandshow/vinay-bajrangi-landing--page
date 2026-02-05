@@ -13,7 +13,6 @@ export default function LifeJourneyReport() {
         email: '',
         comments: ''
     });
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -182,7 +181,7 @@ export default function LifeJourneyReport() {
                     <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="2" /></svg>
                 </div>
 
-                <div className="relative z-10 w-full max-w-[1820px] mx-auto px-4 lg:px-12 flex flex-col md:flex-row items-center gap-12 ">
+                <div className="relative z-10 w-full max-w-[1820px] mx-auto px-4 md:px-10 lg:px-20 flex flex-col md:flex-row items-center gap-12 ">
 
                     {/* Left Content */}
                     <div className="md:w-1/2 space-y-8">
@@ -245,7 +244,7 @@ export default function LifeJourneyReport() {
 
                         <div className="relative z-10 flex flex-col items-center">
                             {/* Astrologer Portrait with Glow Halo */}
-                            <div className="relative mb-[50px] z-20">
+                            <div className="relative mb-[30px] z-20">
                                 {/* Chakra/Halo SVG or Image bg */}
                                 <div className="absolute -inset-4 bg-gradient-to-t from-yellow-600 to-transparent rounded-full opacity-50 blur-md"></div>
                                 <div className="w-48 h-48 lg:w-68 lg:h-68 rounded-full border-4 border-yellow-500 overflow-hidden shadow-[0_0_40px_rgba(234,179,8,0.4)] bg-gray-800 relative">
@@ -254,45 +253,19 @@ export default function LifeJourneyReport() {
                                     {/* <div className="w-full h-full bg-gray-700 flex items-center justify-center text-xs text-center text-gray-400">Astrologer<br />Image</div> */}
                                 </div>
                             </div>
-
-                            {/* Report Books Stack */}
-                            {/* Report Books Stack */}
-                            <div className="relative z-10 transform scale-90 lg:scale-110 mt-8">
-                                <div className="relative flex items-center justify-center">
-                                    {/* Back Book */}
-                                    <div className="absolute w-48 h-64 bg-gradient-to-br from-blue-900 to-blue-950 border border-yellow-500/30 rounded-r-lg shadow-2xl transform -rotate-12 -translate-x-12 translate-y-2 flex flex-col items-center justify-center p-2 text-center origin-bottom-right">
-                                        <div className="absolute left-1 top-0 bottom-0 w-1 bg-yellow-600/50"></div>
-                                        <span className="text-[10px] text-yellow-400 font-serif opacity-80">Life Journey<br />Report</span>
-                                    </div>
-
-                                    {/* Front Book */}
-                                    <div className="relative w-52 h-72 bg-gradient-to-b from-[#0f1d35] to-[#0b1120] border border-yellow-500/60 rounded-r-xl shadow-2xl z-20 transform rotate-6 flex flex-col items-center pt-8 text-center overflow-hidden">
-                                        {/* Spine effect */}
-                                        <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-yellow-600 to-yellow-800"></div>
-                                        <div className="absolute left-2 top-0 bottom-0 w-[1px] bg-yellow-500/30"></div>
-
-                                        {/* Header */}
-                                        <div className="relative z-10">
-                                            <div className="text-[10px] text-yellow-500 uppercase tracking-widest mb-1">Acharya Lavbhushan</div>
-                                            <h3 className="text-xl font-serif text-yellow-100 leading-tight">Life Journey<br /><span className="text-yellow-400">Report</span></h3>
-                                            <div className="h-[1px] w-16 bg-yellow-500/50 mx-auto my-2"></div>
-                                            <div className="text-[8px] text-yellow-200 uppercase tracking-wider">Powered By Astrology</div>
-                                        </div>
-
-                                        {/* Chart/Astrologer Placeholder */}
-                                        <div className="mt-6 relative w-32 h-32">
-                                            {/* Kundli Diagram Background */}
-                                            <div className="absolute inset-0 border border-yellow-500/30 rotate-45 opacity-30"></div>
-                                            <div className="absolute inset-0 border border-yellow-500/30 -rotate-45 opacity-30"></div>
-
-                                            {/* Circular Portrait */}
-                                            <div className="relative z-10 w-24 h-24 mx-auto rounded-full border-2 border-yellow-500 bg-gray-800 overflow-hidden flex items-center justify-center shadow-lg mt-4">
-                                                <span className="text-[8px] text-gray-400">Astrologer<br />Photo</span>
-                                                {/* <img src="/achaarya.webp" className="w-full h-full object-cover" /> */}
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            {/* Report Book Cover */}
+                            <div className="relative z-10 mt-4">
+                                <div className="relative w-[180px] md:w-[220px] aspect-[2/3] transform rotate-3 hover:rotate-0 transition-all duration-500 hover:scale-105">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1755540735962-905a0f9cdef9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEFzdHJvbG9neSUyMEJvb2slMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+                                        alt="Life Journey Report"
+                                        className="w-full h-full object-contain drop-shadow-2xl rounded-r-lg absolute top-0 left-0 -rotate-10 -translate-x-10"
+                                    />
+                                    <img
+                                        src="https://images.unsplash.com/photo-1755540735962-905a0f9cdef9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEFzdHJvbG9neSUyMEJvb2slMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+                                        alt="Life Journey Report"
+                                        className="w-full h-full object-contain drop-shadow-2xl rounded-r-lg"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -418,17 +391,17 @@ export default function LifeJourneyReport() {
                             className="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-8 px-4 scroll-smooth"
                         >
                             {[
-                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK   " },
-                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK   " },
-                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
-                                { name: "Anjini Dhawan", role: "INDIAN ACTRESS", img: "https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAlaya%20F.e8fcb303.webp&w=384&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK" },
+                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Anjini Dhawan", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                             ].map((celeb, idx) => (
                                 <div key={idx} className="flex-none w-72 md:w-80 relative group/card snap-center">
                                     <div className="relative h-[450px] rounded-2xl overflow-hidden border border-yellow-500/20 bg-gray-900 shadow-2xl transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(204,153,51,0.2)]">
@@ -564,7 +537,7 @@ export default function LifeJourneyReport() {
                         {[
                             {
                                 title: "Detailed Birth Chart (Kundli) Analysis",
-                                desc: "ग्रहों और भावों की स्थिति का गहन अध्ययन।",
+                                desc: "An in-depth and structured analysis of your birth chart, examining planetary placements, house influences, and key yogas that shape your life direction.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -572,8 +545,8 @@ export default function LifeJourneyReport() {
                                 )
                             },
                             {
-                                title: "Planetary Influence",
-                                desc: "Career, Finance & Relationships पर प्रभाव।",
+                                title: "Planetary Influence Assessment",
+                                desc: "Clear insights into how planetary movements impact your career growth, financial stability, and personal relationships, highlighting both supportive and challenging phases.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
@@ -582,7 +555,7 @@ export default function LifeJourneyReport() {
                             },
                             {
                                 title: "Dasha & Antardasha Insights",
-                                desc: "आने वाले वर्षों के प्रमुख बदलाव।",
+                                desc: "Precise interpretation of major and sub-periods, explaining upcoming life transitions, opportunities, and cautionary phases over the coming years.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
@@ -590,17 +563,62 @@ export default function LifeJourneyReport() {
                                 )
                             },
                             {
-                                title: "Gemstone Recommendations",
-                                desc: "भाग्य वृद्धि के लिए सही रत्न सुझाव।",
+                                title: "Five-Year Life Forecast (Year-Wise Roadmap)",
+                                desc: "A structured, year-by-year outlook highlighting major turning points, growth periods, and phases that require caution, helping you plan life decisions with clarity.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m0-16.875l-2.25 1.313M3 14.25v2.25l2.25 1.313" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                                     </svg>
                                 )
                             },
                             {
-                                title: "Personalised Remedies",
-                                desc: "कठिनाइयों को दूर करने के लिए विशेष उपाय।",
+                                title: "Career & Professional Timing",
+                                desc: "Guidance on favorable periods for job change, promotion, leadership roles, entrepreneurship, and professional stability based on planetary cycles.",
+                                icon: (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.675.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.675-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 003.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                                    </svg>
+                                )
+                            },
+                            {
+                                title: "Financial Strength & Risk Phases",
+                                desc: "Analysis of wealth-building opportunities, expense-heavy phases, investment timing, and periods where financial discipline is essential.",
+                                icon: (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                )
+                            },
+                            {
+                                title: "Marriage & Relationship Indicators",
+                                desc: "Insights into marriage timing, relationship harmony, emotional challenges, and recurring patterns affecting personal bonds.",
+                                icon: (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                    </svg>
+                                )
+                            },
+                            {
+                                title: "Health & Mental Well-Being Cycles",
+                                desc: "Identification of stress-prone phases, emotional fatigue periods, and planetary influences affecting overall vitality and balance.",
+                                icon: (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                    </svg>
+                                )
+                            },
+                            {
+                                title: "Karmic Patterns & Life Lessons",
+                                desc: "Understanding past-life influences, unresolved karmic themes, and lessons your chart indicates you are meant to complete in this lifetime.",
+                                icon: (
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                                    </svg>
+                                )
+                            },
+                            {
+                                title: "Personalized Astrological Remedies (Optional Guidance)",
+                                desc: "Simple, practical, and non-intrusive remedies aligned with planetary imbalances to help strengthen favorable outcomes.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -608,15 +626,15 @@ export default function LifeJourneyReport() {
                                 )
                             },
                             {
-                                title: "Lucky Periods Analysis",
-                                desc: "शुभ समय और अवसरों की पहचान।",
+                                title: "Easy-to-Understand Digital Report",
+                                desc: "Professionally structured, clearly explained, and optimized for reading on mobile, tablet, and desktop devices.",
                                 icon: (
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-yellow-500 mb-4">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                     </svg>
                                 )
                             }
-                        ].slice(0, showAllFeatures ? 6 : 3).map((feature, idx) => (
+                        ].slice(0, showAllFeatures ? 11 : 3).map((feature, idx) => (
                             <div key={idx} className="bg-gray-900 border border-white/10 rounded-xl p-8 hover:border-yellow-500/50 transition-colors shadow-lg">
                                 {feature.icon}
                                 <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
@@ -701,8 +719,8 @@ export default function LifeJourneyReport() {
                                 Get Your Premium Life Journey Report Now
                             </button>
                             <div className="text-3xl font-bold text-white flex justify-center items-center gap-4">
-                                <span className="text-gray-500 line-through text-2xl">₹1996</span>
-                                <span className="text-yellow-500">₹996</span>
+                                <span className="text-gray-500 line-through text-2xl">₹1999</span>
+                                <span className="text-yellow-500">₹699</span>
                             </div>
                         </div>
 
@@ -724,14 +742,20 @@ export default function LifeJourneyReport() {
 
                     {/* Heading & Text */}
                     <h2 className="text-4xl md:text-5xl font-normal text-yellow-500 mb-6 tracking-wider">ASTROLOGY</h2>
-                    <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-4xl mx-auto mb-16">
-                        is an ancient science that reveals how the positions of planets, stars, and constellations at the
-                        time of your birth shape your personality, emotions, strengths, challenges, and life events. We
-                        use time-tested Vedic astrology techniques to analyze your birth chart (Kundli) in detail and
-                        provide you with deep insights. This report will not only help you understand yourself better but
-                        also guide you in making wise decisions about career, relationships, health, and finance, aligning
-                        your life with cosmic energies for growth and harmony.
-                    </p>
+                    <div className="text-gray-300 leading-relaxed text-sm md:text-base max-w-4xl mx-auto mb-16">
+                        Astrology is a time-tested knowledge system that explains how planetary positions at the moment of birth influence your mind, actions, opportunities, challenges, and life events.
+                        Using classical Vedic astrology principles, we analyze your birth chart (Kundli) in depth to understand karma, timing, and planetary strength.
+                        <br /><br />
+                        <strong>This report is designed to help you:</strong>
+                        <ul className="text-left max-w-2xl mx-auto mt-4 space-y-2 list-disc pl-5">
+                            <li>Understand recurring patterns in your life</li>
+                            <li>Recognize favorable and unfavorable periods in advance</li>
+                            <li>Make informed decisions related to career, relationships, health, and finances</li>
+                            <li>Align your actions with planetary timing rather than working against it</li>
+                        </ul>
+                        <br />
+                        Astrology here is not about belief — it is about awareness, preparation, and intelligent action.
+                    </div>
 
                     {/* Stats Box */}
                     <div className="bg-yellow-900/20 border border-yellow-700/30 rounded-2xl p-8 md:p-12 relative overflow-hidden">
@@ -768,8 +792,8 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                                     </svg>
                                 ),
-                                title: "Input Your Birth Details",
-                                sub: "तिथि, समय और जन्मस्थान।"
+                                title: "Enter Your Birth Details",
+                                sub: "Provide your date, time, and place of birth for accurate chart calculation."
                             },
                             {
                                 num: 2,
@@ -778,8 +802,8 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25v-.008zm2.25-4.5h.008v.008H10.5v-.008zm0 2.25h.008v.008H10.5v-.008zm0 2.25h.008v.008H10.5v-.008zm0 2.25h.008v.008H10.5v-.008zm2.25-4.5h.008v.008H12.75v-.008zm0 2.25h.008v.008H12.75v-.008zm0 2.25h.008v.008H12.75v-.008zm0 2.25h.008v.008H12.75v-.008zM2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
                                     </svg>
                                 ),
-                                title: "Accurate Planetary Mapping",
-                                sub: "आपकी कुंडली के अनुसार ग्रहों की पोजीशन।"
+                                title: "Precise Planetary Mapping",
+                                sub: "Your birth chart is generated using exact planetary positions and house placements."
                             },
                             {
                                 num: 3,
@@ -789,7 +813,7 @@ export default function LifeJourneyReport() {
                                     </svg>
                                 ),
                                 title: "Astrological Interpretation",
-                                sub: "दशा, गोचर, भाव और योग का विश्लेषण।"
+                                sub: "Detailed analysis of Dashas, Transits, Houses, and Yogas to understand life events and timing."
                             },
                             {
                                 num: 4,
@@ -798,8 +822,8 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                                     </svg>
                                 ),
-                                title: "Actionable Remedies",
-                                sub: "व्यक्तिगत ग्रह दोषों के लिए उपाय।"
+                                title: "Actionable Astrological Guidance",
+                                sub: "Practical, non-intrusive recommendations to balance challenging planetary influences."
                             },
                             {
                                 num: 5,
@@ -808,8 +832,8 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                                     </svg>
                                 ),
-                                title: "Personalised Report Delivery",
-                                sub: "आपके ईमेल पर संपूर्ण रिपोर्ट।"
+                                title: "Personalized Report Delivery",
+                                sub: "Your complete Life Journey Report is delivered securely to your email in an easy-to-read digital format."
                             }
                         ].map((step, idx) => (
                             <div key={idx} className="relative z-10 flex flex-col items-center">
@@ -842,16 +866,25 @@ export default function LifeJourneyReport() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1600px] mx-auto">
                         {[
-                            "Lagan aur Rashi Report",
-                            "Nakshatra Report",
-                            "Panchang Phal",
-                            "Planetary Positions",
-                            "Horoscope Charts",
-                            "Dasha Analysis",
+                            "Ascendant & Zodiac Sign Analysis",
+                            "Nakshatra Analysis",
+                            "Panchang Phal Evaluation",
+                            "Future Life Aspects Overview",
+                            "Planetary Predictions",
+                            "Raj Yoga Identification",
+                            "Mangal (Mars) Dosha Analysis",
                             "Sade Sati Report",
-                            "Mangal Dosha Analysis",
-                            "Numerology Report"
-                        ].slice(0, showAllInclusions ? 9 : 3).map((item, idx) => (
+                            "Kaal Sarp Dosha Analysis & Remedies",
+                            "Complete Dasha Predictions",
+                            "Rudraksha & Gemstone Recommendations",
+                            "Auspicious Timing for Career & Business",
+                            "Shodasha Varga Analysis",
+                            "Shadbala & Ashtakavarga Evaluation",
+                            "KP Cusp Analysis Report",
+                            "Yogini & Chara Dasha Interpretation",
+                            "Tajik Varshphal (5-Year Forecast)",
+                            "Atimitra Nakshatra Insights"
+                        ].slice(0, showAllInclusions ? 18 : 3).map((item, idx) => (
                             <div key={idx} className="bg-[#0a0f1c] border border-white/5 rounded-2xl p-6 flex items-center gap-6 shadow-lg hover:border-yellow-500/30 transition-all group">
                                 <div className="w-12 h-12 rounded-full bg-yellow-500 text-black flex items-center justify-center font-bold text-lg shadow-[0_0_10px_rgba(234,179,8,0.5)] group-hover:scale-110 transition-transform">
                                     {(idx + 1).toString().padStart(2, '0')}
@@ -892,21 +925,22 @@ export default function LifeJourneyReport() {
 
                         {/* Plan 1 */}
                         <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all">
-                            <div className="absolute top-8 left-8 bg-yellow-600 text-black text-xs font-bold px-3 py-1 rounded">FLAT 50% OFF</div>
+                            <div className="absolute top-8 left-8 bg-yellow-600 text-black text-xs font-bold px-3 py-1 rounded">FLAT LIMITED-TIME OFFER</div>
                             <h3 className="text-2xl font-bold text-white mt-8 mb-2">Life Journey Report</h3>
-                            <p className="text-gray-400 text-sm mb-6">Your Personalized Roadmap to Life's Big Questions</p>
+                            <p className="text-gray-400 text-sm mb-6">Your Personalized Astrological Roadmap</p>
 
                             <div className="flex items-end gap-2 mb-8">
-                                <span className="text-gray-500 line-through text-xl">₹1996</span>
-                                <span className="text-yellow-400 text-4xl font-bold">₹996</span>
+                                <span className="text-gray-500 line-through text-xl">₹1999</span>
+                                <span className="text-yellow-400 text-4xl font-bold">₹699</span>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
                                 {[
-                                    "Detailed analysis of your life using Astrology",
-                                    "Insights on career, love, health & wealth",
-                                    "Easy remedies like gemstones, mantras & yantras",
-                                    "Written in simple, easy-to-understand language by expert astrologists"
+                                    "In-depth life analysis based on Vedic astrology",
+                                    "Career, relationships, health & financial insights",
+                                    "Practical, easy-to-follow astrological guidance",
+                                    "Written in clear, structured language",
+                                    "Ideal for those seeking clarity about their life direction and future phases"
                                 ].map((feat, i) => (
                                     <li key={i} className="flex gap-3 text-gray-300 text-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-yellow-500 flex-shrink-0">
@@ -917,32 +951,29 @@ export default function LifeJourneyReport() {
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-gray-500 mb-6">
-                                Perfect for anyone who wants clear answers & direction for the next chapter of life.
-                            </p>
-
                             <button className="w-full py-3 border border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-colors uppercase tracking-wider text-sm">
-                                Buy Now
+                                BUY NOW
                             </button>
                         </div>
 
                         {/* Plan 2 (Best Seller) */}
                         <div className="bg-[#0a0f1c] border-2 border-yellow-500 rounded-2xl p-8 flex flex-col relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(234,179,8,0.1)]">
                             <div className="absolute top-8 left-8 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded">BEST SELLER</div>
-                            <h3 className="text-2xl font-bold text-white mt-8 mb-2">Life Journey Report + 1-On-1 Consultation</h3>
-                            <p className="text-gray-400 text-sm mb-6">Discuss Your Challenges Face-to-Face with an Expert</p>
+                            <h3 className="text-2xl font-bold text-white mt-8 mb-2">Life Journey Report + 1-on-1 Consultation</h3>
+                            <p className="text-gray-400 text-sm mb-6">Speak Directly with an Astrological Expert</p>
 
                             <div className="flex items-end gap-2 mb-8">
                                 <span className="text-gray-500 line-through text-xl">₹6000</span>
-                                <span className="text-yellow-400 text-5xl font-bold">₹1900</span>
+                                <span className="text-yellow-400 text-5xl font-bold">₹799</span>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
                                 {[
                                     "Includes everything in the Life Journey Report",
-                                    "PLUS: A 15-20-minute private session with an expert",
-                                    "Get real-time clarity & guidance for your most important decisions",
-                                    "Remedies & advice tailored to your unique astrology profile"
+                                    "15–20 minute private consultation with an expert astrologer",
+                                    "Discuss your challenges and decisions in real time",
+                                    "Personalized guidance and remedies aligned to your chart",
+                                    "Best suited for those who want deeper clarity through direct interaction"
                                 ].map((feat, i) => (
                                     <li key={i} className="flex gap-3 text-gray-300 text-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-yellow-500 flex-shrink-0">
@@ -953,31 +984,28 @@ export default function LifeJourneyReport() {
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-gray-500 mb-6">
-                                Ideal for people who want live, personal interaction for deeper clarity & accurate remedies.
-                            </p>
-
                             <button className="w-full py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-400 transition-colors uppercase tracking-wider text-sm shadow-lg">
-                                Buy Now
+                                BUY NOW
                             </button>
                         </div>
 
                         {/* Plan 3 */}
                         <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all">
                             <div className="absolute top-8 left-8 bg-yellow-100/20 text-yellow-200 text-xs font-bold px-3 py-1 rounded">BUDGET FRIENDLY</div>
-                            <h3 className="text-2xl font-bold text-white mt-8 mb-2">Life Journey Report + Ask The Astrologer (2 Questions)</h3>
-                            <p className="text-gray-400 text-sm mb-6">You ask - Expert Answers</p>
+                            <h3 className="text-2xl font-bold text-white mt-8 mb-2">Life Journey Report + Ask the Astrologer (2 Questions)</h3>
+                            <p className="text-gray-400 text-sm mb-6">Focused Answers to Your Most Important Concerns</p>
 
                             <div className="flex items-end gap-2 mb-8">
                                 <span className="text-gray-500 line-through text-xl">₹4599</span>
-                                <span className="text-yellow-400 text-4xl font-bold">₹1599</span>
+                                <span className="text-yellow-400 text-4xl font-bold">₹599</span>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
                                 {[
                                     "Includes everything in the Life Journey Report",
-                                    "PLUS: Ask 2 personal questions about career, relationships, family, or life direction",
-                                    "Get a detailed written answer from an expert within 48 hours"
+                                    "Ask 2 personal questions (career, marriage, family, finances, or life path)",
+                                    "Receive detailed written responses within 48 hours",
+                                    "Ideal if you want specific answers without a live consultation"
                                 ].map((feat, i) => (
                                     <li key={i} className="flex gap-3 text-gray-300 text-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-yellow-500 flex-shrink-0">
@@ -988,12 +1016,8 @@ export default function LifeJourneyReport() {
                                 ))}
                             </ul>
 
-                            <p className="text-xs text-gray-500 mb-6">
-                                Perfect if you want your life insights + a clear, specific answer for your life concerns.
-                            </p>
-
                             <button className="w-full py-3 border border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-colors uppercase tracking-wider text-sm">
-                                Buy Now
+                                BUY NOW
                             </button>
                         </div>
 
@@ -1116,7 +1140,7 @@ export default function LifeJourneyReport() {
                 <div className="max-w-[1600px] mx-auto px-4 lg:px-12 relative z-10">
 
                     <div className="text-center mb-12">
-                        <h4 className="text-yellow-500 text-xs font-bold tracking-[0.2em] uppercase mb-4">ABOUT THE MAESTRO</h4>
+                        <h4 className="text-yellow-500 text-xs font-bold tracking-[0.2em] uppercase mb-4">ABOUT THE EXPERT</h4>
                     </div>
 
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -1127,8 +1151,8 @@ export default function LifeJourneyReport() {
                             <div className="relative z-10 bg-[#0a0f1c] rounded-3xl overflow-hidden border border-yellow-500/30 p-2 shadow-2xl">
                                 <div className="bg-gradient-to-b from-yellow-900/20 to-[#050912] rounded-2xl overflow-hidden">
                                     <img
-                                        src="https://www.acharyalavbhushan.com/achaarya.webp"
-                                        alt="Acharya Lavbhushan"
+                                        src="https://content.vinaybajrangi.com/img/content/1760069123-channels4_profile.jpg"
+                                        alt="Dr. Vinay Bajrangi"
                                         className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
@@ -1140,20 +1164,19 @@ export default function LifeJourneyReport() {
 
                         {/* Right Content Side */}
                         <div className="w-full lg:w-1/2 text-left">
-                            <p className="text-gray-400 text-sm mb-2">This Report</p>
-                            <p className="text-white text-lg mb-4">was made under the guidance of India's Leading Astrologist,</p>
-                            <h2 className="text-4xl md:text-5xl font-bold text-yellow-500 mb-6">Acharya Luvbhushan</h2>
+                            <p className="text-gray-400 text-sm mb-2">This Report Is Prepared Under the Guidance of India’s Renowned Astrologer</p>
+                            <h2 className="text-4xl md:text-5xl font-bold text-yellow-500 mb-6">Dr. Vinay Bajrangi</h2>
 
                             <p className="text-gray-300 mb-10 leading-relaxed text-sm md:text-base">
-                                Acharya Luvbhushan is India's leading expert in Astrology, Numerology and Vastu Science, known for his pioneering work in these fields.
+                                Dr. Vinay Bajrangi is a globally respected astrologer with over two decades of experience in Vedic astrology and Karma correction. He is known for his precise predictions and ability to diagnose the root cause of life’s problems.
                             </p>
 
                             <div className="space-y-4">
                                 {[
-                                    { num: "10+", text: "years into the Logical Science of Astrology, Numerology and Vastu Science" },
-                                    { num: "5000+", text: "TV shows in the early 2000s" },
-                                    { num: "40000+", text: "clients in India as well as overseas in 12 countries" },
-                                    { num: "45000+", text: "people trained including students, entrepreneurs, professionals, housewives, people in jobs, etc." }
+                                    { num: "25+", text: "Years of Experience" },
+                                    { num: "500K+", text: "Lives Transformed" },
+                                    { num: "Media", text: "Recognized by Global Media" },
+                                    { num: "Expert", text: "Expert in Marriage & Career Astrology" }
                                 ].map((stat, idx) => (
                                     <div key={idx} className="bg-[#0a0f1c] border border-white/5 rounded-xl p-4 flex items-center gap-6 hover:border-yellow-500/40 transition-colors group">
                                         <div className="bg-yellow-500 text-black font-bold text-xl min-w-[100px] py-2 rounded text-center shadow-[0_0_15px_rgba(234,179,8,0.4)] group-hover:scale-105 transition-transform">
@@ -1187,7 +1210,7 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                                     </svg>
                                 ),
-                                text: "सही Career Direction & Life Purpose"
+                                text: "Clarity in Career Direction & Life Purpose"
                             },
                             {
                                 icon: (
@@ -1195,7 +1218,7 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 ),
-                                text: "Financial Stability & Growth solutions"
+                                text: "Financial Stability & Sustainable Growth"
                             },
                             {
                                 icon: (
@@ -1203,7 +1226,7 @@ export default function LifeJourneyReport() {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                     </svg>
                                 ),
-                                text: "Peace of Mind & Confidence"
+                                text: "Peace of Mind & Inner Confidence"
                             }
                         ].map((item, idx) => (
                             <div key={idx} className="bg-[#0a0f1c] border border-white/10 rounded-xl p-8 hover:border-yellow-500/50 transition-all group min-h-[150px] flex flex-col justify-center">
@@ -1232,7 +1255,7 @@ export default function LifeJourneyReport() {
                             {/* Full Image Book Cover */}
                             <div className="relative w-[300px] md:w-[480px] aspect-[2/3] transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
                                 <img
-                                    src="https://www.acharyalavbhushan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freport-book.b6cc7cb7.jpg&w=640&q=75&dpl=dpl_AGQ8ZzLHDEFtj8K32ss3bv3ugLGK"
+                                    src="https://images.unsplash.com/photo-1755540735962-905a0f9cdef9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEFzdHJvbG9neSUyMEJvb2slMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
                                     alt="Life Journey Report Book Cover"
                                     className="w-full h-full object-contain drop-shadow-2xl"
                                 />
@@ -1243,15 +1266,15 @@ export default function LifeJourneyReport() {
                         <div className="w-full lg:w-1/2 text-left">
                             <p className="text-yellow-500 text-xs font-bold tracking-[0.1em] uppercase mb-4">THIS REPORT CAN BE LIFE-CHANGING FOR YOU,</p>
                             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-                                Here is Why it's So Special
+                                Why This Report Can Be Truly Transformative
                             </h2>
 
                             <div className="space-y-6 mb-10">
                                 {[
-                                    "Based on Ancient Vedic Astrology Principles",
-                                    "Includes Precise Planetary Calculations",
-                                    "Provides Personalised Remedies",
-                                    "Trusted by Thousands across India & abroad"
+                                    "Deep Vedic Analysis (Not Computer Generated Text)",
+                                    "Based on Precise Mathematical Calculations",
+                                    "Includes Personalized Remedial Measures",
+                                    "Trusted by Thousands for Accuracy"
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-4 group">
                                         <div className="w-6 h-6 rounded-full border border-yellow-500 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-yellow-500 transition-colors">
@@ -1287,16 +1310,20 @@ export default function LifeJourneyReport() {
                         <div className="space-y-8">
                             {[
                                 {
-                                    q: "Will the report be completely personalized?",
-                                    a: "Yes, it will be created based on your unique birth chart (Janam Kundli)."
+                                    q: "How soon will I get the report?",
+                                    a: "Instantly! As soon as you complete the purchase, the report is generated and sent to your email."
                                 },
                                 {
-                                    q: "Will the remedies be simple and practical?",
-                                    a: "Yes, only easy-to-follow mantras, gemstones, poojas, and Rudrakshas will be suggested."
+                                    q: "Is my personal information safe?",
+                                    a: "Yes, 100%. We follow strict data privacy policies and never share your birth details."
                                 },
                                 {
-                                    q: "Will the predictions be based on Dasha and Transit?",
-                                    a: "Yes, all forecasts are prepared using precise planetary periods (Dasha) and transits."
+                                    q: "Can I understand this report if I don't know astrology?",
+                                    a: "Absolutely. The report is written in simple, clear language that anyone can understand."
+                                },
+                                {
+                                    q: "What if I have specific questions?",
+                                    a: "You can successfully upgrade to the \"Ask the Astrologer\" or \"Consultation\" plan for specific answers."
                                 }
                             ].map((item, idx) => (
                                 <div key={idx} className="border-b border-white/5 pb-6 last:border-0 last:pb-0">
@@ -1320,12 +1347,12 @@ export default function LifeJourneyReport() {
 
                         <div className="relative z-10">
                             <span className="inline-block bg-yellow-500 text-black font-bold text-sm px-4 py-1 rounded-full mb-6 shadow-lg animate-bounce">
-                                Special Launch Offer: ₹1996 ₹996 (Offer End Soon)
+                                Special Launch Offer: ₹1999 ₹699 (Offer Ends Soon)
                             </span>
 
                             <div className="flex items-center justify-center gap-4 text-4xl md:text-6xl font-bold mb-8">
-                                <span className="text-gray-500 line-through text-2xl md:text-4xl">₹1996</span>
-                                <span className="text-yellow-500">₹996</span>
+                                <span className="text-gray-500 line-through text-2xl md:text-4xl">₹1999</span>
+                                <span className="text-yellow-500">₹699</span>
                             </div>
 
                             <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-bold text-lg md:text-xl py-4 px-12 rounded-full shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] transform transition-all hover:-translate-y-1 active:scale-95">
@@ -1342,8 +1369,8 @@ export default function LifeJourneyReport() {
 
                     {/* Price Info (Hidden on very small screens if needed, but important) */}
                     <div className="flex items-center gap-4 text-black">
-                        <span className="text-gray-700 line-through text-lg font-semibold">₹1996</span>
-                        <span className="text-[#991b1b] text-3xl font-extrabold tracking-tight">₹996</span>
+                        <span className="text-gray-700 line-through text-lg font-semibold">₹1999</span>
+                        <span className="text-[#991b1b] text-3xl font-extrabold tracking-tight">₹699</span>
                     </div>
 
                     {/* CTA Button */}
