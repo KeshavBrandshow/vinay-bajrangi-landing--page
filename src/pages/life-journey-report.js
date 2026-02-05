@@ -187,12 +187,12 @@ export default function LifeJourneyReport() {
                     <div className="md:w-1/2 space-y-8">
                         {/* Badges */}
                         <div className="space-y-3">
-                            <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#162032]/80 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
+                            <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#F0B100]/20 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
                                 <span className="text-yellow-500">👤</span>
                                 <span>Trusted by 1.1 crore+ Seekers Worldwide | 100% Personalized | Secure & Confidential Delivery</span>
                             </div>
                             <div className="flex">
-                                <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#162032]/80 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
+                                <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#F0B100]/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
                                     <span className="text-yellow-500">📅</span>
                                     <span>Detailed 5-Year Astrological Life Prediction Included</span>
                                 </div>
@@ -213,8 +213,8 @@ export default function LifeJourneyReport() {
 
                         {/* CTA Button */}
                         <div className="pt-2">
-                            <button className="bg-[#cc9933] hover:bg-[#b3862b] text-black font-bold py-3.5 px-8 rounded shadow-lg transition-transform transform hover:scale-105 flex items-center gap-3 text-sm md:text-base">
-                                <span>Get My Personalized Report Now</span>
+                            <button className="bg-[#cc9933] hover:bg-[#b3862b] text-black font-bold py-3.5 px-8 rounded shadow-lg transition-transform transform hover:scale-105 flex items-center gap-3 text-sm md:text-base animate-pulse">
+                                <span className="text-[#980E0D]">Get My Personalized Report Now</span>
                                 <span className="line-through text-black/60 text-xs">₹1999</span>
                                 <span className="text-black font-extrabold">₹699 Only</span>
                             </button>
