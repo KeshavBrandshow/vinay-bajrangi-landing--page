@@ -200,14 +200,15 @@ export default function LifeJourneyReport() {
                         </div>
 
                         {/* Headlines */}
-                        <div className="space-y-2">
-                            <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                                Unlock Your <br /><span className="text-yellow-400">Personalized Life Journey Report</span>
-                                {/* <span className="text-yellow-400"></span> */}
+                        <div className="space-y-4">
+                            <h1 className="text-3xl lg:text-5xl font-extrabold leading-tight">
+                                Feeling Stuck, Confused, or Like Life Isn't Going as Planned?
                             </h1>
-                            <p className="text-lg text-gray-400 font-medium">
-                                By Dr. Vinay Bajrangi<br />
-                                (Internationally Renowned Astrologer & Karma Expert)
+                            <p className="text-lg md:text-xl text-yellow-400/90 font-medium leading-relaxed">
+                                Discover what your planets reveal about your path, your timing, and your true potential.
+                            </p>
+                            <p className="text-sm text-gray-400 font-medium">
+                                By Dr. Vinay Bajrangi — Internationally Renowned Astrologer & Karma Expert
                             </p>
                         </div>
 
@@ -391,23 +392,33 @@ export default function LifeJourneyReport() {
                             className="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-8 px-4 scroll-smooth"
                         >
                             {[
-                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Anjini Dhawan", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", initials: "AK", gradient: "from-orange-500 to-red-600" },
+                                { name: "Alaya F", role: "INDIAN ACTOR", initials: "AF", gradient: "from-pink-500 to-purple-600" },
+                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", initials: "AP", gradient: "from-emerald-500 to-teal-600" },
+                                { name: "Anjali Anand", role: "INDIAN ACTRESS", initials: "AA", gradient: "from-blue-500 to-indigo-600" },
+                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", initials: "AS", gradient: "from-amber-500 to-orange-600" },
+                                { name: "Anjini Dhawan", role: "INDIAN ACTRESS", initials: "AD", gradient: "from-rose-500 to-pink-600" },
+                                { name: "Varun Dhawan", role: "INDIAN ACTOR", initials: "VD", gradient: "from-cyan-500 to-blue-600" },
+                                { name: "Kartik Aaryan", role: "INDIAN ACTOR", initials: "KA", gradient: "from-violet-500 to-purple-600" },
+                                { name: "Nora Fatehi", role: "DANCER & ACTRESS", initials: "NF", gradient: "from-fuchsia-500 to-pink-600" },
+                                { name: "Sidharth Malhotra", role: "INDIAN ACTOR", initials: "SM", gradient: "from-sky-500 to-indigo-600" },
+                                { name: "Kriti Sanon", role: "INDIAN ACTRESS", initials: "KS", gradient: "from-lime-500 to-emerald-600" },
                             ].map((celeb, idx) => (
                                 <div key={idx} className="flex-none w-72 md:w-80 relative group/card snap-center">
                                     <div className="relative h-[450px] rounded-2xl overflow-hidden border border-yellow-500/20 bg-gray-900 shadow-2xl transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(204,153,51,0.2)]">
-                                        {/* Image (Placeholder) */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 opacity-90"></div>
-                                        <img src={celeb.img} alt={celeb.name} className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-80 group-hover/card:opacity-100" />
+                                        {/* Illustrated Avatar with Initials */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 opacity-90"></div>
+                                        <div className={`w-full h-full bg-gradient-to-br ${celeb.gradient} flex items-center justify-center transition-transform duration-700 group-hover/card:scale-110`}>
+                                            <div className="flex flex-col items-center">
+                                                <div className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-white/15 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-2xl">
+                                                    <span className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{celeb.initials}</span>
+                                                </div>
+                                                {/* Decorative star below avatar */}
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-yellow-400 mt-4 opacity-80">
+                                                    <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+                                                </svg>
+                                            </div>
+                                        </div>
 
                                         {/* Content Overlay */}
                                         <div className="absolute bottom-0 left-0 w-full z-20 p-6 flex flex-col items-center text-center">
@@ -643,7 +654,7 @@ export default function LifeJourneyReport() {
                         ))}
                     </div>
 
-                    <div className="text-center mt-12">
+                    <div className="text-center mt-12 space-y-6">
                         <button
                             onClick={() => setShowAllFeatures(!showAllFeatures)}
                             className="bg-inherit border border-yellow-500 text-yellow-500 px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:text-black transition-all flex items-center justify-center gap-2 mx-auto"
@@ -652,6 +663,10 @@ export default function LifeJourneyReport() {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`w-4 h-4 transition-transform ${showAllFeatures ? 'rotate-180' : ''}`}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
+                        </button>
+                        {/* Contextual CTA after What You Get section */}
+                        <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-extrabold py-4 px-10 md:px-14 rounded-lg text-lg md:text-xl shadow-[0_0_20px_rgba(234,179,8,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] uppercase tracking-wide">
+                            Yes, I Want This Clarity
                         </button>
                     </div>
                 </div>
@@ -716,7 +731,7 @@ export default function LifeJourneyReport() {
                         {/* CTA & Price */}
                         <div className="text-center mt-12 space-y-6">
                             <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-extrabold py-4 px-8 md:px-12 rounded-lg text-lg md:text-xl shadow-[0_0_20px_rgba(234,179,8,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] uppercase tracking-wide">
-                                Get Your Premium Life Journey Report Now
+                                Show Me My Life Blueprint
                             </button>
                             <div className="text-3xl font-bold text-white flex justify-center items-center gap-4">
                                 <span className="text-gray-500 line-through text-2xl">₹1999</span>
@@ -760,11 +775,12 @@ export default function LifeJourneyReport() {
                     {/* Stats Box */}
                     <div className="bg-yellow-900/20 border border-yellow-700/30 rounded-2xl p-8 md:p-12 relative overflow-hidden">
                         <div className="relative z-10">
-                            <div className="text-5xl md:text-7xl font-bold text-white mb-2">10L+</div>
-                            <div className="text-sm md:text-base text-gray-300 font-bold uppercase tracking-widest mb-8">Reports Have Been Sold Already!</div>
+                            <div className="text-5xl md:text-7xl font-bold text-white mb-2">10 Lakh+</div>
+                            <div className="text-sm md:text-base text-gray-300 font-bold uppercase tracking-widest mb-4">Reports Delivered</div>
+                            <p className="text-yellow-500/80 text-lg font-medium mb-8">Trusted because of accuracy, not promises.</p>
 
                             <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-extrabold py-3 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase text-sm md:text-base">
-                                Get Your Report Now
+                                Unlock My Personalized Report
                             </button>
                         </div>
                     </div>
@@ -1034,44 +1050,73 @@ export default function LifeJourneyReport() {
                             </svg>
                             <h3 className="text-yellow-500 font-bold tracking-widest uppercase mb-2">TESTIMONIALS</h3>
                             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-wide drop-shadow-md">
-                                Loved by thousands!
+                                Real People. Real Clarity. Real Change.
                             </h2>
+                        </div>
+
+                        {/* Social Proof Banner */}
+                        <div className="mb-12 inline-flex items-center gap-3 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-6 py-3">
+                            <span className="text-2xl">📊</span>
+                            <span className="text-yellow-400 font-bold text-base md:text-lg">10 lakh+ reports delivered.</span>
+                            <span className="text-gray-400 text-sm md:text-base">Trusted because of accuracy, not promises.</span>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1600px] mx-auto text-left">
                             {[
                                 {
-                                    name: "Ritu Sharma",
+                                    name: "Arjun Mehta",
+                                    role: "Software Engineer, Pune",
+                                    initial: "AM",
+                                    gradient: "from-blue-500 to-indigo-600",
+                                    tag: "Career Confusion",
+                                    text: "I was 27, had a decent job but felt completely lost about whether I was on the right path. I kept second-guessing every decision. The Life Journey Report told me exactly why I was feeling this internal conflict — it was a Saturn transit affecting my 10th house. More importantly, it told me when this phase would end and what to focus on until then. That single insight gave me more peace than two years of overthinking. I stopped fighting my situation and started preparing for what was coming."
+                                },
+                                {
+                                    name: "Priya Nair",
+                                    role: "Teacher, Kochi",
+                                    initial: "PN",
+                                    gradient: "from-pink-500 to-rose-600",
+                                    tag: "Marriage Delay",
+                                    text: "Marriage proposals kept falling through and my family was getting anxious. I had almost given up trying to understand why. The report identified a specific Dasha period responsible for the delays and gave me a realistic timeline. It also suggested simple remedies — nothing complicated or expensive. Within the timeframe Dr. Bajrangi's analysis indicated, things genuinely shifted. I am now engaged. I don't say this lightly — this report changed how my family and I approached the entire situation."
+                                },
+                                {
+                                    name: "Rakesh Singhania",
+                                    role: "Business Owner, Ahmedabad",
                                     initial: "RS",
-                                    text: '"Life Journey Report ने मेरी career direction clear कर दी। Remedies आसान और effective हैं।"'
+                                    gradient: "from-amber-500 to-orange-600",
+                                    tag: "Financial Stress",
+                                    text: "I had been facing financial losses for almost three years — business deals falling apart, unexpected expenses, nothing working despite my best efforts. I was skeptical about astrology honestly, but a friend insisted. The report explained the planetary combination causing this pattern and more importantly told me which months to avoid major financial decisions. Following that guidance, I made no big moves during those periods. The bleeding stopped. I am not saying astrology fixed my business — but understanding my timing helped me stop making it worse."
                                 },
                                 {
-                                    name: "Anil Verma",
-                                    initial: "AV",
-                                    text: '"Marriage decisions में clarity मिली। Report detailed और accurate थी।"'
+                                    name: "Sunita Bhatnagar",
+                                    role: "Homemaker, Jaipur",
+                                    initial: "SB",
+                                    gradient: "from-emerald-500 to-teal-600",
+                                    tag: "Health Anxiety",
+                                    text: "After a health scare last year I became very anxious about the future — my own and my family's. The report addressed health indicators in my chart honestly and without creating fear. It highlighted a period I needed to be careful in and suggested specific lifestyle adjustments aligned with my planetary influences. What I appreciated most was that nothing was dramatized. It felt like speaking to a wise, calm advisor rather than reading a scary prediction. I feel genuinely more grounded now."
                                 },
                                 {
-                                    name: "Meena Kapoor",
-                                    initial: "MK",
-                                    text: '"Financial stability के लिए जो solutions दिए, उन्होंने सच में काम किया।"'
+                                    name: "Divya Krishnamurthy",
+                                    role: "IT Professional, Toronto",
+                                    initial: "DK",
+                                    gradient: "from-violet-500 to-purple-600",
+                                    tag: "Life Purpose",
+                                    text: "I was living abroad, earning well, but felt deeply unfulfilled. Everyone around me thought I had the perfect life — I could not explain why something felt missing. The report identified a strong spiritual and creative inclination in my chart that my current career was completely ignoring. It was the first time something external validated what I had been feeling internally for years. I have since started working on a creative project alongside my job. Small step, but it finally feels like my life."
                                 },
                                 {
-                                    name: "Suresh Raina",
-                                    initial: "SR",
-                                    text: '"Understanding my strengths helped me pivot my business strategy. Highly recommended!"'
-                                },
-                                {
-                                    name: "Priya Singh",
-                                    initial: "PS",
-                                    text: '"The report gave me peace of mind regarding my family\'s health. The remedies are simple to follow."'
-                                },
-                                {
-                                    name: "Rahul Dravid",
-                                    initial: "RD",
-                                    text: '"Incredible detail! It felt like the astrologer knew me personally without ever meeting me."'
+                                    name: "Vikram Desai",
+                                    role: "Architect, Mumbai",
+                                    initial: "VD",
+                                    gradient: "from-cyan-500 to-blue-600",
+                                    tag: "Relationship Conflict",
+                                    text: "My marriage was going through a very rough phase — constant arguments, emotional distance, we were both exhausted. The report showed a difficult planetary period affecting my 7th house and explained how my wife's and my energies were clashing during this time. Knowing it was a temporary phase and not a permanent incompatibility genuinely reduced the panic. We stopped treating it like a permanent problem and started waiting it out more patiently. Things are significantly better now. Sometimes awareness itself is the remedy."
                                 }
                             ].slice(0, showAllTestimonials ? 6 : 3).map((testimonial, idx) => (
                                 <div key={idx} className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 shadow-lg hover:border-yellow-500/30 transition-all flex flex-col h-full">
+                                    {/* Tag */}
+                                    <div className="mb-4">
+                                        <span className="inline-block bg-yellow-500/10 border border-yellow-500/30 text-yellow-500 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">{testimonial.tag}</span>
+                                    </div>
                                     <div className="flex gap-1 mb-4 text-yellow-500">
                                         {[1, 2, 3, 4, 5].map((_, i) => (
                                             <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -1079,12 +1124,15 @@ export default function LifeJourneyReport() {
                                             </svg>
                                         ))}
                                     </div>
-                                    <p className="text-gray-300 text-lg italic mb-6 flex-grow">{testimonial.text}</p>
+                                    <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6 flex-grow">"{testimonial.text}"</p>
                                     <div className="flex items-center gap-4 mt-auto">
-                                        <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-lg">
+                                        <div className={`w-12 h-12 bg-gradient-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
                                             {testimonial.initial}
                                         </div>
-                                        <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                                        <div>
+                                            <h4 className="text-white font-bold text-base">— {testimonial.name}</h4>
+                                            <p className="text-gray-500 text-xs">{testimonial.role}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -1095,7 +1143,7 @@ export default function LifeJourneyReport() {
                                 onClick={() => setShowAllTestimonials(!showAllTestimonials)}
                                 className="bg-transparent border border-yellow-500 text-yellow-500 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 hover:text-black transition-all flex items-center justify-center gap-2 mx-auto uppercase tracking-wider text-sm"
                             >
-                                {showAllTestimonials ? 'Show Less' : 'Show More'}
+                                {showAllTestimonials ? 'Show Less' : 'Read More Testimonials'}
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`w-4 h-4 transition-transform ${showAllTestimonials ? 'rotate-180' : ''}`}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
@@ -1356,7 +1404,7 @@ export default function LifeJourneyReport() {
                             </div>
 
                             <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-bold text-lg md:text-xl py-4 px-12 rounded-full shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] transform transition-all hover:-translate-y-1 active:scale-95">
-                                Get My Life Journey Report Now
+                                I'm Ready — Get My Report
                             </button>
                         </div>
                     </div>
