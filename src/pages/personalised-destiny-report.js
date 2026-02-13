@@ -201,10 +201,17 @@ export default function PersonalisedDestinyReport() {
 
                         {/* Headlines */}
                         <div className="space-y-2">
+                            <div className="flex items-center gap-3 text-amber-500/80 font-medium text-sm md:text-base tracking-wide uppercase">
+                                <span className="h-px w-4 bg-amber-500/40"></span>
+                                <span>For Those Who Feel Their Life Is Unfolding Exactly As It Should — But Don't Yet Know Why</span>
+                                <span className="h-px w-4 bg-amber-500/40"></span>
+                            </div>
                             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                                Unlock Your <br /><span className="text-yellow-400">Personalised Destiny Report</span>
-                                {/* <span className="text-yellow-400"></span> */}
+                                Why Does It Feel Like Your Life Has a Pattern You Can't Escape?
                             </h1>
+                            <p className="text-lg md:text-xl text-yellow-400/90 font-medium leading-relaxed">
+                                Your karma holds the answer. Your Destiny Report reveals it.
+                            </p>
                             <p className="text-lg text-gray-400 font-medium">
                                 By Dr. Vinay Bajrangi<br />
                                 (Internationally Renowned Astrologer & Karma Timing Expert)
@@ -218,6 +225,9 @@ export default function PersonalisedDestinyReport() {
                                 <span className="line-through text-black/60 text-xs">₹2499</span>
                                 <span className="text-black font-extrabold">₹799 Only</span>
                             </button>
+                            <p className="text-xs text-yellow-600/60 mt-3 text-center max-w-md">
+                                No fear-based predictions. No vague spiritual jargon. Just clear, honest karmic analysis — trusted by 4.5 lakh+ seekers.
+                            </p>
                         </div>
 
                         {/* Stats */}
@@ -362,7 +372,6 @@ export default function PersonalisedDestinyReport() {
                     </div>
                 </div>
             </div>
-
             {/* --- CELEBRITY EXPERIENCES SECTION --- */}
             <div className="bg-[#050912] py-20 overflow-hidden relative">
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-900/40 to-transparent"></div>
@@ -942,7 +951,7 @@ export default function PersonalisedDestinyReport() {
                         <p className="text-gray-400">Select the report that best fits your needs.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1400px] mx-auto">
 
                         {/* Plan 1 */}
                         <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all shadow-lg hover:shadow-xl">
@@ -950,7 +959,8 @@ export default function PersonalisedDestinyReport() {
                             <h3 className="text-2xl font-bold text-white mt-4 mb-2">Personalised Destiny Report</h3>
                             <p className="text-gray-400 text-sm mb-6">Complete destiny & karma blueprint</p>
 
-                            <div className="flex items-end gap-2 mb-8">
+                            <div className="flex items-end gap-3 mb-8">
+                                <span className="text-gray-500 line-through text-2xl">₹2499</span>
                                 <span className="text-yellow-400 text-4xl font-bold">₹799</span>
                             </div>
 
@@ -975,13 +985,46 @@ export default function PersonalisedDestinyReport() {
                             </button>
                         </div>
 
-                        {/* Plan 2 */}
+                        {/* Plan 2 — NEW: Destiny Report + 1-on-1 Consultation */}
+                        <div className="bg-[#0a0f1c] border-2 border-green-500 rounded-2xl p-8 flex flex-col relative shadow-[0_0_30px_rgba(34,197,94,0.1)]">
+                            <div className="absolute top-8 left-8 bg-green-500 text-black text-xs font-bold px-3 py-1 rounded">BEST VALUE</div>
+                            <h3 className="text-2xl font-bold text-white mt-8 mb-2">Destiny Report + 1-on-1 Consultation</h3>
+                            <p className="text-gray-400 text-sm mb-6">Speak directly with an astrological expert</p>
+
+                            <div className="flex items-end gap-3 mb-8">
+                                <span className="text-gray-500 line-through text-2xl">₹15999</span>
+                                <span className="text-yellow-400 text-4xl font-bold">₹6899</span>
+                            </div>
+
+                            <ul className="space-y-4 mb-8 flex-grow">
+                                {[
+                                    "Everything in the Personalised Destiny Report",
+                                    "15–20 minute private consultation with an expert astrologer",
+                                    "Discuss your karmic challenges in real time",
+                                    "Personalized remedies aligned to your destiny chart",
+                                    "Best suited for those who want deeper clarity through direct interaction"
+                                ].map((feat, i) => (
+                                    <li key={i} className="flex gap-3 text-gray-300 text-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-green-500 flex-shrink-0">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        {feat}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <button className="w-full py-3 bg-green-500 text-black font-bold rounded hover:bg-green-400 transition-colors uppercase tracking-wider text-sm shadow-lg">
+                                BUY NOW
+                            </button>
+                        </div>
+
+                        {/* Plan 3 */}
                         <div className="bg-[#0a0f1c] border-2 border-yellow-500 rounded-2xl p-8 flex flex-col relative shadow-[0_0_30px_rgba(234,179,8,0.1)]">
                             <div className="absolute top-8 left-8 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded">MOST POPULAR</div>
                             <h3 className="text-2xl font-bold text-white mt-8 mb-2">Destiny Report + Ask the Astrologer (2 Questions)</h3>
                             <p className="text-gray-400 text-sm mb-6">Includes written answers to 2 destiny-related questions</p>
 
-                            <div className="flex items-end gap-2 mb-8">
+                            <div className="flex items-end gap-3 mb-8">
                                 <span className="text-yellow-400 text-4xl font-bold">₹1699</span>
                             </div>
 
@@ -1026,34 +1069,40 @@ export default function PersonalisedDestinyReport() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1600px] mx-auto text-left">
                             {[
                                 {
-                                    name: "Ritu Sharma",
-                                    initial: "RS",
-                                    text: '"Life Journey Report ने मेरी career direction clear कर दी। Remedies आसान और effective हैं।"'
+                                    name: "Kavitha Iyer",
+                                    title: "Marketing Professional, Chennai",
+                                    initial: "KI",
+                                    text: '"I had been through three failed relationships and couldn\'t understand what I was doing wrong. Each time felt different but ended the same way. The Destiny Report explained a karmic pattern in my 7th house that was creating this cycle — and more importantly, what I needed to learn from it before things could change. For the first time I stopped blaming circumstances and started understanding the lesson. That shift alone was worth everything."'
                                 },
                                 {
-                                    name: "Anil Verma",
-                                    initial: "AV",
-                                    text: '"Marriage decisions में clarity मिली। Report detailed और accurate थी।"'
+                                    name: "Ankit Sharma",
+                                    title: "Finance Analyst, Delhi",
+                                    initial: "AS",
+                                    text: '"I had a good career by every external measure — salary, designation, stability. But I felt completely hollow inside. The Destiny Report showed me that my 9th house and Rahu placement were pulling me toward teaching and knowledge sharing, not corporate work. I haven\'t quit my job yet — but I\'ve started a weekend workshop and for the first time in years I feel like I am moving toward something real."'
                                 },
                                 {
-                                    name: "Meena Kapoor",
-                                    initial: "MK",
-                                    text: '"Financial stability के लिए जो solutions दिए, उन्होंने सच में काम किया।"'
-                                },
-                                {
-                                    name: "Suresh Raina",
+                                    name: "Sudha Ramanathan",
+                                    title: "Homemaker, Hyderabad",
                                     initial: "SR",
-                                    text: '"Understanding my strengths helped me pivot my business strategy. Highly recommended!"'
+                                    text: '"I spent years fighting certain situations in my life — my difficult relationship with my mother, my health challenges, a career that never fully took off. The report helped me understand which of these were karmic in nature and which ones I had the power to change. That distinction gave me enormous peace. I stopped exhausting myself fighting the wrong battles."'
                                 },
                                 {
-                                    name: "Priya Singh",
-                                    initial: "PS",
-                                    text: '"The report gave me peace of mind regarding my family\'s health. The remedies are simple to follow."'
+                                    name: "Rajesh Kulkarni",
+                                    title: "Entrepreneur, Pune",
+                                    initial: "RK",
+                                    text: '"I have read extensively about spirituality and karma for over a decade. But reading general books and understanding my own specific karmic blueprint are two completely different things. This report gave me a personal map — my specific karmic debts, the houses where I need to work hardest, the Dasha periods connected to spiritual growth. It felt like moving from theory to practice."'
                                 },
                                 {
-                                    name: "Rahul Dravid",
-                                    initial: "RD",
-                                    text: '"Incredible detail! It felt like the astrologer knew me personally without ever meeting me."'
+                                    name: "Neha Joshi",
+                                    title: "Architect, Mumbai",
+                                    initial: "NJ",
+                                    text: '"Success always came late for me — jobs, recognition, even relationships. The report explained my Saturn placement and how my destiny cycle was structured for delayed but solid growth. Understanding that I wasn\'t failing — I was just on a different timeline — completely changed my relationship with effort and patience. I am now in the best phase of my professional life and I understand exactly why it came when it did."'
+                                },
+                                {
+                                    name: "Siddharth Nair",
+                                    title: "Software Engineer, London",
+                                    initial: "SN",
+                                    text: '"Living abroad, you lose connection with your cultural roots and sometimes with yourself. What I received was a deeply accurate mirror of my inner conflicts — the tension between ambition and belonging, between the life I built and the one I perhaps should have. The report didn\'t tell me what to do. It helped me understand who I am. That kind of clarity is rare."'
                                 }
                             ].slice(0, showAllTestimonials ? 6 : 3).map((testimonial, idx) => (
                                 <div key={idx} className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 shadow-lg hover:border-yellow-500/30 transition-all flex flex-col h-full">
@@ -1069,7 +1118,10 @@ export default function PersonalisedDestinyReport() {
                                         <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-lg">
                                             {testimonial.initial}
                                         </div>
-                                        <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                                        <div>
+                                            <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                                            {testimonial.title && <p className="text-gray-400 text-sm">{testimonial.title}</p>}
+                                        </div>
                                     </div>
                                 </div>
                             ))}
