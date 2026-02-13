@@ -201,13 +201,15 @@ export default function PersonalisedDestinyReport() {
 
                         {/* Headlines */}
                         <div className="space-y-2">
-                            <div className="flex items-center gap-3 text-amber-500/80 font-medium text-sm md:text-base tracking-wide uppercase">
-                                <span className="h-px w-4 bg-amber-500/40"></span>
-                                <span>For Those Who Feel Their Life Is Unfolding Exactly As It Should — But Don't Yet Know Why</span>
-                                <span className="h-px w-4 bg-amber-500/40"></span>
+                             <div className="flex items-center justify-center gap-4 mt-10">
+                                <div className="h-px w-8 bg-[#E5B2B2] opacity-50"></div> {/* Decorative line */}
+                                <span className="text-[#F8C8C8] text-sm md:text-lg font-medium tracking-tight italic">
+                                   For Those Who Feel Their Life Is Unfolding Exactly As It Should — But Don't Yet Know Why
+                                </span>
+                                <div className="h-px w-8 bg-[#E5B2B2] opacity-50"></div> {/* Decorative line */}
                             </div>
                             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                                Why Does It Feel Like Your Life Has a Pattern You Can't Escape?
+                                Why Does It Feel Like Your Life Has a Pattern <span className="text-yellow-400">You Can't Escape?</span> 
                             </h1>
                             <p className="text-lg md:text-xl text-yellow-400/90 font-medium leading-relaxed">
                                 Your karma holds the answer. Your Destiny Report reveals it.
@@ -415,12 +417,12 @@ export default function PersonalisedDestinyReport() {
                                 { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                                 { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                                 { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                                 { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
-                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                                 { name: "Anjini Dhawan", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
                             ].map((celeb, idx) => (
                                 <div key={idx} className="flex-none w-72 md:w-80 relative group/card snap-center">

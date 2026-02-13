@@ -182,11 +182,10 @@ export default function LoveAndRelationshipReport() {
                 </div>
 
                 <div className="relative z-10 w-full max-w-[1820px] mx-auto px-4 md:px-10 lg:px-20 flex flex-col md:flex-row items-center gap-12 ">
-
                     {/* Left Content */}
                     <div className="md:w-1/2 space-y-8">
                         {/* Badges */}
-                        <div className="space-y-3">
+                        {/* <div className="space-y-3">
                             <div className="inline-flex items-center gap-2 border border-yellow-600/50 bg-[#F0B100]/20 backdrop-blur-sm rounded-full px-4 py-1.5 text-[10px] md:text-xs text-yellow-500 font-medium tracking-wide">
                                 <span className="text-yellow-500">👤</span>
                                 <span>Trusted by 3,00,000+ Seekers Worldwide | 100% Personalized | Secure Digital Delivery </span>
@@ -197,22 +196,30 @@ export default function LoveAndRelationshipReport() {
                                     <span>Understand Your Love Life, Emotional Patterns & Relationship Destiny</span>
                                 </div>
                             </div>
-                        </div>
+
+                        </div> */}
 
                         {/* Headlines */}
                         <div className="space-y-2">
+                            <div className="flex items-center justify-center gap-4 mb-10">
+                                <div className="h-px w-8 bg-[#E5B2B2] opacity-50"></div> {/* Decorative line */}
+                                <span className="text-[#F8C8C8] text-sm md:text-lg font-medium tracking-tight italic">
+                                    For Those Who Keep Giving Everything — And Still Can't Make Love Work
+                                </span>
+                                <div className="h-px w-8 bg-[#E5B2B2] opacity-50"></div> {/* Decorative line */}
+                            </div>
                             <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
-                                Unlock Your <br /><span className="text-yellow-400">Love & Relationship Report</span>
+                                Why Do Your Relationships Keep
+                                Following the Same <br /><span className="text-yellow-400">Painful Pattern?</span>
                                 {/* <span className="text-yellow-400"></span> */}
                             </h1>
-                            <p className="text-lg text-gray-400 font-medium">
+                            {/* <p className="text-lg text-gray-400 font-medium mt-10">
                                 By Dr. Vinay Bajrangi<br />
                                 (Internationally Renowned Astrologer & Karma Timing Expert)
-                            </p>
+                            </p> */}
                         </div>
-
                         <div className="text-gray-300/90 text-sm md:text-base leading-relaxed max-w-2xl">
-                            Love is never accidental. Your attractions, emotional needs, relationship struggles, delays in marriage, misunderstandings, breakups, or even repeated toxic patterns are deeply connected to your planetary placements.
+                            Your planets reveal your emotional blueprint — and exactly how to change what isn't working.
                         </div>
 
                         {/* CTA Button */}
@@ -223,6 +230,18 @@ export default function LoveAndRelationshipReport() {
                                 <span className="text-black font-extrabold">₹599 Only</span>
                             </button>
                         </div>
+
+                        <p className="text-[#D1A7A7] text-xs md:text-sm font-medium tracking-wide flex items-center gap-2 opacity-90">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="w-3 h-3 text-[#F8C8C8]"
+                            >
+                                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.5 3c1.553 0 2.946.69 3.896 1.779A3.993 3.993 0 0115 3c2.786 0 5.25 2.322 5.25 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                            </svg>
+                            No judgment. No fear. Just honest, clear insights into your love life — trusted by 4.5 lakh+ seekers.
+                        </p>
 
                         {/* Stats */}
                         <div className="flex gap-8 lg:gap-14 pt-6 border-t border-gray-800/50 mt-4">
@@ -371,6 +390,154 @@ export default function LoveAndRelationshipReport() {
             {/* <div className="bg-[#050912] py-20 overflow-hidden relative">
                  ...
             </div> */}
+
+
+            {/* --- HERO SECTION --- */}
+
+
+
+            {/* --- CELEBRITY EXPERIENCES SECTION --- */}
+            <div className="bg-[#050912] py-20 overflow-hidden relative">
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-900/40 to-transparent"></div>
+
+                <div className="max-w-[1920px] mx-auto px-4 lg:px-12 relative z-10">
+                    <div className="text-center mb-16 space-y-4">
+                        <div className="text-yellow-600 font-bold tracking-[0.2em] text-xs uppercase">TRUSTED BY CELEBRITIES & INDUSTRY LEADERS</div>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#cc9933] drop-shadow-md pb-2 leading-tight">When Matters of the Heart Become Critical — They Seek Precision</h2>
+                        <p className="text-gray-300/80 max-w-3xl mx-auto text-lg font-light leading-relaxed">
+                            Celebrities, public figures, and industry leaders have consulted <strong>Dr. Vinay Bajrangi</strong> to understand <strong>during their most emotionally critical phases — marriage decisions, relationship crossroads, heartbreaks, and major personal transitions. All experiences shared with complete discretion and confidentiality.</strong>
+                        </p>
+
+                        <div className="max-w-4xl mx-auto bg-white/5 rounded-xl p-6 border border-white/10 mt-6 text-left">
+                            <p className="text-yellow-500 font-semibold mb-3 text-center md:text-left">Astrology here is used to:</p>
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-gray-300 text-sm md:text-base">
+                                <li className='flex items-start gap-2'><span className="text-yellow-500 mt-1">✔</span> Understand why love comes early or late in life</li>
+                                <li className='flex items-start gap-2'><span className="text-yellow-500 mt-1">✔</span> Decode repeated relationship patterns and emotional blocks</li>
+                                <li className='flex items-start gap-2'><span className="text-yellow-500 mt-1">✔</span> Make marriage and commitment decisions with clarity</li>
+                                <li className='flex items-start gap-2'><span className="text-yellow-500 mt-1">✔</span> Align emotional decisions with favorable planetary periods  </li>
+                            </ul>
+                            <p className="text-gray-500 text-xs mt-4 text-center md:text-left italic">(All experiences shared with discretion and confidentiality)</p>
+                        </div>
+                    </div>
+
+                    <div className="relative group px-0 lg:px-12">
+                        {/* Nav Left */}
+                        <button
+                            onClick={() => celebScroll('left')}
+                            className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-black/50 hover:bg-yellow-600 text-white items-center justify-center rounded-full backdrop-blur-sm border border-white/10 transition-all hover:scale-110 shadow-xl cursor-pointer"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                        </button>
+
+                        {/* Carousel */}
+                        <div
+                            ref={celebSliderRef}
+                            className="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-8 px-4 scroll-smooth"
+                        >
+                            {[
+                                { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Akshay Kumar", role: "INDIAN ACTOR & FILM PRODUCER", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Alaya F", role: "INDIAN ACTOR", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Ameesha Patel", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Anjali Anand", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                // { name: "Akanksha Sharma", role: "INDIAN ACTOR & MODEL", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                                { name: "Anjini Dhawan", role: "INDIAN ACTRESS", img: "https://images.unsplash.com/photo-1633621412960-6df85eff8c85?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" },
+                            ].map((celeb, idx) => (
+                                <div key={idx} className="flex-none w-72 md:w-80 relative group/card snap-center">
+                                    <div className="relative h-[450px] rounded-2xl overflow-hidden border border-yellow-500/20 bg-gray-900 shadow-2xl transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(204,153,51,0.2)]">
+                                        {/* Image (Placeholder) */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 opacity-90"></div>
+                                        <img src={celeb.img} alt={celeb.name} className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-80 group-hover/card:opacity-100" />
+
+                                        {/* Content Overlay */}
+                                        <div className="absolute bottom-0 left-0 w-full z-20 p-6 flex flex-col items-center text-center">
+                                            <div className="w-12 h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent mb-4"></div>
+                                            <h3 className="text-2xl font-bold text-yellow-100 uppercase tracking-wide font-serif mb-1 group-hover/card:text-yellow-400 transition-colors">{celeb.name}</h3>
+                                            <div className="text-[10px] text-yellow-500/80 font-bold tracking-[0.15em] uppercase border-t border-white/10 pt-2 mt-1 w-full">{celeb.role}</div>
+                                        </div>
+                                    </div>
+                                    {/* Golden confetti/particles decoration */}
+                                    <div className="absolute -bottom-2 -right-2 w-full h-full border border-yellow-500/10 rounded-2xl -z-10 group-hover/card:translate-x-2 group-hover/card:translate-y-2 transition-transform duration-300"></div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Nav Right */}
+                        <button
+                            onClick={() => celebScroll('right')}
+                            className="hidden lg:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-14 h-14 bg-black/50 hover:bg-yellow-600 text-white items-center justify-center rounded-full backdrop-blur-sm border border-white/10 transition-all hover:scale-110 shadow-xl cursor-pointer"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                        </button>
+                    </div>
+
+                    {/* NEW CONTENT BLOCKS BELOW CAROUSEL */}
+                    <div className="mt-20 max-w-5xl mx-auto space-y-20">
+
+                        {/* Celebrity Experiences Testimonials */}
+                        <div>
+                            <div className="text-center mb-10">
+                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">🎤 CELEBRITY EXPERIENCES</h3>
+                                <p className="text-yellow-500 text-lg font-medium">Real Guidance. Real Results.</p>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {[
+                                    "Astrology helped me understand my timing rather than fight it.",
+                                    "The predictions were direct, logical, and deeply accurate.",
+                                    "This was not superstition — it was strategic life planning."
+                                ].map((quote, idx) => (
+                                    <div key={idx} className="bg-[#0a0f1c] border border-white/5 rounded-xl p-6 relative">
+                                        <div className="absolute -top-3 left-6 text-4xl text-yellow-600/30">"</div>
+                                        <p className="text-gray-300 italic relative z-10">{quote}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="mt-8 bg-gray-900/50 rounded-xl p-8 border-l-4 border-yellow-500">
+                                <p className="text-gray-300 mb-4 text-lg">Through karmic astrology, dashā analysis, and precise transit mapping, Dr. Vinay Bajrangi has helped high-profile individuals:</p>
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {[
+                                        "Navigate fame-related pressures",
+                                        "Avoid career-damaging decisions",
+                                        "Understand delays, controversies & comebacks",
+                                        "Align actions with favorable planetary periods"
+                                    ].map((item, i) => (
+                                        <li key={i} className="flex items-center gap-3 text-gray-400">
+                                            <span className="text-yellow-500 font-bold">✔</span> {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Why Celebrities Trust Section */}
+                        <div className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] rounded-2xl p-8 md:p-12 border border-yellow-500/20 shadow-2xl">
+                            <h3 className="text-2xl md:text-3xl font-bold text-[#facc15] mb-8 text-center uppercase tracking-wide">🔮 WHY CELEBRITIES TRUST DR. VINAY BAJRANGI</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 max-w-3xl mx-auto leading-relaxed">
+                                {[
+                                    "Discretion & absolute confidentiality",
+                                    "No sensationalism or fear-based predictions",
+                                    "Practical guidance aligned with real-world outcomes",
+                                    "Deep focus on karma, timing & free will"
+                                ].map((point, idx) => (
+                                    <div key={idx} className="flex items-start gap-4">
+                                        <div className="w-6 h-6 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <span className="text-yellow-500 text-sm">✔</span>
+                                        </div>
+                                        <span className="text-gray-200 text-lg">{point}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
 
             {/* --- PERSONAL MESSAGE SECTION --- */}
             <div className="bg-[#0b1120] py-16 text-center relative overflow-hidden">
@@ -754,37 +921,39 @@ export default function LoveAndRelationshipReport() {
                 </div>
             </div>
             {/* --- PRICING SECTION --- */}
+            {/* --- PRICING SECTION --- */}
             <div className="bg-[#050912] pb-20 pt-10 relative overflow-hidden">
                 <div className="max-w-[1920px] mx-auto px-4 lg:px-12 relative z-10">
 
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-bold text-[#facc15] mb-4 tracking-wide drop-shadow-md">
-                            Choose Your Plan
+                            Choose the Support That Feels Right for You
                         </h2>
                         <p className="text-gray-400">Select the report that best fits your needs.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto items-stretch">
 
-                        {/* Plan 1 */}
-                        <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all shadow-lg hover:shadow-xl w-full md:w-2/3 mx-auto">
-                            {/* <div className="absolute top-8 left-8 bg-yellow-600 text-black text-xs font-bold px-3 py-1 rounded">FLAT LIMITED-TIME OFFER</div> */}
-                            <h3 className="text-2xl font-bold text-white mt-4 mb-2">Love & Relationship Report</h3>
-                            <p className="text-gray-400 text-sm mb-6">Complete love & emotional destiny blueprint</p>
+                        {/* Plan 1 — Left Card */}
+                        <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all shadow-lg">
+                            <h3 className="text-xl font-bold text-white mt-4 mb-2">Love & Relationship Report</h3>
+                            <p className="text-gray-400 text-xs mb-6">Complete love & emotional destiny blueprint</p>
 
-                            <div className="flex items-end gap-2 mb-8">
-                                <span className="text-yellow-400 text-4xl font-bold">₹599</span>
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="text-gray-500 line-through text-lg">₹1499</span>
+                                <span className="text-yellow-400 text-3xl font-bold">₹599</span>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
                                 {[
-                                    "Love Nature & Compatibility",
-                                    "Timing of Relationships",
-                                    "Breakup & Delay Analysis",
-                                    "Remedial Measures"
+                                    "Love nature & compatibility analysis",
+                                    "Timing of love and marriage",
+                                    "Breakup & delay root cause analysis",
+                                    "Remedial measures included",
+                                    "Written in simple, clear language"
                                 ].map((feat, i) => (
-                                    <li key={i} className="flex gap-3 text-gray-300 text-sm">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-yellow-500 flex-shrink-0">
+                                    <li key={i} className="flex gap-3 text-gray-300 text-xs leading-relaxed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                         </svg>
                                         {feat}
@@ -797,14 +966,82 @@ export default function LoveAndRelationshipReport() {
                             </button>
                         </div>
 
-                        {/* Plan 2 Hidden/Removed */}
-                         {/* <div className="bg-[#0a0f1c] border-2 border-yellow-500 rounded-2xl p-8 flex flex-col relative shadow-[0_0_30px_rgba(234,179,8,0.1)]"> ... </div> */}
+                        {/* Plan 2 — Middle Card (Elevated/Highlighted) */}
+                        <div className="bg-[#0f172a] border-2 border-yellow-500 rounded-2xl p-8 flex flex-col relative shadow-[0_0_40px_rgba(234,179,8,0.15)] transform md:-translate-y-4 z-20">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-black text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-tighter">
+                                Best Value
+                            </div>
+
+                            <h3 className="text-xl font-bold text-white mt-4 mb-2">Love Report + 1-on-1 Consultation</h3>
+                            <p className="text-gray-400 text-xs mb-6">Speak directly with an astrological expert</p>
+
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="text-gray-500 line-through text-lg">₹15999</span>
+                                <span className="text-yellow-400 text-3xl font-bold">₹8799</span>
+                            </div>
+
+                            <ul className="space-y-4 mb-8 flex-grow">
+                                {[
+                                    "Everything in the Love & Relationship Report",
+                                    "15–20 minute private consultation with an expert",
+                                    "Discuss your specific relationship situation directly",
+                                    "Personalized remedies for your unique challenges",
+                                    "Best suited for deeper clarity through direct interaction"
+                                ].map((feat, i) => (
+                                    <li key={i} className="flex gap-3 text-gray-300 text-xs leading-relaxed font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        {feat}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <button className="w-full py-4 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-400 transition-colors uppercase tracking-wider text-sm shadow-lg">
+                                BUY NOW
+                            </button>
+                        </div>
+
+                        {/* Plan 3 — Right Card */}
+                        <div className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 flex flex-col relative group hover:border-white/20 transition-all shadow-lg">
+                            <div className="absolute -top-3 right-6 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tight">
+                                Most Popular
+                            </div>
+
+                            <h3 className="text-xl font-bold text-white mt-4 mb-2">Love Report + Ask 2 Questions</h3>
+                            <p className="text-gray-400 text-xs mb-6">Focused answers to your concerns</p>
+
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="text-gray-500 line-through text-lg">₹13999</span>
+                                <span className="text-yellow-400 text-3xl font-bold">₹6699</span>
+                            </div>
+
+                            <ul className="space-y-4 mb-8 flex-grow">
+                                {[
+                                    "Everything in the Love & Relationship Report",
+                                    "Ask 2 specific questions about love or marriage",
+                                    "Detailed written answers within 48 hours",
+                                    "Ideal for targeted clarity without live chat",
+                                    "Perfect for one specific situation"
+                                ].map((feat, i) => (
+                                    <li key={i} className="flex gap-3 text-gray-300 text-xs leading-relaxed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 text-yellow-500 flex-shrink-0 mt-0.5">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        {feat}
+                                    </li>
+                                ))}
+                            </ul>
+
+                            <button className="w-full py-3 border border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-colors uppercase tracking-wider text-sm">
+                                BUY NOW
+                            </button>
+                        </div>
 
                     </div>
-
                 </div>
                 {/* --- TESTIMONIALS SECTION --- */}
-                <div className="bg-[#050912] pb-20 pt-50 relative overflow-hidden text-center">
+                {/* <div className="bg-[#050912] pb-20 pt-50 relative overflow-hidden text-center">
                     <div className="max-w-[1920px] mx-auto px-4 lg:px-12 relative z-10">
 
                         <div className="flex flex-col items-center mb-16">
@@ -820,34 +1057,40 @@ export default function LoveAndRelationshipReport() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1600px] mx-auto text-left">
                             {[
                                 {
-                                    name: "Ritu Sharma",
-                                    initial: "RS",
-                                    text: '"Life Journey Report ने मेरी career direction clear कर दी। Remedies आसान और effective हैं।"'
+                                    name: "Kavitha Iyer",
+                                    title: "Marketing Professional, Chennai",
+                                    initial: "KI",
+                                    text: '"I had been through three failed relationships and couldn\'t understand what I was doing wrong. Each time felt different but ended the same way. The Destiny Report explained a karmic pattern in my 7th house that was creating this cycle — and more importantly, what I needed to learn from it before things could change. For the first time I stopped blaming circumstances and started understanding the lesson. That shift alone was worth everything."'
                                 },
                                 {
-                                    name: "Anil Verma",
-                                    initial: "AV",
-                                    text: '"Marriage decisions में clarity मिली। Report detailed और accurate थी।"'
+                                    name: "Ankit Sharma",
+                                    title: "Finance Analyst, Delhi",
+                                    initial: "AS",
+                                    text: '"I had a good career by every external measure — salary, designation, stability. But I felt completely hollow inside. The Destiny Report showed me that my 9th house and Rahu placement were pulling me toward teaching and knowledge sharing, not corporate work. I haven\'t quit my job yet — but I\'ve started a weekend workshop and for the first time in years I feel like I am moving toward something real."'
                                 },
                                 {
-                                    name: "Meena Kapoor",
-                                    initial: "MK",
-                                    text: '"Financial stability के लिए जो solutions दिए, उन्होंने सच में काम किया।"'
-                                },
-                                {
-                                    name: "Suresh Raina",
+                                    name: "Sudha Ramanathan",
+                                    title: "Homemaker, Hyderabad",
                                     initial: "SR",
-                                    text: '"Understanding my strengths helped me pivot my business strategy. Highly recommended!"'
+                                    text: '"I spent years fighting certain situations in my life — my difficult relationship with my mother, my health challenges, a career that never fully took off. The report helped me understand which of these were karmic in nature and which ones I had the power to change. That distinction gave me enormous peace. I stopped exhausting myself fighting the wrong battles."'
                                 },
                                 {
-                                    name: "Priya Singh",
-                                    initial: "PS",
-                                    text: '"The report gave me peace of mind regarding my family\'s health. The remedies are simple to follow."'
+                                    name: "Rajesh Kulkarni",
+                                    title: "Entrepreneur, Pune",
+                                    initial: "RK",
+                                    text: '"I have read extensively about spirituality and karma for over a decade. But reading general books and understanding my own specific karmic blueprint are two completely different things. This report gave me a personal map — my specific karmic debts, the houses where I need to work hardest, the Dasha periods connected to spiritual growth. It felt like moving from theory to practice."'
                                 },
                                 {
-                                    name: "Rahul Dravid",
-                                    initial: "RD",
-                                    text: '"Incredible detail! It felt like the astrologer knew me personally without ever meeting me."'
+                                    name: "Neha Joshi",
+                                    title: "Architect, Mumbai",
+                                    initial: "NJ",
+                                    text: '"Success always came late for me — jobs, recognition, even relationships. The report explained my Saturn placement and how my destiny cycle was structured for delayed but solid growth. Understanding that I wasn\'t failing — I was just on a different timeline — completely changed my relationship with effort and patience. I am now in the best phase of my professional life and I understand exactly why it came when it did."'
+                                },
+                                {
+                                    name: "Siddharth Nair",
+                                    title: "Software Engineer, London",
+                                    initial: "SN",
+                                    text: '"Living abroad, you lose connection with your cultural roots and sometimes with yourself. What I received was a deeply accurate mirror of my inner conflicts — the tension between ambition and belonging, between the life I built and the one I perhaps should have. The report didn\'t tell me what to do. It helped me understand who I am. That kind of clarity is rare."'
                                 }
                             ].slice(0, showAllTestimonials ? 6 : 3).map((testimonial, idx) => (
                                 <div key={idx} className="bg-[#0a0f1c] border border-white/10 rounded-2xl p-8 shadow-lg hover:border-yellow-500/30 transition-all flex flex-col h-full">
@@ -863,7 +1106,10 @@ export default function LoveAndRelationshipReport() {
                                         <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-lg">
                                             {testimonial.initial}
                                         </div>
-                                        <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                                        <div>
+                                            <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                                            {testimonial.title && <p className="text-gray-400 text-sm">{testimonial.title}</p>}
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -882,7 +1128,7 @@ export default function LoveAndRelationshipReport() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
             {/* --- ABOUT MAESTRO SECTION --- */}
             <div className="bg-black pb-20 pt-10 relative overflow-hidden">
