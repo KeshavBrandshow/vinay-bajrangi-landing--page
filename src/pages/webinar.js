@@ -211,13 +211,13 @@ const AstroWebinarHero = () => {
                     {/* Header Header */}
                     <div className=" text-[#260126] py-4 text-center">
                         <h1 className="text-3xl md:text-5xl font-[700] tracking-tight">
-                            Join Astro Mastery Live Webinar Today
+                            Live Webinar — Limited Seats
                         </h1>
                     </div>
 
                     <div className="bg-[#260126] text-white py-2 text-center">
                         <p className="opacity-90 mt-1 italic font-bold text-2xl">
-                            Trusted by 10,000+ Astro Enthusiasts
+                            Trusted by 80,000+ Kundali Consultees Across the Globe
                         </p>
                     </div>
 
@@ -235,29 +235,31 @@ const AstroWebinarHero = () => {
 
                             {/* Teacher Image */}
                             <img
-                                src="https://tagmango.com/staticassets/-astrology-webinar-5-581db2d075685067e536f0909733a665.png"
+                                src=""
+                                // https://tagmango.com/staticassets/-astrology-webinar-5-581db2d075685067e536f0909733a665.png
                                 alt="Acharya Lavbhushan Ji"
                                 className="relative z-10 w-full h-auto drop-shadow-xl rounded-full"
                             />
 
                             {/* Hindi Quote */}
                             <p className="mt-4 text-center text-[#1A051D] font-bold text-sm leading-tight italic">
-                                "ज्योतिष सिर्फ भविष्य बताने की विद्या नहीं है — ये आत्मा को उसके कर्मों <br /> का बोध कराने का माध्यम है।"
+                                "ज्योतिष भविष्यवाणी नहीं — यह आपके कर्मों को समझने और जीवन को सही दिशा देने का विज्ञान है।"
                             </p>
                         </div>
 
                         {/* Right Side: Copy & CTA */}
                         <div className="w-full md:w-2/3 flex flex-col gap-4">
                             <h2 className="text-3xl md:text-4xl font-black text-[#260126] leading-tight">
-                                Your Life Is Being Controlled by 9 Planets. Isn't It Time You Learn to Master Them?
+                                Your Life Is Governed by 9 Planets & Your Karma.
+                                Isn't It Time You Understood Both?
                             </h2>
 
                             <p className="font-bold text-[#260126] text-lg uppercase tracking-wide">
-                                Learn The Secrets of Astrology From The Legend Himself
+                                Learn the Real Science of Vedic Astrology From India's Foremost Karmic Astrologer
                             </p>
 
                             <p className="text-[#260126] text-sm leading-relaxed">
-                                In this live webinar, <strong>Acharya Lavbhushan Ji</strong> will teach the real science of Sanatani Vedic astrology so you can read Kundlis, solve life problems, help others & even build a career from this powerful knowledge.
+                                In this powerful live webinar, <strong>Dr. Vinay Bajrangi</strong> PhD in Vedic Astrology, 25+ years of experience, 80,000+ Kundalis analyzed — will teach you to read birth charts, decode Karma, solve life problems, and build a meaningful practice rooted in authentic Jyotish science.
                             </p>
 
                             {/* CTA Button */}
@@ -281,7 +283,7 @@ const AstroWebinarHero = () => {
                             </div>
 
                             <p className="text-lg font-semibold text-[#260126] mt-2">
-                                Limited Seats – Book before it fills! 2600+ curious sanatanis already registered.
+                                Limited Seats – <strong className="text-[#260126]">2,600+ Astrology Seekers</strong>Already Registered
                             </p>
                         </div>
                     </div>
@@ -893,7 +895,7 @@ const AstroWebinarHero = () => {
                     <div className="flex flex-col text-white">
                         <div className="flex items-baseline gap-1">
                             <p className="text-2xl md:text-3xl font-black text-[#FFD700]">₹99/-</p>
-                            
+
                             <p className="text-[10px] md:text-xs font-bold opacity-80">
                                 (Few Seats Left!)
                             </p>
