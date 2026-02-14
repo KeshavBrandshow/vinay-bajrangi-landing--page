@@ -1,7 +1,115 @@
-import React from 'react';
-import { Calendar, Clock, BookOpen, Video, UserCircle, Heart, Target, GraduationCap, Briefcase, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Calendar, Clock, Plus, Minus, Phone, MessageCircle, Play, Home, ShieldPlus, TrendingUp, HeartPulse, BookOpen, Video, UserCircle, Heart, Target, GraduationCap, Briefcase, Sparkles } from 'lucide-react';
 
 const AstroWebinarHero = () => {
+    const [openIndex, setOpenIndex] = useState(null);
+    const faqs = [
+        {
+            question: "Where can I join the webinar?",
+            answer: "You can join from the comfort of your home using any smartphone, laptop, or tablet with an internet connection."
+        },
+        {
+            question: "Where will the webinar take place?",
+            answer: "The webinar will be hosted live on Zoom. You will receive the link via email and WhatsApp once you register."
+        },
+        {
+            question: "Will this help me start a career in astrology?",
+            answer: "Yes, Acharya Ji covers foundational secrets that help aspiring professionals build a structured path toward a successful practice."
+        },
+        {
+            question: "Will there be reminders sent out before the webinar begins?",
+            answer: "Absolutely. We send timely reminders via WhatsApp and Email so you don't miss the live session."
+        },
+        {
+            question: "Is there a registration fee for the webinar?",
+            answer: "The registration fee is currently just ₹99 for a limited time."
+        },
+        {
+            question: "Who should attend this webinar?",
+            answer: "Anyone interested in Vedic science, personal growth, or career seekers looking for a stable and meaningful profession."
+        }
+    ];
+    const benefits = [
+        {
+            title: "Bring Back Joy",
+            desc: "Help someone rediscover happiness, clarity, and purpose with your Astrology skills.",
+            icon: <Home className="text-[#FFD700]" size={28} />,
+        },
+        {
+            title: "Boost Health",
+            desc: "Guide them toward healing by identifying the planetary root of chronic imbalances and low vitality.",
+            icon: <ShieldPlus className="text-[#FFD700]" size={28} />,
+        },
+        {
+            title: "Grow Your Income",
+            desc: "Improve their financial status or double their income using Astrology.",
+            icon: <TrendingUp className="text-[#FFD700]" size={28} />,
+        },
+        {
+            title: "Fix Relationships",
+            desc: "Help them repair strained bonds, emotional blockages, and compatibility struggles using Vedic insights.",
+            icon: <HeartPulse className="text-[#FFD700]" size={28} />,
+        }
+    ];
+    const questions = [
+        "Do you wish to fulfill the dream of buying your own beautiful dream house?",
+        "Do you earn well, but still struggle with high expenses and low savings?",
+        "Is maintaining relationships with family and friends becoming difficult?",
+        "Are you tired of failures and now want a stable, successful career or business?",
+        "Do you want to improve your health through spiritual guidance and practices?",
+        "Do you feel lost or confused while making important life decisions?",
+        "Are you looking for logical and practical remedies to life's major problems?",
+        "Do you often feel overwhelmed with stress, anxiety, or mental pressure?"
+    ];
+    const videoTestimonials = [
+        {
+            id: "vid1",
+            title: "How Astro Mastery Webinar Changed My Life",
+            thumbnail: "/testimonials/thumb1.jpg",
+        },
+        {
+            id: "vid2",
+            title: "How Astro Mastery Webinar Changed My Life",
+            thumbnail: "/testimonials/thumb2.jpg",
+        },
+        {
+            id: "vid3",
+            title: "How Astro Mastery Webinar Changed My Life",
+            thumbnail: "/testimonials/thumb3.jpg",
+        },
+    ];
+    const testimonials = [
+        {
+            name: "Shri Aniruddhacharya Ji",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-shri-aniruddhacharya-ji-8516466504fe953d726e035953dccbb7.png", // Replace with your actual image path
+        },
+        {
+            name: "Pundrik Goswami",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-pundrik-goswami-81011fedb0951b8cd8aa48c333ad117c.png", // Replace with your actual image path
+        },
+        {
+            name: "Shri Aniruddhacharya Ji",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-shri-aniruddhacharya-ji-8516466504fe953d726e035953dccbb7.png", // Replace with your actual image path
+        },
+        {
+            name: "Pundrik Goswami",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-pundrik-goswami-81011fedb0951b8cd8aa48c333ad117c.png", // Replace with your actual image path
+        }, {
+            name: "Shri Aniruddhacharya Ji",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-shri-aniruddhacharya-ji-8516466504fe953d726e035953dccbb7.png", // Replace with your actual image path
+        },
+        {
+            name: "Pundrik Goswami",
+            title: "Katha Vachak",
+            image: "https://tagmango.com/staticassets/-pundrik-goswami-81011fedb0951b8cd8aa48c333ad117c.png", // Replace with your actual image path
+        }
+
+    ];
 
     const features = [
         {
@@ -437,8 +545,374 @@ const AstroWebinarHero = () => {
             {/* Featured On section ends */}
 
 
+            {/* Testimonials Section */}
+            <section className="bg-[#2D0A31] py-16 px-4 md:px-8">
+                <div className="max-w-7xl mx-auto">
+                    {/* Section Header */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-white text-3xl md:text-5xl font-black mb-4">
+                            Trusted by Celebrities, Business Leaders & Spiritual Icons
+                        </h2>
+                        <p className="text-gray-300 italic text-sm md:text-base max-w-4xl mx-auto opacity-80 leading-relaxed">
+                            Acharya Ji's guidance is valued not just by the masses but by those who shape industries, inspire millions & seek clarity at the highest levels.
+                        </p>
+                    </div>
 
+                    {/* Cards Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {testimonials.map((person, index) => (
+                            <div key={index} className="relative group">
+                                {/* Outer Decorative Frame */}
+                                <img
+                                    src={person.image}
+                                    alt={person.name}
+                                    className="w-full h-auto object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            {/* Testimonials Section End */}
 
+            {/* What our Students Say Section */}
+            <section className="bg-gray-300 py-16 px-4">
+                <div className="max-w-7xl mx-auto">
+                    {/* Section Title */}
+                    <h2 className="text-[#2D0A31] text-3xl md:text-5xl font-black text-center mb-12">
+                        What Our Students Say
+                    </h2>
+
+                    {/* Video Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {videoTestimonials.map((video) => (
+                            <div
+                                key={video.id}
+                                className="relative group cursor-pointer rounded-xl overflow-hidden shadow-lg border-2 border-transparent hover:border-[#2D0A31] transition-all"
+                            >
+                                {/* Aspect Ratio Container (16:9) */}
+                                <div className="aspect-video relative bg-black">
+                                    {/* Thumbnail Image */}
+                                    <img
+                                        src={video.thumbnail}
+                                        alt={video.title}
+                                        className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+                                    />
+
+                                    {/* Video UI Overlay (Simulated YouTube look) */}
+                                    <div className="absolute inset-0 p-4 flex flex-col justify-between bg-gradient-to-t from-black/60 via-transparent to-black/40">
+                                        <p className="text-white text-sm font-medium drop-shadow-md line-clamp-1">
+                                            {video.title}
+                                        </p>
+
+                                        {/* Play Button */}
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="w-14 h-10 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-red-700 transition-colors">
+                                                <Play fill="white" className="text-white ml-1" size={20} />
+                                            </div>
+                                        </div>
+
+                                        {/* Bottom Bar Details */}
+                                        <div className="flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                            <div className="flex gap-2">
+                                                <div className="w-6 h-6 rounded-full bg-gray-400" /> {/* Avatar placeholder */}
+                                            </div>
+                                            <button className="bg-black/80 text-[10px] text-white px-2 py-1 rounded">
+                                                Watch on YouTube
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <section className="bg-white py-25 px-4 md:px-8">
+                <div className="max-w-6xl mx-auto bg-[#2D0A31] rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="p-8 md:p-14 text-white">
+
+                        {/* Main Title */}
+                        <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight">
+                            For Those Who Genuinely Wish to Understand Astrology — This Webinar Is Your Gateway to the Ancient Science.
+                        </h2>
+
+                        {/* Subheading */}
+                        <p className="text-[#FFD700] font-bold text-lg mb-8">
+                            Guided by Acharya Lavbhushan Ji Himself Learn with Purpose, Clarity, and Real Insight. This is Your Moment, Grab It Now.
+                        </p>
+
+                        {/* Body Content */}
+                        <div className="space-y-6 text-gray-200 text-sm md:text-base opacity-90 leading-relaxed">
+                            <p>
+                                Have you ever felt drawn to astrology but didn't know where to begin—or whom to trust? If you're someone who genuinely wants to learn astrology in a clear, practical, and authentic way, this is the perfect place to start.
+                            </p>
+                            <p>
+                                In this special live webinar, Acharya Lavbhushan will guide you step by step, breaking down complex concepts with real-world logic, not superstition. Whether you're just curious or serious about understanding how astrology connects to your career, relationships, health, and more—this session will open your eyes to knowledge that most people never get to learn.
+                            </p>
+                            <p className="font-bold text-white">
+                                And the best part? It's just ₹99. If you've been waiting for the right moment to begin your astrology journey, this is it.
+                            </p>
+                        </div>
+
+                        {/* Benefit Boxes */}
+                        <div className="mt-10 space-y-4">
+                            <div className="border border-[#FFD700]/30 rounded-lg p-6 bg-white/5 transition-all hover:border-[#FFD700]/60">
+                                <h3 className="text-xl font-bold text-white mb-2">Learn Real Sanatani Astrology the Right Way — Step by Step</h3>
+                                <p className="text-sm text-gray-300">Understand planets, houses & signs with simple logic — not myths. Practical learning from the very first session.</p>
+                            </div>
+
+                            <div className="border border-[#FFD700]/30 rounded-lg p-6 bg-white/5 transition-all hover:border-[#FFD700]/60">
+                                <h3 className="text-xl font-bold text-white mb-2">Turn Curiosity into Clarity</h3>
+                                <p className="text-sm text-gray-300">Gain step-by-step astrology knowledge you can apply in your career, relationships, and everyday life.</p>
+                            </div>
+                        </div>
+
+                        {/* Final Button */}
+                        <div className="mt-10">
+                            <button className="cursor-pointer w-full bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#2D0A31] font-black py-5 rounded-xl text-2xl md:text-3xl shadow-xl hover:scale-[1.02] active:scale-95 transition-all">
+                                Register Now at Just ₹99
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            {/* What our Students Say Section End */}
+
+            {/* master class section */}
+            <section className="bg-[#fec76f] py-12 px-4 md:px-8">
+                <div className="max-w-6xl mx-auto bg-[#F0F0F0] border-2 border-dashed border-[#1A051D]/30 rounded-lg p-6 md:p-10 shadow-sm">
+
+                    {/* Header */}
+                    <h2 className="text-[#1A051D] text-xl md:text-3xl font-black text-center mb-10 leading-tight">
+                        If you are looking for answers to any of these questions, then this Masterclass is for you!
+                    </h2>
+
+                    {/* Questions Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {questions.map((question, index) => (
+                            <div
+                                key={index}
+                                className="bg-[#F5F5DC] p-4 md:p-6 rounded-md flex items-start gap-4 shadow-sm border border-black/5"
+                            >
+                                {/* Bullet Square */}
+                                <div className="w-2 h-2 bg-black mt-2 shrink-0" />
+
+                                <p className="text-[#1A051D] text-sm md:text-lg font-medium leading-relaxed">
+                                    {question}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            {/* master class section end */}
+
+            {/* Destiny Doesn't wait section */}
+            <section className="bg-[#1A051D] py-16 px-4 md:py-24">
+                <div className="max-w-4xl mx-auto text-center space-y-8">
+
+                    {/* Main Heading */}
+                    <h2 className="text-white text-3xl md:text-5xl font-black tracking-tight leading-tight">
+                        Destiny Doesn’t Wait. Why Should You? Grab Your Spot Now!
+                    </h2>
+
+                    {/* Subtext */}
+                    <p className="text-gray-300 italic text-lg md:text-xl font-medium opacity-90">
+                        Just ₹99 to gain clarity, confidence, and control over your life — guided by the LEGEND himself.
+                    </p>
+
+                    {/* High-Impact CTA Button */}
+                    <div className="pt-4">
+                        <button className="cursor-pointer w-full md:w-auto bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-5 px-16 rounded-xl text-2xl md:text-3xl shadow-[0_10px_40px_rgba(255,184,0,0.3)] hover:scale-105 active:scale-95 transition-all duration-300">
+                            Join Astro Mastery Webinar
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            {/* Destiny Doesn't wait section end */}
+
+            {/* Right Knowledge Section */}
+            <section className="bg-white py-16 px-4 md:px-8">
+                <div className="max-w-7xl mx-auto">
+
+                    {/* Top Header Section */}
+                    <div className="text-center mb-10">
+                        <h2 className="text-[#1A051D] text-3xl md:text-5xl font-black leading-tight uppercase tracking-tight">
+                            The Right Knowledge of Astrology Doesn't Just Change You But It Can Heal Others Too
+                        </h2>
+                        <p className="text-[#1A051D] italic text-lg md:text-xl mt-4 opacity-80">
+                            Use this sacred science to bring peace, clarity & transformation to the people around you.
+                        </p>
+                    </div>
+
+                    {/* Main Content Box */}
+                    <div className="bg-[#1A051D] rounded-2xl flex flex-col lg:flex-row overflow-hidden shadow-2xl">
+
+                        {/* Left Side: Spotlight Text */}
+                        <div className="w-full lg:w-1/2 p-12 flex flex-col justify-center items-center text-center border-b lg:border-b-0 lg:border-r border-white/10">
+                            <h3 className="text-[#FFD700] text-4xl md:text-6xl font-black mb-4">
+                                Now Imagine This..
+                            </h3>
+                            <p className="text-white text-lg md:text-xl opacity-80 max-w-sm">
+                                What if your knowledge could become a source of light in someone else's life?
+                            </p>
+                        </div>
+
+                        {/* Right Side: Benefits List */}
+                        <div className="w-full lg:w-1/2 p-6 md:p-10 space-y-4">
+                            {benefits.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="border border-dashed border-[#FFD700]/40 rounded-xl p-5 flex items-start gap-5 hover:bg-white/5 transition-colors group"
+                                >
+                                    {/* Icon Container */}
+                                    <div className="shrink-0 mt-1 group-hover:scale-110 transition-transform">
+                                        {item.icon}
+                                    </div>
+
+                                    {/* Text Content */}
+                                    <div>
+                                        <h4 className="text-white font-bold text-xl mb-1">
+                                            {item.title}
+                                        </h4>
+                                        <p className="text-gray-300 text-sm leading-relaxed opacity-90">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            {/* Right Knowledge Section end */}
+
+            {/* FAQ Section */}
+            <section className="bg-[#F5E6B3] py-16 px-4 md:px-8">
+                <div className="max-w-4xl mx-auto">
+                    {/* Header */}
+                    <h2 className="text-[#1A051D] text-3xl md:text-5xl font-black text-center mb-12 uppercase tracking-tight">
+                        FAQs: Everything You Might Want to Know
+                    </h2>
+
+                    {/* FAQ Container */}
+                    <div className="bg-[#1A051D] rounded-t-2xl overflow-hidden border border-white/10">
+                        {faqs.map((faq, index) => (
+                            <div
+                                key={index}
+                                className="border-b border-white/10 last:border-b-0"
+                            >
+                                <button
+                                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                                    className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+                                >
+                                    <span className="text-white text-lg md:text-xl font-bold">
+                                        {faq.question}
+                                    </span>
+                                    <span className="text-white shrink-0 ml-4">
+                                        {openIndex === index ? (
+                                            <Minus size={24} className="opacity-80" />
+                                        ) : (
+                                            <Plus size={24} className="opacity-80" />
+                                        )}
+                                    </span>
+                                </button>
+
+                                {/* Accordion Content */}
+                                <div
+                                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                                        }`}
+                                >
+                                    <div className="p-6 pt-0 text-gray-300 text-base md:text-lg leading-relaxed border-t border-white/5 mt-2">
+                                        {faq.answer}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            {/* FAQ Section end */}
+
+            {/* Contact Us Section */}
+            <footer className="bg-[#1A051D] text-white pt-12 pb-6 px-4 md:px-8 border-t border-white/5">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex flex-col md:flex-row justify-between gap-8 mb-10">
+
+                        {/* Address Section */}
+                        <div className="space-y-2 max-w-sm">
+                            <h4 className="font-bold text-lg">Address:</h4>
+                            <p className="text-gray-300 text-sm leading-relaxed opacity-90">
+                                1st Floor, Plot No. 15, Calgiri Marg, Usha Colony, <br />
+                                Sector 1, Malviya Nagar, Jaipur Rajasthan 302017
+                            </p>
+                        </div>
+
+                        {/* Contact Section */}
+                        <div className="space-y-3">
+                            <h4 className="font-bold text-lg">Contact:</h4>
+                            <div className="space-y-2">
+                                <a
+                                    href="tel:+919783807666"
+                                    className="flex items-center gap-3 text-gray-300 hover:text-[#FFD700] transition-colors"
+                                >
+                                    <Phone size={18} />
+                                    <span className="text-sm font-medium">+91-9783807666</span>
+                                </a>
+                                <a
+                                    href="https://wa.me/919116571466"
+                                    target="_blank"
+                                    className="flex items-center gap-3 text-gray-300 hover:text-[#FFD700] transition-colors"
+                                >
+                                    <MessageCircle size={18} />
+                                    <span className="text-sm font-medium">+91-9116571466</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bottom Bar */}
+                    <div className="pt-8 border-t border-white/10 text-center">
+                        <p className="text-xs text-gray-500 font-medium tracking-wide">
+                            Copyright © 2025 Astravastugurukul. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            {/* Contact Us Section end */}
+
+            {/* sticky footer section  */}
+            <div className="fixed bottom-0 left-0 w-full bg-[#1A051D] border-t border-white/10 z-50 px-4 py-5 md:px-8">
+                <div className="max-w-7xl mx-auto flex items-center justify-between">
+
+                    {/* Pricing and Social Proof */}
+                    <div className="flex flex-col text-white">
+                        <div className="flex items-baseline gap-1">
+                            <p className="text-2xl md:text-3xl font-black text-[#FFD700]">₹99/-</p>
+                            
+                            <p className="text-[10px] md:text-xs font-bold opacity-80">
+                                (Few Seats Left!)
+                            </p>
+                        </div>
+                        <p className="text-xs md:text-sm font-bold leading-none">
+                            10,000+ Students Taught
+                        </p>
+                    </div>
+
+                    {/* Action Button */}
+                    <div>
+                        <button className="bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-2.5 px-6 md:px-10 rounded-lg text-sm md:text-lg shadow-lg hover:scale-105 active:scale-95 transition-all">
+                            Register Now
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            {/* sticky footer section end */}
         </>
     );
 };
