@@ -114,47 +114,47 @@ const AstroWebinarHero = () => {
     const features = [
         {
             title: "Read Your Own Kundli",
-            desc: "Learn how to decode planets, houses & signs even as a beginner.",
+            desc: "Learn to decode planets, houses & signs from scratch — including the D-1 Lagna chart and the Navamsa D-9 chart that forms the backbone of accurate Vedic prediction.",
             icon: "📜", // Replace with custom SVGs or Lucide icons
         },
         {
             title: "Understand How Planets Affect Your Life",
-            desc: "Understanding Your Birth Chart/Kundali",
+            desc: "Understand each planet's nature, placement, and role in your birth chart — and why their current transits create ripples in career, love, health, and finances.",
             icon: "🪐",
         },
         {
             title: "Discover the Power of Numerology",
-            desc: "Use your birth date & name to unlock hidden energy patterns.",
+            desc: "Use your birth date and name to unlock hidden karmic energy patterns and understand the numbers that silently shape your biggest life decisions.",
             icon: "🔢",
         },
         {
             title: "Know Your Rashi & What It Means",
-            desc: "Reveal your true personality, tendencies, and inner strengths.",
+            desc: "Reveal your true personality, inner tendencies, and emotional strengths through your Moon sign — and what it means for your relationships and life path.",
             icon: "♈",
         },
         {
             title: "Explore Your Lagna (Ascendant)",
-            desc: "Understand your soul path and how others truly perceive you.",
+            desc: "Understand your soul's chosen path in this lifetime and how others truly perceive you through the lens of your rising sign and D-1 chart.",
             icon: "🧘",
         },
         {
-            title: "Spot the Root Cause of Life Problems",
-            desc: "Learn how planetary imbalances affect money, peace & success.",
+            title: "Karma Correction — The Real Remedy",
+            desc: "Dr. Bajrangi's signature teaching: why no ritual alone can change your horoscope, and how conscious karmic action is the only lasting planetary remedy.",
             icon: "⚙️",
         },
         {
-            title: "Take the Right Actions, at the Right Time",
-            desc: "Master the concept of timing (Dasha) and aligned decision-making.",
+            title: "Take the Right Actions at the Right Time",
+            desc: "Master Dasha periods and planetary transits so you can make better-timed decisions about career, marriage, investment, and major life moves.",
             icon: "⏰",
         },
         {
-            title: "Turn Struggles into Spiritual Strength",
-            desc: "Convert confusion and pain into growth with Sanatani wisdom.",
+            title: "Begin Your Jyotish Beej Journey",
+            desc: "Get a clear roadmap to advance through Dr. Bajrangi's Jyotish Beej → Pushpa → Taru course pathway toward professional certification and practice.",
             icon: "✨",
         },
         {
-            title: "Begin Your Journey as an Astro Expert",
-            desc: "Build a skill that helps others — and even creates a career path.",
+            title: "Begin Your Journey as a Jyotish Expert",
+            desc: "Build a skill that heals, guides, and transforms others' lives — and creates a credible, meaningful career path as a certified astrology consultant.",
             icon: "🎓",
         }
     ];
@@ -235,9 +235,8 @@ const AstroWebinarHero = () => {
 
                             {/* Teacher Image */}
                             <img
-                                src=""
-                                // https://tagmango.com/staticassets/-astrology-webinar-5-581db2d075685067e536f0909733a665.png
-                                alt="Acharya Lavbhushan Ji"
+                                src="https://content.vinaybajrangi.com/img/content/1760069123-channels4_profile.jpg"
+                                alt="Dr. Vinay Bajrangi"
                                 className="relative z-10 w-full h-auto drop-shadow-xl rounded-full"
                             />
 
@@ -310,7 +309,7 @@ const AstroWebinarHero = () => {
             <section className="bg-[#F5E6B3] py-25 px-4 flex flex-col items-center">
                 {/* Top Heading */}
                 <h2 className="text-2xl md:text-4xl font-black text-[#1A051D] mb-8 text-center uppercase tracking-tight">
-                    A Personal Message from Acharya Lavbhushan Ji
+                    A Personal Message from Dr. Vinay Bajrangi Ji
                 </h2>
 
                 {/* Video Container */}
@@ -367,10 +366,11 @@ const AstroWebinarHero = () => {
                 {/* Header: Reduced margin-bottom from 12 to 6 */}
                 <div className="text-center mb-6">
                     <h2 className="text-[#2D0A31] text-3xl md:text-5xl font-black mb-2">
-                        What You’ll Learn in This Powerful ₹99 Webinar
+                        What You'll Learn in This
+                        Powerful ₹99 Webinar
                     </h2>
                     <p className="text-[#1A051D] italic text-lg opacity-80">
-                        Your future is in the right hands now, don't worry
+                        You'll walk away with real, practical knowledge — not just theory or future predictions
                     </p>
                 </div>
 
@@ -421,7 +421,7 @@ const AstroWebinarHero = () => {
                     <div className="w-full lg:w-3/5 space-y-6">
                         <div className="space-y-2">
                             <h4 className="text-xl font-medium">Meet Your Mentor:</h4>
-                            <h2 className="text-4xl md:text-5xl font-black">Acharya Lavbhushan Ji</h2>
+                            <h2 className="text-4xl md:text-5xl font-black">Dr. Vinay Bajrangi</h2>
                             <p className="text-[#FFD700] italic font-medium">
                                 India's #1 Trusted Astro-Numerology-Vastu Expert & Sanatani Guide
                             </p>
@@ -429,31 +429,52 @@ const AstroWebinarHero = () => {
 
                         <div className="space-y-4 text-gray-200 text-sm md:text-base leading-relaxed">
                             <p>
-                                Acharya Ji is a legendary name in the world of Astrology, Numerology & Vastu known for delivering powerful, practical guidance rooted in deep spiritual knowledge.
+                                Dr. Vinay Bajrangi is one of India's most respected and sought-after Vedic astrologers — a name synonymous not with blind prediction, but with Karma Correction and scientific clarity. With a PhD in Vedic Astrology and 25+ years of hands-on practice from Bajrangi Dham, Noida, he has personally analyzed over 80,000 Kundalis from across India and the world.
                             </p>
                             <p>
-                                With almost 3 decades of experience, he has personally analyzed thousands of Kundlis and helped people from all walks of life from everyday people to top Industrialists, elite business families and renowned celebrities to overcome karmic challenges and unlock their highest potential.
+                                His clients span everyday families, top industrialists, senior politicians, Bollywood celebrities, and business leaders — all drawn by his reputation for accuracy, transparency, and an approach grounded in logic rather than superstition. He never scares, but he never hides the truth either.
                             </p>
                             <p>
-                                What sets him apart is his unique ability to simplify the deep wisdom into practical knowledge & teachings that even complete beginners can learn with ease.
+                                What sets Dr. Bajrangi apart is his unique reliance on the Navamsa Kundli (D-9 Chart) as the lens for all major predictions, his rejection of fear-based remedies, and his structured teaching pathway — from Jyotish Beej to Jyotish Taru — that has certified thousands of students as practicing astrologers.
                             </p>
                         </div>
 
                         {/* Stat Cards */}
                         <div className="space-y-4 pt-4">
-                            <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5">
-                                <h3 className="text-2xl font-bold mb-2">Trained 10,000+ Students</h3>
-                                <p className="text-sm opacity-80">
-                                    He has trained more than 10,000 students through various workshops, webinars and masterclasses.
-                                </p>
-                            </div>
+                            <div className="flex gap-4">
+                                <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5 w-1/2">
+                                    <h3 className="text-2xl font-bold mb-2">25+ </h3>
+                                    <p className="text-sm opacity-80">
+                                        Years of Practice
+                                    </p>
+                                </div>
 
-                            <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5">
-                                <h3 className="text-2xl font-bold mb-2">2 Million+ Social Media Followers</h3>
-                                <p className="text-sm opacity-80">
-                                    With a growing online community of over 2 Million+ followers, Acharya Ji regularly shares insights on numbers, remedies, and life guidance — making ancient sciences simple and accessible to the modern generation.
-                                </p>
+
+
+                                <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5 w-1/2">
+                                    <h3 className="text-2xl font-bold mb-2">80K+</h3>
+                                    <p className="text-sm opacity-80">
+                                        Kundalis Analyzed
+                                    </p>
+                                </div>
                             </div>
+                            <div className="flex gap-4">
+                                <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5 w-1/2">
+                                    <h3 className="text-2xl font-bold mb-2">PhD</h3>
+                                    <p className="text-sm opacity-80">
+                                        Vedic Astrology
+                                    </p>
+                                </div>
+
+
+
+                                <div className="border border-[#F5E6B3]/30 rounded-lg p-6 bg-white/5 w-1/2">
+                                    <h3 className="text-2xl font-bold mb-2">10K+</h3>
+                                    <p className="text-sm opacity-80">
+                                        Students Trained
+                                    </p>
+                                </div>
+                                </div>
                         </div>
                     </div>
 
@@ -462,23 +483,23 @@ const AstroWebinarHero = () => {
                         <div className="relative">
                             {/* Mentor Image - Replace src with your asset path */}
                             <img
-                                src="https://tagmango.com/staticassets/--069low-ae3067043866c104133c17f8174efba8-d703523893b868e9f1b70c6bd25650b8.png"
-                                alt="Acharya Lavbhushan"
+                                src="https://content.vinaybajrangi.com/img/content/1760069123-channels4_profile.jpg"
+                                alt="Dr. Vinay Bajrangi"
                                 className="w-full h-[500px] max-w-md drop-shadow-2xl"
                             />
 
                             {/* Name Tag Overlay */}
                             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[115%] bg-[#F5E6B3] text-[#2D0A31] py-4 px-6 rounded-md text-center shadow-xl">
-                                <h3 className="text-3xl font-bold uppercase tracking-tight whitespace-nowrap">Acharya Lavbhushan</h3>
+                                <h3 className="text-3xl font-bold uppercase tracking-tight whitespace-nowrap">Dr. Vinay Bajrangi</h3>
                                 <p className="text-[15px] font-semibold uppercase mt-1">
-                                    A Legacy of Accuracy, Trust & Wisdom Since 2003
+                                    A Legacy of Karma & Science Since 1999
                                 </p>
                             </div>
                         </div>
 
                         {/* Hindi Quote */}
                         <p className="mt-16 text-center italic font-medium text-lg leading-relaxed text-gray-100">
-                            "ज्योतिष एक विद्या नहीं, एक जिम्मेदारी है — अपने जीवन को <br /> समझने और उसे सही दिशा देने की जिम्मेदारी।"
+                            "ज्योतिष विज्ञान है — भय नहीं। यह आपको आपके कर्मों का बोध कराता है, न कि किसी अदृश्य शक्ति का डर।"
                         </p>
                     </div>
 
