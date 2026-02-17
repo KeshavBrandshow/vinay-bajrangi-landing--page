@@ -1,81 +1,85 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, Plus, Minus, Phone, MessageCircle, Play, Home, ShieldPlus, TrendingUp, HeartPulse, BookOpen, Video, UserCircle, Heart, Target, GraduationCap, Briefcase, Sparkles } from 'lucide-react';
+import { Calendar, Clock, Plus, Minus, Phone, MessageCircle, Mail, Play, Home, ShieldPlus, TrendingUp, HeartPulse, BookOpen, Video, UserCircle, Heart, Target, GraduationCap, Briefcase, Sparkles } from 'lucide-react';
 
 const AstroWebinarHero = () => {
     const [openIndex, setOpenIndex] = useState(null);
     const faqs = [
         {
             question: "Where can I join the webinar?",
-            answer: "You can join from the comfort of your home using any smartphone, laptop, or tablet with an internet connection."
+            answer: "After a successful payment, you'll receive a confirmation email with the Zoom link. You'll also be added to a WhatsApp group where all updates and reminders will be shared."
         },
         {
             question: "Where will the webinar take place?",
-            answer: "The webinar will be hosted live on Zoom. You will receive the link via email and WhatsApp once you register."
+            answer: "Absolutely. This webinar is the perfect first step on Dr. Bajrangi's structured Jyotish learning path — Jyotish Beej (seed), Jyotish Pushpa (foundation), and Jyotish Taru (advanced) — leading to a professional certification and the ability to practice as a certified astrologer."
         },
         {
-            question: "Will this help me start a career in astrology?",
-            answer: "Yes, Acharya Ji covers foundational secrets that help aspiring professionals build a structured path toward a successful practice."
+            question: "Will there be reminders before the webinar begins?",
+            answer: "Yes. You will receive timely reminders via email, SMS, and WhatsApp notifications so you never miss the session."
         },
         {
-            question: "Will there be reminders sent out before the webinar begins?",
-            answer: "Absolutely. We send timely reminders via WhatsApp and Email so you don't miss the live session."
-        },
-        {
-            question: "Is there a registration fee for the webinar?",
-            answer: "The registration fee is currently just ₹99 for a limited time."
+            question: "Is there a registration fee? Why only ₹99?",
+            answer: "The content of this webinar is valued at ₹1,999. Dr. Bajrangi has chosen to offer it at just ₹99 to make authentic Vedic astrology accessible to every sincere seeker — regardless of background, city, or financial capacity."
         },
         {
             question: "Who should attend this webinar?",
-            answer: "Anyone interested in Vedic science, personal growth, or career seekers looking for a stable and meaningful profession."
-        }
+            answer: "This webinar is ideal for anyone genuinely interested in Vedic astrology — from complete beginners to those looking to understand advanced Jyotish concepts. If you want to understand your life through the lens of karma and planetary science, this is for you."
+        },
+        {
+            question: "Can I participate with my family or partner?",
+            answer: "Yes, absolutely. We encourage learning together — one registration covers your access. Shared understanding of karmic patterns can profoundly transform family relationships and decision-making."
+        },
+        {
+            question: "Do I need prior knowledge of astrology?",
+            answer: "None at all. This webinar is designed for absolute beginners. Dr. Bajrangi teaches everything step-by-step with scientific logic and real-world examples — starting from the very foundations of Vedic astrology."
+        },
     ];
     const benefits = [
         {
             title: "Bring Back Joy",
-            desc: "Help someone rediscover happiness, clarity, and purpose with your Astrology skills.",
+            desc: "Help someone rediscover clarity, purpose, and harmony in their home and family using Jyotish insights.",
             icon: <Home className="text-[#FFD700]" size={28} />,
         },
         {
             title: "Boost Health",
-            desc: "Guide them toward healing by identifying the planetary root of chronic imbalances and low vitality.",
+            desc: "Guide others toward healing by identifying the karmic and planetary root of chronic health imbalances.",
             icon: <ShieldPlus className="text-[#FFD700]" size={28} />,
         },
         {
             title: "Grow Your Income",
-            desc: "Improve their financial status or double their income using Astrology.",
+            desc: "Help improve financial outcomes by timing key moves using Dasha periods and planetary opportunities.",
             icon: <TrendingUp className="text-[#FFD700]" size={28} />,
         },
         {
             title: "Fix Relationships",
-            desc: "Help them repair strained bonds, emotional blockages, and compatibility struggles using Vedic insights.",
+            desc: "Help repair strained bonds and emotional blockages using birth chart compatibility and karmic analysis.",
             icon: <HeartPulse className="text-[#FFD700]" size={28} />,
         }
     ];
     const questions = [
-        "Do you wish to fulfill the dream of buying your own beautiful dream house?",
-        "Do you earn well, but still struggle with high expenses and low savings?",
-        "Is maintaining relationships with family and friends becoming difficult?",
-        "Are you tired of failures and now want a stable, successful career or business?",
-        "Do you want to improve your health through spiritual guidance and practices?",
-        "Do you feel lost or confused while making important life decisions?",
-        "Are you looking for logical and practical remedies to life's major problems?",
-        "Do you often feel overwhelmed with stress, anxiety, or mental pressure?"
+        "Do you earn well, but still struggle with high expenses, low savings, and financial instability?",
+        "Have you tried rituals and remedies but seen no lasting change in your circumstances?",
+        "Do you feel lost or paralyzed when making important decisions — about career, marriage, or money?",
+        "Are you tired of career failures and want a stable, successful path — in job, business, or profession?",
+        "Do you wish to fulfill the dream of your own home, financial freedom, or a secure future?",
+        "Do you often feel overwhelmed by stress, anxiety, or a persistent sense that something is off in life?",
+        "Is maintaining healthy relationships with family, friends, or partner becoming increasingly difficult?",
+        "Do you want to improve your health and understand its spiritual and karmic root causes?"
     ];
-    const videoTestimonials = [
+    const studentTestimonials = [
         {
-            id: "vid1",
-            title: "How Astro Mastery Webinar Changed My Life",
-            thumbnail: "/testimonials/thumb1.jpg",
+            name: "Rahul Sharma",
+            title: "Business Owner, Delhi",
+            disc: "I had tried so many remedies for my career problems. Dr. Bajrangi's webinar showed me that the issue was my own karmic actions — not external forces. That shift in perspective changed everything for me.",
         },
         {
-            id: "vid2",
-            title: "How Astro Mastery Webinar Changed My Life",
-            thumbnail: "/testimonials/thumb2.jpg",
+            name: "Priya Mehta",
+            title: "Homemaker & Jyotish Learner, Mumbai",
+            disc: "The D-9 Navamsa chart explanation was unlike anything I'd heard before. Finally an astrologer who teaches the science behind the predictions — not just the predictions themselves. Joining the full Jyotish Beej course next.",
         },
         {
-            id: "vid3",
-            title: "How Astro Mastery Webinar Changed My Life",
-            thumbnail: "/testimonials/thumb3.jpg",
+            name: "Ankit Verma",
+            title: "Software Engineer, Bangalore",
+            disc: "I was skeptical about online astrology but Dr. Bajrangi's approach is completely different. No fear, no blind rituals — just clear, logical Vedic science. ₹99 for this kind of knowledge is honestly unbelievable.",
         },
     ];
     const testimonials = [
@@ -160,43 +164,49 @@ const AstroWebinarHero = () => {
     ];
 
     const logos = [
-        { name: "Zee News", src: "https://tagmango.com/staticassets/-vnglxmkexx3r2j8ohuichjrbbe-a15350e2e154b7196753f0b402f4cf79.png" },
-        { name: "TEDx", src: "https://tagmango.com/staticassets/-cmyi9kknmtm46alcc8xlviuamm-574f769a0ecd21175f6dcb9f11bee03f.png" },
-        { name: "Mint", src: "https://tagmango.com/staticassets/-khcyp9t5si650wauyv9ch8t4kyi-93e11b092caf9807f6baa60dc2b784e7.png" },
-        { name: "Dainik Bhaskar", src: "https://tagmango.com/staticassets/-6ey3ssomerabqnqg4k5tco9z5ei-d7940a80eee9b0733b0dd321fc2dcbab.png" },
-        { name: "Mid Day", src: "https://tagmango.com/staticassets/-yacr5jvzm3m3fidiqvgiuno6u-f2d07384de24ea9cb1c8785b7fdc432f.png" },
-        { name: "Outlook India", src: "https://tagmango.com/staticassets/-awctfwtwbbyso4fo1zmlc5tcam-f66fbeabbf40b4186555ed26ee9bd206.png" },
+        { name: "Hindustan Times" },
+        { name: "Times of India" },
+        { name: "ANI News" },
+        { name: "Business Standard" },
+        { name: "Deccan Herald" },
+        { name: "Outlook India" },
+        { name: "The Week" },
+        { name: "Mid Day" },
+        { name: "DNA India" },
+        { name: "Amar Ujala" },
+        { name: "Deccan Chronicle" },
+
     ];
 
     const categories = [
         {
             title: "Astrology Enthusiasts",
-            desc: "Whether you're a beginner or have some knowledge, this session offers a structured way to deepen your understanding of planets, charts, and numbers.",
+            desc: "Whether you're just beginning or have some foundation, this session gives you a rigorous, structured path to deepen your understanding of planets, charts and karma.",
             icon: <UserCircle size={40} className="text-white opacity-80" />,
         },
         {
-            title: "Seeking Relationship Clarity",
-            desc: "Learn how birth charts reveal compatibility, emotional blocks, and the right timing for love, marriage, or resolution.",
+            title: "Seekers of Personal Growth",
+            desc: "Understand the deeper 'why' behind repeated life patterns. Decode karmic imbalances and get clear direction on relationships, purpose and peace of mind.",
             icon: <Heart size={40} className="text-white opacity-80" />,
         },
         {
-            title: "Seekers of Personal Growth",
-            desc: "Understand the deeper 'why' behind your life events. Decode your karmic patterns and get direction for relationships, purpose, and peace of mind.",
+            title: "Professionals & Entrepreneurs",
+            desc: "Use Dasha timing and planetary cycles to make smarter business decisions, pick the right partners, and align your moves with high-growth planetary periods.",
             icon: <Target size={40} className="text-white opacity-80" />,
         },
         {
-            title: "Students & Career Changers",
-            desc: "Not sure which path to take? Use your chart to find career strengths, ideal timing, and hidden potential for long-term success.",
+            title: "Seeking Relationship Clarity",
+            desc: "Learn how birth charts reveal compatibility, karmic bonds, and the right timing for marriage, commitment, or bringing resolution to long-standing conflicts.",
             icon: <GraduationCap size={40} className="text-white opacity-80" />,
         },
         {
-            title: "Professionals & Entrepreneurs",
-            desc: "Use planetary timing and patterns to make better business decisions, choose the right partners, and align with high-growth opportunities.",
+            title: "Students & Career Changers",
+            desc: "Not sure which path to take? Your Kundli holds the answer. Find your career strengths, ideal timing, and hidden potential for long-term success.",
             icon: <Briefcase size={40} className="text-white opacity-80" />,
         },
         {
-            title: "Aspiring Astro Professionals",
-            desc: "Want to turn your passion into a profession? Learn how our students are earning ₹30,000 to ₹3,00,000/month through astrology and numerology consultations.",
+            title: "Aspiring Jyotish ProfessionalsAspiring Jyotish Professionals",
+            desc: "Want to turn your passion into a certified practice? Learn how Dr. Bajrangi's students have built consultation careers helping thousands every month.",
             icon: <Sparkles size={40} className="text-white opacity-80" />,
         },
     ];
@@ -268,7 +278,7 @@ const AstroWebinarHero = () => {
 
                             {/* Timer Section */}
                             <div className="mt-4">
-                                <p className="text-xl font-bold text-[#1A051D] mb-2">Offer Ends In</p>
+                                <p className="text-xl font-bold text-[#1A051D] mb-2">Offers Ends In</p>
                                 <div className="flex gap-2">
                                     {['days', 'hours', 'minutes', 'seconds'].map((unit) => (
                                         <div key={unit} className="flex flex-col items-center">
@@ -362,53 +372,55 @@ const AstroWebinarHero = () => {
             {/* youtube-vedio-section-end */}
 
             {/* What you will learn section */}
-            <section className="bg-white py-16 px-4 md:px-8 max-w-7xl mx-auto">
-                {/* Header: Reduced margin-bottom from 12 to 6 */}
-                <div className="text-center mb-6">
-                    <h2 className="text-[#2D0A31] text-3xl md:text-5xl font-black mb-2">
-                        What You'll Learn in This
-                        Powerful ₹99 Webinar
-                    </h2>
-                    <p className="text-[#1A051D] italic text-lg opacity-80">
-                        You'll walk away with real, practical knowledge — not just theory or future predictions
-                    </p>
-                </div>
+            <section className="bg-white max-w-8xl">
+                <section className="bg-white py-16 px-4 md:px-8 max-w-7xl mx-auto">
+                    {/* Header: Reduced margin-bottom from 12 to 6 */}
+                    <div className="text-center mb-6">
+                        <h2 className="text-[#2D0A31] text-3xl md:text-5xl font-black mb-2">
+                            What You'll Learn in This
+                            Powerful ₹99 Webinar
+                        </h2>
+                        <p className="text-[#1A051D] italic text-lg opacity-80">
+                            You'll walk away with real, practical knowledge — not just theory or future predictions
+                        </p>
+                    </div>
 
-                {/* Features Grid: Reduced gap and margin-bottom */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="bg-[#2D0A31] border-2 border-[#FFD700] rounded-xl p-5 py-10 flex gap-4 hover:shadow-xl transition-shadow group"
-                        >
-                            {/* Icon size slightly reduced for compactness */}
-                            <div className="text-3xl group-hover:scale-110 transition-transform flex-shrink-0">
-                                {feature.icon}
+                    {/* Features Grid: Reduced gap and margin-bottom */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                        {features.map((feature, index) => (
+                            <div
+                                key={index}
+                                className="bg-[#2D0A31] border-2 border-[#FFD700] rounded-xl p-5 py-10 flex gap-4 hover:shadow-xl transition-shadow group"
+                            >
+                                {/* Icon size slightly reduced for compactness */}
+                                <div className="text-3xl group-hover:scale-110 transition-transform flex-shrink-0">
+                                    {feature.icon}
+                                </div>
+
+                                <div className="flex flex-col">
+                                    <h3 className="text-[#FFD700] font-bold text-base mb-1 leading-tight">
+                                        {feature.title}
+                                    </h3>
+                                    <p className="text-white text-xs opacity-90 leading-relaxed">
+                                        {feature.desc}
+                                    </p>
+                                </div>
                             </div>
+                        ))}
+                    </div>
 
-                            <div className="flex flex-col">
-                                <h3 className="text-[#FFD700] font-bold text-base mb-1 leading-tight">
-                                    {feature.title}
-                                </h3>
-                                <p className="text-white text-xs opacity-90 leading-relaxed">
-                                    {feature.desc}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                    {/* Bottom CTA: Reduced margin-bottom on text */}
+                    <div className="text-center">
+                        <p className="text-[#1A051D] italic text-md mb-6">
+                            You’ll walk away with real knowledge, not just theory or predictions, join now.
+                        </p>
 
-                {/* Bottom CTA: Reduced margin-bottom on text */}
-                <div className="text-center">
-                    <p className="text-[#1A051D] italic text-md mb-6">
-                        You’ll walk away with real knowledge, not just theory or predictions, join now.
-                    </p>
-
-                    {/* Button: Slightly reduced vertical padding */}
-                    <button className="cursor-pointer bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-3 px-10 rounded-lg shadow-[0_4px_20px_rgba(255,184,0,0.4)] text-xl md:text-2xl hover:scale-105 active:scale-95 transition-all">
-                        Register Now at Just ₹99
-                    </button>
-                </div>
+                        {/* Button: Slightly reduced vertical padding */}
+                        <button className="cursor-pointer bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-3 px-10 rounded-lg shadow-[0_4px_20px_rgba(255,184,0,0.4)] text-xl md:text-2xl hover:scale-105 active:scale-95 transition-all">
+                            Register Now at Just ₹99
+                        </button>
+                    </div>
+                </section>
             </section>
             {/* What you will learn section end */}
 
@@ -474,7 +486,7 @@ const AstroWebinarHero = () => {
                                         Students Trained
                                     </p>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -509,7 +521,7 @@ const AstroWebinarHero = () => {
 
             {/* Featured On section */}
             <section className="bg-white py-12 px-4 md:px-8">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-8xl mx-auto">
 
                     {/* Featured On Section */}
                     <div className="mb-20">
@@ -517,12 +529,17 @@ const AstroWebinarHero = () => {
                         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 opacity-90">
                             {/* Note: In production, replace these with actual <img> tags */}
                             {logos.map((logo) => (
-                                <img
-                                    key={logo.src}
-                                    src={logo.src}
-                                    alt={logo.name}
-                                    className="h-8 md:h-12 w-auto hover:grayscale transition-all cursor-default object-contain"
-                                />
+                                // <img
+                                //     key={logo.src}
+                                //     src={logo.src}
+                                //     alt={logo.name}
+                                //     className="h-8 md:h-12 w-auto hover:grayscale transition-all cursor-default object-contain"
+                                // />
+                                <div className="flex items-center max-w-8xl mx-auto border border-[#FFA500]/90 rounded-lg p-2">
+
+                                    <span className="font-semibold text-gray-700">{logo.name}</span>
+
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -532,35 +549,40 @@ const AstroWebinarHero = () => {
                         <h2 className="text-[#1A051D] text-3xl md:text-4xl font-black uppercase tracking-tight">
                             Who Should Join This Webinar?
                         </h2>
+                        <p className="text-[#1A051D] italic text-lg opacity-80 mt-4">
+                            Whether you're a curious beginner or a serious seeker — there's something profoundly valuable here for you
+                        </p>
                     </div>
 
                     {/* Audience Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-                        {categories.map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-[#1A051D] border border-[#FFD700]/30 rounded-lg p-6 flex items-start gap-5 hover:border-[#FFD700] transition-colors group"
-                            >
-                                <div className="shrink-0 mt-1 group-hover:scale-110 transition-transform">
-                                    {item.icon}
+                    <div className='max-w-6xl mx-auto   '>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                            {categories.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-[#1A051D] border border-[#FFD700]/30 rounded-lg p-6 flex items-start gap-5 hover:border-[#FFD700] transition-colors group"
+                                >
+                                    <div className="shrink-0 mt-1 group-hover:scale-110 transition-transform">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <h4 className="text-white font-bold text-lg mb-2 leading-tight">
+                                            {item.title}
+                                        </h4>
+                                        <p className="text-gray-300 text-sm leading-relaxed opacity-90">
+                                            {item.desc}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-white font-bold text-lg mb-2 leading-tight">
-                                        {item.title}
-                                    </h4>
-                                    <p className="text-gray-300 text-sm leading-relaxed opacity-90">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
 
-                    {/* Registration Button */}
-                    <div className="text-center">
-                        <button className="cursor-pointer bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-4 px-12 rounded-lg shadow-xl text-2xl md:text-3xl hover:scale-105 active:scale-95 transition-all w-full md:w-auto">
-                            Register Now at Just ₹99
-                        </button>
+                        {/* Registration Button */}
+                        <div className="text-center">
+                            <button className="cursor-pointer bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-4 px-12 rounded-lg shadow-xl text-2xl md:text-3xl hover:scale-105 active:scale-95 transition-all w-full md:w-auto">
+                                Register Now at Just ₹99
+                            </button>
+                        </div>
                     </div>
 
                 </div>
@@ -601,50 +623,55 @@ const AstroWebinarHero = () => {
             {/* What our Students Say Section */}
             <section className="bg-gray-300 py-16 px-4">
                 <div className="max-w-7xl mx-auto">
+
                     {/* Section Title */}
-                    <h2 className="text-[#2D0A31] text-3xl md:text-5xl font-black text-center mb-12">
+
+                    <p className="text-[#1A051D] italic text-lg opacity-80 mt-4 text-center">
+                        Student Stories
+                    </p>
+                    <h2 className="text-[#1A051D] text-3xl md:text-5xl font-black text-center mb-4">
                         What Our Students Say
                     </h2>
+                    <p className="text-[#1A051D] italic text-lg opacity-80 text-center mb-12">
+                        Real transformations from real people — guided by Dr. Bajrangi's Karma Correction approach
+                    </p>
 
-                    {/* Video Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {videoTestimonials.map((video) => (
+                    {/* Student Testimonials Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {studentTestimonials.map((student, index) => (
                             <div
-                                key={video.id}
-                                className="relative group cursor-pointer rounded-xl overflow-hidden shadow-lg border-2 border-transparent hover:border-[#2D0A31] transition-all"
+                                key={index}
+                                className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-[#FFD700] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group"
                             >
-                                {/* Aspect Ratio Container (16:9) */}
-                                <div className="aspect-video relative bg-black">
-                                    {/* Thumbnail Image */}
-                                    <img
-                                        src={video.thumbnail}
-                                        alt={video.title}
-                                        className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
-                                    />
-
-                                    {/* Video UI Overlay (Simulated YouTube look) */}
-                                    <div className="absolute inset-0 p-4 flex flex-col justify-between bg-gradient-to-t from-black/60 via-transparent to-black/40">
-                                        <p className="text-white text-sm font-medium drop-shadow-md line-clamp-1">
-                                            {video.title}
-                                        </p>
-
-                                        {/* Play Button */}
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="w-14 h-10 bg-red-600 rounded-lg flex items-center justify-center group-hover:bg-red-700 transition-colors">
-                                                <Play fill="white" className="text-white ml-1" size={20} />
-                                            </div>
+                                <div>
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="w-12 h-12 bg-[#2D0A31] rounded-full flex items-center justify-center text-[#FFD700]">
+                                            <UserCircle size={32} />
                                         </div>
-
-                                        {/* Bottom Bar Details */}
-                                        <div className="flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <div className="flex gap-2">
-                                                <div className="w-6 h-6 rounded-full bg-gray-400" /> {/* Avatar placeholder */}
-                                            </div>
-                                            <button className="bg-black/80 text-[10px] text-white px-2 py-1 rounded">
-                                                Watch on YouTube
-                                            </button>
+                                        <div>
+                                            <h4 className="text-[#1A051D] font-bold text-lg leading-tight">
+                                                {student.name}
+                                            </h4>
+                                            <p className="text-[#FFA500] text-xs font-semibold uppercase tracking-wider">
+                                                {student.title}
+                                            </p>
                                         </div>
                                     </div>
+
+                                    <div className="relative">
+                                        <span className="absolute -top-4 -left-2 text-6xl text-[#FFA500] opacity-20 font-serif">
+                                            &ldquo;
+                                        </span>
+                                        <p className="text-[#1A051D] text-sm leading-relaxed italic relative z-10">
+                                            {student.disc}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-6 flex gap-1">
+                                    {[...Array(5)].map((_, i) => (
+                                        <Sparkles key={i} size={14} className="text-[#FFA500]" />
+                                    ))}
                                 </div>
                             </div>
                         ))}
@@ -654,40 +681,41 @@ const AstroWebinarHero = () => {
             <section className="bg-white py-25 px-4 md:px-8">
                 <div className="max-w-6xl mx-auto bg-[#2D0A31] rounded-2xl overflow-hidden shadow-2xl">
                     <div className="p-8 md:p-14 text-white">
-
+                        <p className="text-[#FFD700] font-bold text-lg mb-8">Your Gateway to Ancient Wisdom</p>
                         {/* Main Title */}
                         <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight">
-                            For Those Who Genuinely Wish to Understand Astrology — This Webinar Is Your Gateway to the Ancient Science.
+                            For Those Who Genuinely Wish to Understand Astrology —
+                            This Webinar Is Your Starting Point.
                         </h2>
 
                         {/* Subheading */}
-                        <p className="text-[#FFD700] font-bold text-lg mb-8">
+                        {/* <p className="text-[#FFD700] font-bold text-lg mb-8">
                             Guided by Acharya Lavbhushan Ji Himself Learn with Purpose, Clarity, and Real Insight. This is Your Moment, Grab It Now.
-                        </p>
+                        </p> */}
 
                         {/* Body Content */}
                         <div className="space-y-6 text-gray-200 text-sm md:text-base opacity-90 leading-relaxed">
                             <p>
-                                Have you ever felt drawn to astrology but didn't know where to begin—or whom to trust? If you're someone who genuinely wants to learn astrology in a clear, practical, and authentic way, this is the perfect place to start.
+                                Have you ever felt drawn to Vedic astrology but didn't know where to begin — or whom to trust? If you genuinely want to learn astrology in a clear, practical, and authentic way — grounded in science and karma, not superstition and fear — this is the place to start.
                             </p>
                             <p>
-                                In this special live webinar, Acharya Lavbhushan will guide you step by step, breaking down complex concepts with real-world logic, not superstition. Whether you're just curious or serious about understanding how astrology connects to your career, relationships, health, and more—this session will open your eyes to knowledge that most people never get to learn.
+                                In this special live webinar, Dr. Bajrangi will guide you step by step, breaking down complex Jyotish concepts with real-world logic. Whether you're just curious or serious about how astrology connects to your career, relationships, health, and more — this session will open your eyes to knowledge most people never get to learn.
                             </p>
                             <p className="font-bold text-white">
-                                And the best part? It's just ₹99. If you've been waiting for the right moment to begin your astrology journey, this is it.
+                                <span className='text-[#FFD700] font-bold text-lg'>And the best part? It's just ₹99.</span> If you've been waiting for the right moment to begin your Jyotish journey, this is it.
                             </p>
                         </div>
 
                         {/* Benefit Boxes */}
                         <div className="mt-10 space-y-4">
                             <div className="border border-[#FFD700]/30 rounded-lg p-6 bg-white/5 transition-all hover:border-[#FFD700]/60">
-                                <h3 className="text-xl font-bold text-white mb-2">Learn Real Sanatani Astrology the Right Way — Step by Step</h3>
-                                <p className="text-sm text-gray-300">Understand planets, houses & signs with simple logic — not myths. Practical learning from the very first session.</p>
+                                <h3 className="text-xl font-bold text-white mb-2">Learn Real Vedic Jyotish, the Right Way</h3>
+                                <p className="text-sm text-gray-300">Understand planets, houses & signs through scientific logic — not myths. Practical from the very first session.    </p>
                             </div>
 
                             <div className="border border-[#FFD700]/30 rounded-lg p-6 bg-white/5 transition-all hover:border-[#FFD700]/60">
                                 <h3 className="text-xl font-bold text-white mb-2">Turn Curiosity into Clarity</h3>
-                                <p className="text-sm text-gray-300">Gain step-by-step astrology knowledge you can apply in your career, relationships, and everyday life.</p>
+                                <p className="text-sm text-gray-300">Gain step-by-step knowledge you can apply in your career, relationships and everyday decisions immediately.</p>
                             </div>
                         </div>
 
@@ -709,8 +737,12 @@ const AstroWebinarHero = () => {
 
                     {/* Header */}
                     <h2 className="text-[#1A051D] text-xl md:text-3xl font-black text-center mb-10 leading-tight">
-                        If you are looking for answers to any of these questions, then this Masterclass is for you!
+                        If You're Looking for Answers to Any of These Questions, This Masterclass Is for You
                     </h2>
+                    <p className="text-[#1A051D] italic text-md text-center mb-6">
+                        You don't need to live with unanswered questions — the answers are already in your birth chart.
+                    </p>
+
 
                     {/* Questions Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -738,9 +770,21 @@ const AstroWebinarHero = () => {
 
                     {/* Main Heading */}
                     <h2 className="text-white text-3xl md:text-5xl font-black tracking-tight leading-tight">
-                        Destiny Doesn’t Wait. Why Should You? Grab Your Spot Now!
+                        Destiny Doesn't Wait. Why Should You? Grab Your Spot Now!
                     </h2>
-
+                    <div className="mt-4">
+                        <p className="text-xl font-bold text-white mb-2">Offers Ends In</p>
+                        <div className="flex gap-2 text-white text-center items-center justify-center">
+                            {['days', 'hours', 'minutes', 'seconds'].map((unit) => (
+                                <div key={unit} className="flex flex-col items-center">
+                                    <div className="w-14 h-14 bg-[#ffda94] border-2 border-black rounded flex items-center justify-center text-2xl font-bold text-[#260126]">
+                                        00
+                                    </div>
+                                    <span className="text-[12px] uppercase  mt-1 text-white">{unit}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                     {/* Subtext */}
                     <p className="text-gray-300 italic text-lg md:text-xl font-medium opacity-90">
                         Just ₹99 to gain clarity, confidence, and control over your life — guided by the LEGEND himself.
@@ -763,11 +807,15 @@ const AstroWebinarHero = () => {
 
                     {/* Top Header Section */}
                     <div className="text-center mb-10">
+                        <p className="text-[#1A051D] font-bold text-lg mb-8">The Ripple Effect</p>
                         <h2 className="text-[#1A051D] text-3xl md:text-5xl font-black leading-tight uppercase tracking-tight">
-                            The Right Knowledge of Astrology Doesn't Just Change You But It Can Heal Others Too
+                            The Right Knowledge of Jyotish Doesn't Just Change You — It Heals Others Too
                         </h2>
                         <p className="text-[#1A051D] italic text-lg md:text-xl mt-4 opacity-80">
-                            Use this sacred science to bring peace, clarity & transformation to the people around you.
+                            When you understand Karma and planetary science, you become a source of light for the people around you.
+                        </p>
+                        <p className="text-[#1A051D] italic text-lg md:text-xl mt-4 opacity-80">
+                            Now imagine this — what if your knowledge could become a transforming force in someone else's life?
                         </p>
                     </div>
 
@@ -861,6 +909,76 @@ const AstroWebinarHero = () => {
             </section>
             {/* FAQ Section end */}
 
+            {/* Final High-Impact Registration Section */}
+            <section className="bg-[#1A051D] py-20 px-4 md:px-8 border-t border-white/5 relative overflow-hidden">
+                {/* Decorative Background Elements */}
+                <div className="absolute top-0 left-0 w-64 h-64 bg-[#FFD700] opacity-5 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF8A00] opacity-5 blur-[120px] rounded-full translate-x-1/4 translate-y-1/4"></div>
+
+                <div className="max-w-5xl mx-auto flex flex-col items-center text-center relative z-10">
+
+                    {/* Top Status Badge */}
+                    <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full mb-10">
+                        <span className="flex h-2 w-2 rounded-full bg-[#FFB800] animate-pulse"></span>
+                        <p className="text-[#FFB800] text-xs font-semibold uppercase tracking-wider">
+                            ⚡ Few Seats Left — 2,600+ Already Registered
+                        </p>
+                    </div>
+
+                    {/* Main Offer Title */}
+                    <h2 className="text-white text-4xl md:text-6xl font-black mb-6 leading-[1.1] tracking-tight max-w-4xl mx-auto">
+                        <span className="text-[#FFD700]">₹99</span> to Gain Clarity, Confidence & Control Over Your Life
+                    </h2>
+
+                    {/* Mentor Credentials */}
+                    <p className="text-gray-400 text-sm md:text-base font-medium mb-12 opacity-90">
+                        Guided by Dr. Vinay Bajrangi — 25 Years • 80,000+ Kundalis • PhD in Vedic Astrology
+                    </p>
+
+                    {/* Pricing Visuals */}
+                    <div className="flex flex-col items-center mb-10">
+                        <p className="text-gray-500 line-through text-lg mb-2">Value: ₹1,999</p>
+                        <div className="relative">
+                            <h3 className="text-[#FFA500] text-8xl md:text-9xl font-black leading-none drop-shadow-[0_0_30px_rgba(255,165,0,0.3)]">
+                                ₹99
+                            </h3>
+                        </div>
+                    </div>
+
+                    {/* Feature Bar */}
+                    <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 mb-12 text-[#FFD700] font-black text-xs md:text-sm tracking-widest px-4">
+                        <span>ONE-TIME REGISTRATION</span>
+                        <span className="hidden md:block opacity-30">•</span>
+                        <span>ZOOM LIVE SESSION</span>
+                        <span className="hidden md:block opacity-30">•</span>
+                        <span>JYOTISH CERTIFICATION PATHWAY</span>
+                    </div>
+
+                    {/* Big CTA Button */}
+                    <button className="cursor-pointer group relative bg-gradient-to-r from-[#FFD700] via-[#FFB800] to-[#FF8A00] text-[#1A051D] font-black py-5 px-14 rounded-2xl text-2xl md:text-3xl shadow-[0_15px_40px_rgba(255,184,0,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 mb-16">
+                        <span className="relative z-10">Register Now &rarr;</span>
+                        <div className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </button>
+
+                    {/* Social Proof Badges */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl px-4">
+                        <div className="bg-white/5 border border-white/10 rounded-xl py-5 px-6 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                            <span className="text-[#4CAF50] text-xl">✅</span>
+                            <span className="text-gray-200 font-bold text-sm">80,000+ Kundalis Analyzed</span>
+                        </div>
+                        <div className="bg-white/5 border border-white/10 rounded-xl py-5 px-6 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                            <span className="text-[#FFD700] text-xl">🎓</span>
+                            <span className="text-gray-200 font-bold text-sm">10,000+ Students Taught</span>
+                        </div>
+                        <div className="bg-white/5 border border-white/10 rounded-xl py-5 px-6 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                            <span className="text-[#FF8A00] text-xl">📖</span>
+                            <span className="text-gray-200 font-bold text-sm">15+ National Publications</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             {/* Contact Us Section */}
             <footer className="bg-[#1A051D] text-white pt-12 pb-6 px-4 md:px-8 border-t border-white/5">
                 <div className="max-w-7xl mx-auto">
@@ -870,8 +988,7 @@ const AstroWebinarHero = () => {
                         <div className="space-y-2 max-w-sm">
                             <h4 className="font-bold text-lg">Address:</h4>
                             <p className="text-gray-300 text-sm leading-relaxed opacity-90">
-                                1st Floor, Plot No. 15, Calgiri Marg, Usha Colony, <br />
-                                Sector 1, Malviya Nagar, Jaipur Rajasthan 302017
+                                Bajrangi Dham, Sector 66, Noida, Uttar Pradesh
                             </p>
                         </div>
 
@@ -884,22 +1001,24 @@ const AstroWebinarHero = () => {
                                     className="flex items-center gap-3 text-gray-300 hover:text-[#FFD700] transition-colors"
                                 >
                                     <Phone size={18} />
-                                    <span className="text-sm font-medium">+91-9783807666</span>
+                                    <span className="text-sm font-medium">
+                                        +91 9278555588
+                                    </span>
                                 </a>
                                 <a
-                                    href="https://wa.me/919116571466"
-                                    target="_blank"
+                                    href="mailto:mail@vinaybajrangi.com"
                                     className="flex items-center gap-3 text-gray-300 hover:text-[#FFD700] transition-colors"
                                 >
-                                    <MessageCircle size={18} />
-                                    <span className="text-sm font-medium">+91-9116571466</span>
+                                    <Mail size={18} />
+                                    <span className="text-sm font-medium">
+                                        mail@vinaybajrangi.com</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="pt-8 border-t border-white/10 text-center">
+                    <div className="pt-18 pb-30 border-t border-white/10 text-center">
                         <p className="text-xs text-gray-500 font-medium tracking-wide">
                             Copyright © 2025 Astravastugurukul. All Rights Reserved.
                         </p>
