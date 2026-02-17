@@ -608,9 +608,14 @@ const AstroWebinarHero = () => {
                         {testimonials.map((person, index) => (
                             <div key={index} className="relative group">
                                 {/* Outer Decorative Frame */}
-                                <img
+                                {/* <img
                                     src={person.image}
                                     alt={person.name}
+                                    className="w-full h-auto object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
+                                /> */}
+                                <img
+                                    src=""
+                                    alt="images will be uploaded soon"
                                     className="w-full h-auto object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 rounded-2xl"
                                 />
                             </div>
