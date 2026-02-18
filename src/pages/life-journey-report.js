@@ -137,7 +137,7 @@ export default function LifeJourneyReport() {
         <div className="min-h-screen font-sans bg-gray-50 text-gray-800">
             <style>{hideScrollbarStyle}</style>
             <Head>
-                <title>Life Journey Report - Acharya Lavbhushan</title>
+                <title>Life Journey Report - Dr. Vinay Bajrangi</title>
                 <meta name="description" content="Get your personalized Life Journey Report covering Career, Health, Marriage, and Finance." />
             </Head>
 
@@ -511,7 +511,7 @@ export default function LifeJourneyReport() {
 
                 <div className="max-w-5xl mx-auto px-4 relative z-10">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cc9933] mb-8 lg:mb-12 tracking-wide drop-shadow-sm">
-                        A Personal Message from Acharya Lavbhushan Ji
+                        A Personal Message from Dr. Vinay Bajrangi
                     </h2>
 
                     {/* Video Wrapper with Glow */}
@@ -522,7 +522,7 @@ export default function LifeJourneyReport() {
                             <iframe
                                 className="w-full h-full"
                                 src="https://www.youtube.com/embed/PjwdTj_5u-g?autoplay=0&controls=1&rel=0"
-                                title="Personal Message from Acharya Lavbhushan"
+                                title="Personal Message from Dr. Vinay Bajrangi"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen

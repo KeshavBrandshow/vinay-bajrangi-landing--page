@@ -336,7 +336,7 @@ const AstroWebinarHero = () => {
                         {/* YouTube UI Overlays */}
                         <div className="absolute top-4 left-4 flex items-center gap-2 text-white text-sm font-medium z-10">
                             <img src="/avatar.jpg" alt="Profile" className="w-8 h-8 rounded-full border border-white" />
-                            <span className="drop-shadow-md">Join the Astro Mastery Webinar with Acharya Lavbhushan...</span>
+                            <span className="drop-shadow-md">Join the Astro Mastery Webinar with Dr. Vinay Bajrangi...</span>
                         </div>
 
                         {/* Large YouTube Play Button */}
@@ -695,7 +695,7 @@ const AstroWebinarHero = () => {
 
                         {/* Subheading */}
                         {/* <p className="text-[#FFD700] font-bold text-lg mb-8">
-                            Guided by Acharya Lavbhushan Ji Himself Learn with Purpose, Clarity, and Real Insight. This is Your Moment, Grab It Now.
+                            Guided by Dr. Vinay Bajrangi Ji Himself Learn with Purpose, Clarity, and Real Insight. This is Your Moment, Grab It Now.
                         </p> */}
 
                         {/* Body Content */}

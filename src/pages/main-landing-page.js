@@ -24,7 +24,7 @@ export default function MainLandingPage() {
     return (
         <div className="min-h-screen font-sans bg-gray-50 text-gray-800">
             <Head>
-                <title>Premium Astrological Reports - Acharya Lavbhushan</title>
+                <title>Premium Astrological Reports - Dr. Vinay Bajrangi</title>
                 <meta name="description" content="Unlock your destiny with personalized reports on Life Journey, Love & Relationships, and Destiny." />
             </Head>
 
@@ -49,7 +49,7 @@ export default function MainLandingPage() {
 
             {/* --- FOOTER / EXTRA CONTENT IF NEEDED --- */}
             <div className="bg-[#450a0a] text-center py-8 border-t border-white/10 text-white/60">
-                <p className="text-sm">© {new Date().getFullYear()} Vinay Bajrangi. All Rights Reserved.</p>
+                <p className="text-sm">© {new Date().getFullYear()} Dr. Vinay Bajrangi. All Rights Reserved.</p>
             </div>
 
         </div>
@@ -340,7 +340,7 @@ function HeroSlider() {
 
                             {/* Logo/Header */}
                             <div className="absolute top-12 left-0 w-full text-center">
-                                <div className="text-[10px] text-yellow-200 tracking-widest uppercase">ACHARYA LAVBHUSHAN</div>
+                                <div className="text-[10px] text-yellow-200 tracking-widest uppercase">Dr. Vinay Bajrangi</div>
                             </div>
 
                             {/* Title Area */}
@@ -363,7 +363,7 @@ function HeroSlider() {
                                     />
                                 </div>
                                 <div className="w-full bg-yellow-500 text-black text-center py-2 font-bold text-sm uppercase tracking-wider relative bottom-8 mx-auto max-w-[80%] rounded-md shadow-lg">
-                                    By Acharya Lavbhushan
+                                    By Dr. Vinay Bajrangi
                                 </div>
                             </div>
 
@@ -471,7 +471,7 @@ function ReportCard({ title, desc, price, originalPrice, rating, reviews, link, 
                     <div className={`w-full h-full border-2 border-yellow-500/50 rounded-r-lg bg-gradient-to-br ${color} flex flex-col items-center p-2 text-center relative overflow-hidden`}>
 
                         {/* Mini details mirroring the main book */}
-                        <div className="text-[6px] text-yellow-200 uppercase tracking-widest mt-2 mb-2">Acharya Lavbhushan</div>
+                        <div className="text-[6px] text-yellow-200 uppercase tracking-widest mt-2 mb-2">Dr. Vinay Bajrangi</div>
                         <div className="text-white font-serif font-bold text-sm leading-tight mb-2 border-b border-white/20 pb-2">{title}</div>
 
                         {/* Mini Author Image */}

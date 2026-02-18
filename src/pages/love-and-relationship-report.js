@@ -137,7 +137,7 @@ export default function LoveAndRelationshipReport() {
         <div className="min-h-screen font-sans bg-gray-50 text-gray-800">
             <style>{hideScrollbarStyle}</style>
             <Head>
-                <title>Love & Relationship Report - Acharya Lavbhushan</title>
+                <title>Love & Relationship Report - Dr. Vinay Bajrangi</title>
                 <meta name="description" content="Understand Your Love Life, Emotional Patterns & Relationship Destiny" />
             </Head>
 

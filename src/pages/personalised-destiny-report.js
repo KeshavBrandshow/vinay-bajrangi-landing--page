@@ -137,7 +137,7 @@ export default function PersonalisedDestinyReport() {
         <div className="min-h-screen font-sans bg-gray-50 text-gray-800">
             <style>{hideScrollbarStyle}</style>
             <Head>
-                <title>Personalised Destiny Report - Acharya Lavbhushan</title>
+                <title>Personalised Destiny Report - Dr. Vinay Bajrangi</title>
                 <meta name="description" content="Get your personalized Life Journey Report covering Career, Health, Marriage, and Finance." />
             </Head>
 
