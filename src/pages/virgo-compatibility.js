@@ -329,7 +329,7 @@ export default function VirgoCompatibilityApp(props) {
                     <div className="compat-layout">
                         {/* TAURUS */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#2D6A2A,#5A9E55)" }}
@@ -385,7 +385,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* CAPRICORN */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#5A5A5A,#9A9A9A)" }}
@@ -440,7 +440,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* CANCER */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#2B6CB0,#63B3ED)" }}
@@ -495,7 +495,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* SCORPIO */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#7B2D8B,#B05EC0)" }}
@@ -551,7 +551,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* PISCES (opposite) */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#3B82B0,#82C8E0)" }}
@@ -607,7 +607,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* VIRGO + VIRGO */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{
@@ -664,7 +664,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* LIBRA */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#2080D0,#60B8F0)" }}
@@ -721,7 +721,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* ARIES */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#C0351A,#F26B3A)" }}
@@ -777,7 +777,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* GEMINI */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#3A8A2A,#5CB84A)" }}
@@ -833,7 +833,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* LEO */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#C0392B,#E05A4E)" }}
@@ -889,7 +889,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* SAGITTARIUS */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#6B3FA0,#9B6BD0)" }}
@@ -946,7 +946,7 @@ export default function VirgoCompatibilityApp(props) {
 
                         {/* AQUARIUS */}
                         <div className="compat-card reveal">
-                            <div className="compat-header" onclick="toggleCompat(this)">
+                            <div className="compat-header" onClick={toggleCompat}>
                                 <div
                                     className="compat-sign-icon"
                                     style={{ background: "linear-gradient(135deg,#1A5A9E,#4A9ECC)" }}
