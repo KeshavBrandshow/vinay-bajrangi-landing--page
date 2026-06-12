@@ -238,6 +238,29 @@ body {
     padding-bottom: 60px;
 }
 
+.virgo-overview {
+    background: var(--white);
+    padding: 80px 6vw 40px;
+}
+
+@media (max-width: 767px) {
+    .hero-content {
+        padding-bottom: 25px;
+    }
+
+    .virgo-overview{
+        padding-top: 25px !important;
+    }
+
+    .section-lead{
+        margin-bottom: 25px !important;
+    }
+
+    .overview-grid{
+        margin-bottom: 10px !important;
+    }
+}
+
 .hero-eyebrow {
     display: flex;
     align-items: center;
@@ -551,6 +574,19 @@ body {
     display: block;
     margin-bottom: 12px;
 }
+
+.section-tag-gemstone{
+    padding-top: 60px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .section-tag-gemstone{
+        padding-top: 30px;
+        display: block;
+    }
+}
+
 .section-title {
     font-family: var(--font-display);
     font-size: clamp(1.9rem, 3.2vw, 2.7rem);
@@ -616,6 +652,17 @@ body {
 }
 
 /* ── COMPAT ACCORDIONS ── */
+.compatibility-breakdown{
+    background: var(--white);
+    padding: 80px 6vw 40px;
+}
+
+@media (max-width: 767px) {
+    .compatibility-breakdown{
+        padding-bottom: 25px !important;
+    }
+}
+
 .compat-layout {
     display: flex;
     flex-direction: column;
@@ -756,6 +803,13 @@ body {
     background: var(--sign-pale);
     padding: 80px 6vw;
 }
+
+@media (max-width: 767px) {
+    .score-section {
+        padding: 35px 0px !important;
+    }
+}
+
 .score-grid {
     max-width: 1100px;
     margin: 0 auto;
@@ -833,6 +887,19 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+.report-callout-section{
+    background: var(--white);
+    padding: 80px 6vw;
+}
+
+@media (max-width: 767px) {
+    .report-callout-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
 .report-callout::before {
     content: "♍";
     position: absolute;
@@ -922,6 +989,13 @@ body {
     background: var(--white);
     padding: 0 6vw 80px;
 }
+
+@media (max-width: 767px) {
+    .gem-strip {
+        padding: 30px;
+    }
+}
+
 .gem-strip-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -983,6 +1057,13 @@ body {
     padding: 60px 6vw;
     border-top: 1px solid rgba(92, 110, 42, 0.12);
 }
+
+@media (max-width: 767px) {
+    .signs-nav {
+        padding: 30px 6vw;
+    }
+}
+
 .signs-nav-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -1053,6 +1134,13 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+@media (max-width: 767px) {
+    .bottom-cta {
+        padding: 35px 6vw;
+    }
+}
+
 .bottom-cta::before {
     content: "✦ ✦ ✦";
     font-size: 0.7rem;

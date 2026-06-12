@@ -250,7 +250,7 @@ export default function VirgoCompatibilityApp(props) {
             <hr className="section-divider" />
 
             {/* VIRGO IN LOVE: OVERVIEW */}
-            <div style={{ background: "var(--white)", padding: "80px 6vw 40px" }}>
+            <div className="virgo-overview">
                 <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
                     <span className="section-tag reveal">Understanding Virgo in Love</span>
                     <h2 className="section-title reveal">
@@ -314,7 +314,7 @@ export default function VirgoCompatibilityApp(props) {
             <hr className="section-divider" />
 
             {/* COMPATIBILITY BREAKDOWN */}
-            <div style={{ background: "var(--white)", padding: "40px 6vw 80px" }}>
+            <div className="compatibility-breakdown">
                 <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
                     <span className="section-tag reveal">Virgo with Each Sign</span>
                     <h2 className="section-title reveal">
@@ -1143,7 +1143,7 @@ export default function VirgoCompatibilityApp(props) {
             <hr className="section-divider" />
 
             {/* REPORT CALLOUT */}
-            <div style={{ padding: "60px 6vw", background: "var(--white)" }}>
+            <div className="report-callout-section">
                 <div className="report-callout reveal">
                     <div>
                         <span className="rc-tag">For Virgo · Personalised Report</span>
@@ -1189,7 +1189,7 @@ export default function VirgoCompatibilityApp(props) {
             {/* GEMSTONE WEARABLES FOR VIRGO */}
             <div className="gem-strip">
                 <div className="gem-strip-inner">
-                    <span className="section-tag reveal" style={{ paddingTop: "60px", display: "block" }}>
+                    <span className="section-tag section-tag-gemstone reveal">
                         Vedic Remedies for Virgo
                     </span>
                     <h2 className="section-title reveal">
@@ -1374,7 +1374,7 @@ export default function VirgoCompatibilityApp(props) {
                         >
                             Try Free Calculator
                         </a>
-                        <a href="https://www.vinaybajrangi.com/contact-us" className="btn-outline-white">
+                        <a href="https://www.vinaybajrangi.com/services/consultation.php" className="btn-outline-white">
                             Book a Consultation
                         </a>
                     </div>
