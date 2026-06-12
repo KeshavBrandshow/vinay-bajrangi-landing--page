@@ -947,7 +947,7 @@ export default function LibraDemo() {
             <div className="bottom-cta-btns">
               <a href="https://www.vinaybajrangi.com/love-and-relationship-report" className="btn-white">✦ Order My Love Report</a>
               <a href="https://www.vinaybajrangi.com/calculator/love-calculator" className="btn-outline-white">Try Free Calculator</a>
-              <a href="https://www.vinaybajrangi.com/contact-us" className="btn-outline-white">Book a Consultation</a>
+              <a href="https://www.vinaybajrangi.com/services/consultation.php" className="btn-outline-white">Book a Consultation</a>
             </div>
           </div>
         </section>
