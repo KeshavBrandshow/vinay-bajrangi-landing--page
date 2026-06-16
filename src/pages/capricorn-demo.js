@@ -1900,7 +1900,7 @@ export default function CapricornDemo() {
             </a>
 
             <a
-              href="/services/consultation.php"
+              href="https://www.vinaybajrangi.com/services/consultation.php"
               className="btn-outline-white"
             >
               Book a Consultation
