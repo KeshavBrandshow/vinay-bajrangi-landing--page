@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Sparkles, ShieldCheck, BadgeCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const features = [
     {
@@ -92,9 +93,9 @@ const stats = [
 
 const stages = [
     {
-        badge: "BEGINNER",
-        stage: "STAGE 1",
-        title: "THE CURIOUS BEGINNER",
+        badge: "Beginner",
+        stage: "Stage 1",
+        title: "The Curious Beginner",
         icon: Compass,
         description:
             "You've heard of zodiac signs. You may have read articles or watched videos. But you've never formally studied a Vedic chart.",
@@ -102,9 +103,9 @@ const stages = [
         strategy: "Start from absolute basics. Build a strong base before anything else.",
     },
     {
-        badge: "PROFESSIONAL",
-        stage: "STAGE 2",
-        title: "THE ASPIRING PRACTITIONER",
+        badge: "Practitioner",
+        stage: "Stage 2",
+        title: "The Aspiring Practitioner",
         icon: Briefcase,
         description:
             "You understand planets and houses, can read a basic chart, and want to develop predictive accuracy and consultation skill.",
@@ -112,9 +113,9 @@ const stages = [
         strategy: "Build predictive ability across Graduate + PG progression.",
     },
     {
-        badge: "MASTER",
-        stage: "STAGE 3",
-        title: "THE FUTURE MASTER",
+        badge: "Master",
+        stage: "Stage 3",
+        title: "The Future Master",
         icon: Crown,
         description:
             "You have working knowledge and consult clients. You're ready for advanced research, Pre-PhD, and PhD-level Jyotish mastery.",
@@ -125,14 +126,19 @@ const stages = [
 
 const coursesData = [
     {
-        badge: "Foundation",
+        stage: "STAGE 1",
+        icon: "lotus",
+        footerIcon: "book",
+
+        bgGradient: "linear-gradient(180deg, #001F70 0%, #00164D 45%, #000C2A 100%)",
+
         title: "Graduate in Jyotish",
         subtitle: "Vedic Astrology Mastery",
         tagline: "From Foundations to Professional Practice",
         quote: "The Complete Professional Astrology Programme",
-        bgGradient: "from-[oklch(0.32_0.1_265)] to-[oklch(0.22_0.08_265)]",
+
         footerText: "From Student to Jyotish Practitioner.",
-        isPopular: false,
+
         content: [
             {
                 heading: "Graduation",
@@ -144,15 +150,21 @@ const coursesData = [
             },
         ],
     },
+
     {
-        badge: "Most Popular",
+        stage: "STAGE 2",
+        icon: "om",
+        footerIcon: "leaf",
+
+        bgGradient: "linear-gradient(180deg, #00463C 0%, #002E27 45%, #001510 100%)",
+
         title: "Post Graduation in Jyotish",
         subtitle: "From Beej to Pushpa",
         tagline: "Your Journey to Post Graduation in Vedic Astrology",
         quote: "The Complete Jyotish Learning Path",
-        bgGradient: "from-[oklch(0.35_0.13_145)] to-[oklch(0.22_0.1_150)]",
+
         footerText: "Where the Seeds of Astrology Grow into Jyotish Mastery.",
-        isPopular: true,
+
         content: [
             {
                 heading: "Graduation",
@@ -168,15 +180,21 @@ const coursesData = [
             },
         ],
     },
+
     {
-        badge: "Scholarship",
+        stage: "STAGE 3",
+        icon: "yantra",
+        footerIcon: "graduation",
+
+        bgGradient: "linear-gradient(180deg, #44138A 0%, #2A0B58 45%, #16052F 100%)",
+
         title: "Pre-PhD Programme in Jyotish",
         subtitle: "Jyotish Vriksha",
         tagline: "From Knowledge to Astrological Scholarship",
         quote: "Jyotish Vriksha — Pre-PhD in Vedic Astrology",
-        bgGradient: "from-[oklch(0.32_0.13_305)] to-[oklch(0.22_0.1_295)]",
+
         footerText: "From Jyotish Study to Jyotish Scholarship.",
-        isPopular: false,
+
         content: [
             {
                 heading: "Graduation",
@@ -191,7 +209,7 @@ const coursesData = [
                 items: ["Jyotish Taru", "Jyotish Pushpa"],
             },
             {
-                heading: "Pre-HD",
+                heading: "Pre-PhD",
                 items: ["Vriksha", "Bhrigu Chakra Paddhati"],
             },
         ],
@@ -204,7 +222,7 @@ const coreStages = [
     { stage: "Stage 1", num: "02", name: "Jyotish Ankur", desc: "Early Learning" },
     { stage: "Stage 1", num: "03", name: "Jyotish Pallav", desc: "Intermediate Level" },
     { stage: "Stage 2", num: "04", name: "Jyotish Taru", desc: "Post Graduate" },
-    { stage: "Stage 2", num: "05", name: "Jyotish Pushpa", desc: "Post Graduate" },
+    { stage: "Stage 2", num: "05", name: "Jyotish Pushpa", desc: "Master in Post Graduate" },
     { stage: "Stage 3", num: "06", name: "Jyotish Vriksha", desc: "Pre-PhD · Bhrigu Chakra" },
 ];
 
@@ -574,7 +592,6 @@ const opportunityCards = [
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
                 aria-hidden="true"
             >
                 <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
@@ -595,7 +612,6 @@ const opportunityCards = [
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
                 aria-hidden="true"
             >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -607,7 +623,7 @@ const opportunityCards = [
     },
     {
         title: "Corporate & Celebrity Clients",
-        desc: "High-ticket retainer &amp; event-based work",
+        desc: "High-ticket retainer & event-based work",
         icon: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -619,7 +635,6 @@ const opportunityCards = [
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
                 aria-hidden="true"
             >
                 <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
@@ -641,7 +656,6 @@ const opportunityCards = [
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
                 aria-hidden="true"
             >
                 <circle cx="12" cy="12" r="10" />
@@ -742,11 +756,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" />
             </svg>
@@ -764,11 +780,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                 <path d="M16 3.128a4 4 0 0 1 0 7.744" />
@@ -789,11 +807,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M12 7v14" />
                 <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
@@ -812,11 +832,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <circle cx="12" cy="12" r="10" />
                 <path d="m9 12 2 2 4-4" />
@@ -835,11 +857,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M12 15V3" />
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -859,11 +883,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" />
             </svg>
@@ -881,11 +907,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
@@ -905,11 +933,13 @@ const ecosystemFeatures = [
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-gold"
-                aria-hidden="true"
+                style={{
+                    color: "#D4AF37",
+                    opacity: 1,
+                }}
             >
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
                 <path d="m9 12 2 2 4-4" />
@@ -1268,6 +1298,79 @@ export default function CertifiedAstrologyCourse({ data }) {
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+
+    const CardIcon = ({ type }) => {
+        const stroke = "#D4AF37";
+
+        switch (type) {
+            case "lotus":
+                return (
+                    <svg viewBox="0 0 64 64" className="w-10 h-10">
+                        <g fill="none" stroke={stroke} strokeWidth="2">
+                            <path d="M32 16c-5 6-8 12-8 18 0 9 4 15 8 20 4-5 8-11 8-20 0-6-3-12-8-18Z" />
+                            <path d="M20 24c-4 4-6 9-6 15 0 7 4 12 10 14" />
+                            <path d="M44 24c4 4 6 9 6 15 0 7-4 12-10 14" />
+                            <path d="M14 36c4-2 8-2 12 0" />
+                            <path d="M50 36c-4-2-8-2-12 0" />
+                            <path d="M22 52h20" />
+                        </g>
+                    </svg>
+                );
+
+            case "om":
+                return <div className="text-[#D4AF37] text-[42px] leading-none font-serif">ॐ</div>;
+
+            case "yantra":
+                return (
+                    <svg viewBox="0 0 64 64" className="w-10 h-10">
+                        <g fill="none" stroke={stroke} strokeWidth="2">
+                            <circle cx="32" cy="32" r="18" />
+                            <polygon points="32,16 46,32 32,48 18,32" />
+                            <polygon points="32,22 40,32 32,42 24,32" />
+                            <circle cx="32" cy="32" r="4" />
+                        </g>
+                    </svg>
+                );
+
+            case "book":
+                return (
+                    <svg viewBox="0 0 24 24" className="w-12 h-12">
+                        <g fill="none" stroke={stroke} strokeWidth="1.8">
+                            <path d="M3 5h7a3 3 0 0 1 3 3v11H6a3 3 0 0 0-3 3V5z" />
+                            <path d="M21 5h-7a3 3 0 0 0-3 3v11h7a3 3 0 0 1 3 3V5z" />
+                        </g>
+                    </svg>
+                );
+
+            case "leaf":
+                return (
+                    <svg viewBox="0 0 24 24" className="w-12 h-12">
+                        <g fill="none" stroke={stroke} strokeWidth="1.8">
+                            <path d="M19 5c-6 1-10 5-11 12" />
+                            <path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14Z" />
+                        </g>
+                    </svg>
+                );
+
+            case "graduation":
+                return (
+                    <svg viewBox="0 0 24 24" className="w-12 h-12">
+                        <g fill="none" stroke={stroke} strokeWidth="1.8">
+                            <path d="m2 9 10-5 10 5-10 5-10-5Z" />
+                            <path d="M6 11v5c0 2 3 4 6 4s6-2 6-4v-5" />
+                            <path d="M22 10v6" />
+                        </g>
+                    </svg>
+                );
+
+            default:
+                return null;
+        }
+    };
+
+    const topIcons = ["lotus", "om", "yantra"];
+    const footerIcons = ["book", "leaf", "graduation"];
+
     return (
         <>
             <style jsx>{`
@@ -1344,11 +1447,90 @@ export default function CertifiedAstrologyCourse({ data }) {
                 :global(.animate-marquee) {
                     animation: marquee 30s linear infinite;
                 }
+
+                @keyframes floatSlow {
+                    0%,
+                    100% {
+                        transform: translateY(0px);
+                    }
+                    50% {
+                        transform: translateY(-12px);
+                    }
+                }
+
+                .animate-float-slow {
+                    animation: floatSlow 4s ease-in-out infinite;
+                }
+
+                @keyframes ripple {
+                    0% {
+                        transform: scale(1);
+                        opacity: 0.7;
+                    }
+                    70% {
+                        transform: scale(1.45);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: scale(1.45);
+                        opacity: 0;
+                    }
+                }
+
+                .animate-ripple {
+                    animation: ripple 2s infinite ease-out;
+                }
             `}</style>
+
+            <header className="w-full bg-[#020c26] border-b border-[#8f6a2f]/40">
+                <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+                    <div className="h-[74px] flex items-center justify-between">
+                        {/* Left Logo Section */}
+                        <div className="flex items-center">
+                            <Link href="https://www.vinaybajrangi.com/">
+                                <Image
+                                    src="/img/logo.webp"
+                                    alt="Vinay Bajrangi Logo"
+                                    width={90}
+                                    height={90}
+                                    priority
+                                    className="w-auto h-[60px] object-contain cursor-pointer"
+                                />
+                            </Link>
+                        </div>
+
+                        {/* Center Menu */}
+                        <nav className="hidden lg:flex items-center gap-10">
+                            {["Stages", "Courses", "Journey", "Students", "FAQ"].map((item, index) => (
+                                <a
+                                    key={index}
+                                    href="#"
+                                    className="text-[#c4c4c4] hover:text-[#d89b3d] text-sm uppercase tracking-wide transition"
+                                >
+                                    {item}
+                                </a>
+                            ))}
+                        </nav>
+
+                        {/* Right Button */}
+                        <button className="bg-[#d89b3d] hover:bg-[#c98f34] text-black px-8 py-4 rounded-2xl text-sm font-medium uppercase transition">
+                            Know Your Stage
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div className="w-full bg-[#d89b3d] text-black py-1 overflow-hidden">
+                <div
+                    className={`${cinzel.className} text-center text-base tracking-[1px] font-medium uppercase font-serif`}
+                >
+                    ★ New Batch Opens 15 June 2026 · Only 100 Seats · Certified Vedic Astrology Programs ★
+                </div>
+            </div>
 
             {/* Hero Section */}
             <section
-                className="relative overflow-hidden py-16 md:py-24"
+                className="relative overflow-hidden py-10 md:py-10"
                 style={{
                     background: "var(--gradient-hero)",
                 }}
@@ -1472,14 +1654,16 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                         <button
                             onClick={() => setShowEligibilityModal(true)}
-                            className={`${cinzel.className} px-8 py-4 tracking-wider text-sm uppercase rounded-xl hover:shadow-gold transition-all flex items-center gap-2`}
+                            className={`${cinzel.className} px-10 py-5 text-base font-semibold tracking-[2px] uppercase rounded-2xl transition-all duration-300 hover:shadow-gold hover:scale-105 flex items-center gap-3`}
                             style={{
                                 background: "var(--gradient-gold)",
                                 color: "oklch(14% 0.04 270)",
+                                minHeight: "64px",
+                                boxShadow: "0 8px 24px rgba(212, 166, 70, 0.25)",
                             }}
                         >
                             Know Your Stage & Enroll
-                            <ChevronRight size={18} />
+                            <ChevronRight size={22} strokeWidth={2.5} />
                         </button>
 
                         <div className="flex items-center gap-3 mt-6 text-silver text-sm">
@@ -1507,13 +1691,13 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                     {/* RIGHT */}
                     <div className="relative">
-                        <div className="relative rounded-2xl overflow-hidden border border-gold/40 shadow-elevated">
+                        <div className="group relative rounded-2xl overflow-hidden border border-gold/80 shadow-elevated transition-all duration-300">
                             <Image
                                 src="/img/certified-astrology/hero.jpg"
                                 alt="Dr. Vinay Bajrangi"
                                 width={700}
-                                height={900}
-                                className="w-full aspect-[4/5] object-cover"
+                                height={650}
+                                className="w-full h-[520px] lg:h-[580px] object-cover transition-transform duration-500 group-hover:scale-105"
                             />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -1528,17 +1712,27 @@ export default function CertifiedAstrologyCourse({ data }) {
                         </div>
 
                         <button
-                            className="absolute -bottom-6 left-0 md:-left-10 w-[78%] max-w-sm rounded-xl p-4 shadow-elevated text-left transition animate-float"
+                            className="group absolute -bottom-6 left-0 md:-left-10 w-[78%] max-w-sm rounded-xl p-4 text-left shadow-elevated transition-all duration-500 animate-float-slow"
                             style={{
                                 background: "var(--surface-card)",
-                                border: "1px solid var(--border)",
+                                border: "1px solid rgba(212,166,70,0.18)",
+                                boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
                             }}
                         >
+                            <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-[#d4a646] transition-all duration-500 pointer-events-none" />
+
                             <div
-                                className={`${cinzel.className} inline-block px-2 py-0.5 mb-2 text-[9px] tracking-wider rounded uppercase`}
+                                className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                                 style={{
-                                    color: "var(--gold)",
-                                    background: "oklch(92% 0.07 85 / 0.4)",
+                                    boxShadow: "0 0 24px rgba(212,166,70,0.28)",
+                                }}
+                            />
+
+                            <div
+                                className={`${cinzel.className} inline-block px-2 py-0.5 mb-2 text-[9px] tracking-wider rounded uppercase bg-white text-black`}
+                                style={{
+                                    // color: "var(--gold)",
+                                    // background: "oklch(92% 0.07 85 / 0.4)",
                                     border: "1px solid var(--border)",
                                 }}
                             >
@@ -1554,16 +1748,41 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         className="object-cover opacity-80"
                                     />
 
-                                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                                        <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center animate-pulse-gold">
-                                            <Play size={14} fill="currentColor" className="text-black ml-0.5" />
+                                    {/* Full overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                                        {/* Ripple */}
+                                        <span className="absolute w-12 h-12 rounded-full animate-ripple bg-yellow-400/40"></span>
+
+                                        {/* Glow */}
+                                        <span className="absolute w-11 h-11 rounded-full bg-yellow-400/30 blur-md"></span>
+
+                                        {/* Main Button */}
+                                        <div
+                                            className="relative w-10 h-10 rounded-full flex items-center justify-center"
+                                            style={{
+                                                background:
+                                                    "radial-gradient(circle at 30% 30%, #FFD977 0%, #E4B84B 45%, #C9951E 100%)",
+                                                boxShadow:
+                                                    "0 0 20px rgba(212,166,70,0.55), 0 4px 16px rgba(212,166,70,0.35)",
+                                            }}
+                                        >
+                                            <div
+                                                className="absolute left-1/2 top-1/2 -translate-x-[40%] -translate-y-1/2"
+                                                style={{
+                                                    width: 0,
+                                                    height: 0,
+                                                    borderTop: "5px solid transparent",
+                                                    borderBottom: "5px solid transparent",
+                                                    borderLeft: "8px solid #1A1A1A",
+                                                }}
+                                            />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="flex-1">
                                     <div
-                                        className={`${cinzel.className} text-sm mb-1 leading-tight`}
+                                        className={`${cinzel.className} text-base mb-1 leading-tight`}
                                         style={{ color: "var(--ink)" }}
                                     >
                                         Are You Eligible to Learn{" "}
@@ -1573,11 +1792,11 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     </div>
 
                                     <div
-                                        className={`${dmSans.className} text-[10px] flex items-center gap-1 font-normal`}
+                                        className={`${dmSans.className} text-[12px] flex items-center gap-1 font-normal`}
                                         style={{ color: "var(--muted-ink)" }}
                                     >
                                         <Play size={9} fill="currentColor" style={{ color: "var(--gold)" }} />
-                                        Watch · 4:32 min
+                                        Watch · 19:30 min
                                     </div>
                                 </div>
                             </div>
@@ -1678,7 +1897,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Know Your Stage Section */}
-            <section className="py-24 px-6 overflow-hidden" style={{ background: "var(--background)" }}>
+            <section className="py-16 px-6 overflow-hidden" style={{ background: "var(--background)" }}>
                 <div className="max-w-[1250px] mx-auto">
                     {/* Heading */}
                     <div className="text-center max-w-4xl mx-auto mb-28">
@@ -1725,20 +1944,22 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 style={{
                                     background: "var(--surface-card)",
                                     border: "1px solid var(--border)",
-                                    boxShadow: "var(--shadow-card)",
+                                    boxShadow: "0 20px 50px rgba(0,0,0,0.35)",
                                 }}
                             >
                                 {/* Badge */}
                                 <div className="absolute -top-4 left-7">
                                     <div
-                                        className={`${cinzel.className} px-3 py-1 text-[11px] uppercase tracking-[1.5px] rounded-full font-normal`}
+                                        className={`${cinzel.className} flex items-center gap-2 px-4 py-1.5 text-[11px] uppercase tracking-[1.5px] rounded-full font-medium`}
                                         style={{
-                                            background: "var(--gradient-gold)",
-                                            border: "1px solid var(--border)",
-                                            boxShadow: "var(--shadow-card)",
+                                            background: "linear-gradient(135deg, #F2D06B 0%, #D4A646 100%)",
+                                            color: "#1A1A1A",
+                                            boxShadow: "0 10px 20px rgba(212, 166, 70, 0.25)",
+                                            border: "1px solid rgba(255, 224, 130, 0.6)",
                                         }}
                                     >
-                                        🟡 {item.badge}
+                                        <span className="w-2 h-2 rounded-full bg-[#FFF4D0]" />
+                                        {item.badge}
                                     </div>
                                 </div>
 
@@ -1753,14 +1974,14 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     <div>
                                         <div
                                             className={`${cinzel.className} text-[10px] uppercase tracking-[2px] font-normal`}
-                                            style={{ color: "var(--gold)" }}
+                                            style={{ color: "#F2D06B" }}
                                         >
                                             {item.stage}
                                         </div>
 
                                         <h3
-                                            className={`${cinzel.className} text-lg leading-tight font-normal`}
-                                            style={{ color: "var(--ink)" }}
+                                            className={`${cinzel.className} text-lg leading-tight font-medium`}
+                                            style={{ color: "#FAF6EC" }}
                                         >
                                             {item.title}
                                         </h3>
@@ -1769,8 +1990,8 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                                 {/* Description */}
                                 <p
-                                    className={`${dmSans.className} text-sm leading-7 mb-5 font-normal`}
-                                    style={{ color: "var(--muted-ink)" }}
+                                    className={`${dmSans.className} text-sm leading-7 mb-5 italic font-normal`}
+                                    style={{ color: "#D8D2C2" }}
                                 >
                                     {item.description}
                                 </p>
@@ -1788,11 +2009,13 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         {item.levels.map((level) => (
                                             <span
                                                 key={level}
-                                                className={`${dmSans.className} px-2.5 py-1 text-[11px] rounded-md font-normal`}
+                                                className={`${dmSans.className} px-3 py-1.5 text-xs rounded-full font-medium transition-all duration-300 hover:scale-105`}
                                                 style={{
-                                                    background: "var(--surface-lift)",
-                                                    border: "1px solid var(--border)",
-                                                    color: "var(--ink)",
+                                                    background:
+                                                        "linear-gradient(135deg, rgba(212,166,70,0.18), rgba(212,166,70,0.08))",
+                                                    border: "1px solid rgba(212,166,70,0.35)",
+                                                    color: "#F8F3E8",
+                                                    boxShadow: "0 4px 12px rgba(212,166,70,0.12)",
                                                 }}
                                             >
                                                 {level}
@@ -1802,22 +2025,30 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 </div>
 
                                 {/* Strategy */}
-                                <div className="pt-4 border-t border-[#8a6a28]/20">
+                                <div
+                                    className="mt-auto rounded-2xl p-4 border"
+                                    style={{
+                                        background:
+                                            "linear-gradient(135deg, rgba(212,166,70,0.12), rgba(212,166,70,0.04))",
+                                        borderColor: "rgba(212,166,70,0.25)",
+                                        boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+                                    }}
+                                >
                                     <div
-                                        className={`${cinzel.className} text-[10px] uppercase tracking-[2px] text-[#d4a646] mb-2 font-normal`}
+                                        className={`${cinzel.className} text-[10px] uppercase tracking-[2px] mb-3 font-medium`}
+                                        style={{ color: "#F2D06B" }}
                                     >
                                         Strategy
                                     </div>
 
                                     <p
-                                        className={`${dmSans.className} text-xs italic leading-6 font-normal`}
-                                        style={{ color: "var(--muted-ink)" }}
+                                        className={`${dmSans.className} text-sm italic leading-7`}
+                                        style={{ color: "#E2D9C7" }}
                                     >
                                         {item.strategy}
                                     </p>
                                 </div>
 
-                                {/* Button */}
                                 <button
                                     onClick={() => setShowEligibilityModal(true)}
                                     className={`${cinzel.className} mt-6 w-full py-3 border border-[#d4a646]/50 text-[#d4a646] uppercase tracking-[2px] text-xs rounded-lg transition-all hover:bg-[#d4a646]/10 font-normal flex items-center justify-center gap-2`}
@@ -1834,7 +2065,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             {/* Choose Course */}
             <section
                 id="courses"
-                className="py-20 md:py-28 relative overflow-hidden"
+                className="py-10 md:py-10 relative overflow-hidden"
                 style={{ background: "var(--surface-mid)" }}
             >
                 {/* Background Radial Glow */}
@@ -1880,187 +2111,113 @@ export default function CertifiedAstrologyCourse({ data }) {
                     </div>
 
                     {/* Grid Layout */}
-                    <div className="grid md:grid-cols-3 gap-7 md:gap-6 lg:gap-8 items-stretch">
+                    <div className="grid lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                         {coursesData.map((course, index) => (
-                            <article
+                            <div
                                 key={index}
-                                className={`relative rounded-[24px] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 ${
-                                    course.isPopular ? "border-2 z-10" : "border"
-                                }`}
+                                className="relative overflow-hidden rounded-[24px] border border-[#c8a04d] min-h-[760px] flex flex-col"
                                 style={{
-                                    borderColor: course.isPopular ? "var(--gold)" : "var(--border)",
-                                    background: "linear-gradient(180deg, oklch(22% 0.04 265), oklch(18% 0.04 265))",
-                                    boxShadow: course.isPopular
-                                        ? "0 20px 50px rgba(212,175,55,.18)"
-                                        : "0 15px 40px rgba(0,0,0,.25)",
+                                    background: course.bgGradient,
                                 }}
                             >
-                                {/* Premium Glow */}
-                                <div
-                                    className="absolute -top-20 -right-20 w-48 h-48 rounded-full opacity-20 pointer-events-none"
-                                    style={{
-                                        background: "var(--gradient-radial-gold)",
-                                    }}
-                                />
-
                                 {/* Inner Border */}
+                                <div className="absolute inset-[10px] rounded-[18px] border border-[#c8a04d]/50 pointer-events-none" />
+
+                                {/* Mandala Background */}
                                 <div
-                                    className="absolute inset-[1px] rounded-[22px] pointer-events-none"
+                                    className="absolute inset-0 opacity-[0.05] pointer-events-none"
                                     style={{
-                                        border: "1px solid rgba(255,255,255,.05)",
+                                        backgroundImage:
+                                            "radial-gradient(circle at center, rgba(212,175,55,0.12) 1px, transparent 1px)",
+                                        backgroundSize: "24px 24px",
                                     }}
                                 />
 
-                                {/* Badge */}
-                                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
-                                    <span
-                                        className={`${cinzel.className} px-3 py-1 text-[10px] tracking-[0.25em] uppercase rounded-full whitespace-nowrap`}
-                                        style={{
-                                            background: course.isPopular
-                                                ? "var(--gradient-gold)"
-                                                : "rgba(212,175,55,.08)",
-                                            color: course.isPopular ? "var(--primary-foreground)" : "var(--gold)",
-                                            border: "1px solid rgba(212,175,55,.25)",
-                                        }}
-                                    >
-                                        {course.badge}
-                                    </span>
-                                </div>
+                                {/* Corner Decorations */}
+                                <div className="absolute top-4 left-4 w-6 h-6 border-l border-t border-[#c8a04d]" />
+                                <div className="absolute top-4 right-4 w-6 h-6 border-r border-t border-[#c8a04d]" />
+                                <div className="absolute bottom-4 left-4 w-6 h-6 border-l border-b border-[#c8a04d]" />
+                                <div className="absolute bottom-4 right-4 w-6 h-6 border-r border-b border-[#c8a04d]" />
 
                                 {/* Header */}
-                                <header className="pt-12 pb-4 px-6 text-center">
-                                    <h3
-                                        className={`${cinzel.className} text-[22px] leading-snug`}
-                                        style={{ color: "var(--ink)" }}
-                                    >
+                                <div className="relative z-10 px-8 pt-8 text-center">
+                                    <div className="mx-auto relative w-20 h-20 rounded-full border border-[#c8a04d] flex items-center justify-center">
+                                        <div className="absolute inset-[8px] rounded-full border border-[#c8a04d]/70" />
+
+                                        <div className="absolute inset-0 rounded-full opacity-20 bg-[radial-gradient(circle,_rgba(212,175,55,0.25)_0%,_transparent_70%)]" />
+
+                                        <CardIcon type={topIcons[index]} />
+                                    </div>
+
+                                    <div className="inline-block mt-5 px-5 py-1 border border-[#c8a04d] rounded-full">
+                                        <span className="text-[#d4af37] text-sm tracking-[0.2em] uppercase">
+                                            {course.badge}
+                                        </span>
+                                    </div>
+
+                                    <h3 className="mt-6 text-[30px] leading-[1.15] text-[#f4eee4] font-serif">
                                         {course.title}
                                     </h3>
 
-                                    <div
-                                        className={`${cinzel.className} text-[10px] tracking-[0.25em] uppercase mt-2`}
-                                        style={{ color: "var(--gold)" }}
-                                    >
+                                    <p className="mt-3 text-[#d4af37] tracking-[0.15em] text-sm uppercase">
                                         {course.subtitle}
-                                    </div>
-
-                                    <div className="flex items-center justify-center gap-2 mt-3">
-                                        <span className="h-px w-8 bg-gold/30" />
-                                        <div
-                                            className="w-1.5 h-1.5 rounded-full"
-                                            style={{ background: "var(--gold)" }}
-                                        />
-                                        <span className="h-px w-8 bg-gold/30" />
-                                    </div>
-
-                                    <p
-                                        className={`${cormorant.className} text-[15px] italic mt-3`}
-                                        style={{ color: "var(--gold-light)" }}
-                                    >
-                                        {course.tagline}
                                     </p>
-                                </header>
 
-                                {/* Divider */}
-                                <div className="mx-6 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-
-                                {/* Features */}
-                                <div className="px-6 py-5 flex-1">
-                                    <div
-                                        className={`${cinzel.className} text-[10px] tracking-[0.3em] uppercase mb-4`}
-                                        style={{ color: "var(--gold)" }}
-                                    >
-                                        What You'll Get
+                                    <div className="flex items-center justify-center gap-3 my-6">
+                                        <div className="w-12 h-px bg-[#c8a04d]/50" />
+                                        <div className="w-2 h-2 rotate-45 border border-[#c8a04d]" />
+                                        <div className="w-12 h-px bg-[#c8a04d]/50" />
                                     </div>
 
-                                    <div className="space-y-4">
-                                        {course.content.map((block, bIdx) => (
-                                            <div key={bIdx}>
-                                                <div
-                                                    className={`${cinzel.className} text-[11px] tracking-[0.18em] uppercase mb-2`}
-                                                    style={{ color: "var(--ink)" }}
-                                                >
-                                                    {block.heading}
-                                                </div>
+                                    <p className="text-[#f4eee4] text-lg">{course.tagline}</p>
 
-                                                <ul className="space-y-2">
-                                                    {block.items.map((item, iIdx) => (
-                                                        <li
-                                                            key={iIdx}
-                                                            className={`${dmSans.className} flex gap-2 text-[13px] leading-relaxed`}
-                                                            style={{ color: "var(--muted-ink)" }}
-                                                        >
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="14"
-                                                                height="14"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                strokeWidth="2"
-                                                                className="text-gold mt-1 flex-shrink-0"
-                                                            >
-                                                                <circle cx="12" cy="12" r="10" />
-                                                                <path d="m9 12 2 2 4-4" />
-                                                            </svg>
-
-                                                            <span>{item}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    <p className="text-[#d8c8a7] italic mt-4">{course.quote}</p>
                                 </div>
 
-                                {/* Footer Banner */}
-                                <div
-                                    className="mx-6 mb-4 p-3 rounded-xl text-center"
-                                    style={{
-                                        background: "rgba(212,175,55,.06)",
-                                        border: "1px solid rgba(212,175,55,.15)",
-                                    }}
-                                >
-                                    <p
-                                        className={`${cormorant.className} text-xs italic`}
-                                        style={{ color: "var(--gold-light)" }}
-                                    >
-                                        {course.footerText}
-                                    </p>
+                                {/* Features */}
+                                <div className="relative z-10 px-6 mt-8 flex-1">
+                                    <h4 className="text-center text-[#d4af37] text-sm tracking-[0.2em] uppercase mb-5">
+                                        WHAT YOU'LL GET
+                                    </h4>
+
+                                    {course.content.map((section, idx) => (
+                                        <div key={idx} className="border border-[#c8a04d]/40 rounded-[18px] p-5 mb-4">
+                                            <h5 className="text-[#d4af37] text-sm uppercase mb-4">{section.heading}</h5>
+
+                                            <ul className="space-y-3">
+                                                {section.items.map((item, i) => (
+                                                    <li key={i} className="flex gap-3 text-[#f4eee4] text-sm">
+                                                        <span className="text-[#d4af37]">◉</span>
+                                                        {item}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* Footer */}
+                                <div className="relative z-10 px-6 mb-6">
+                                    <div className="border border-[#c8a04d]/40 rounded-xl py-4 text-center">
+                                        <div className="flex items-center justify-center gap-3 px-6">
+                                            <CardIcon type={footerIcons[index]} />
+
+                                            <p className="text-[#d4af37] italic text-sm">{course.footerText}</p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* CTA */}
-                                <div
-                                    className="grid grid-cols-2 mt-auto"
-                                    style={{
-                                        background: "var(--gradient-gold)",
-                                        borderTop: "1px solid rgba(212,175,55,.25)",
-                                    }}
-                                >
-                                    <button
-                                        onClick={() => setShowEligibilityModal(true)}
-                                        className={`${cinzel.className} py-4 text-[11px] uppercase tracking-[0.18em] flex items-center justify-center gap-2 font-medium`}
-                                        style={{
-                                            color: "var(--primary-foreground)",
-                                            borderRight: "1px solid rgba(0,0,0,.15)",
-                                        }}
-                                    >
-                                        Know More
+                                <div className="grid grid-cols-2 bg-[#d4af37] text-[#1b1b1b] relative z-10">
+                                    <button className="py-5 border-r border-black/20 uppercase text-sm tracking-widest">
+                                        KNOW MORE →
                                     </button>
 
-                                    <button
-                                        onClick={() => setShowEligibilityModal(true)}
-                                        className={`${cinzel.className} py-4 text-[11px] uppercase tracking-[0.18em] flex items-center justify-center gap-2 font-medium`}
-                                        style={{
-                                            color: "var(--primary-foreground)",
-                                        }}
-                                    >
-                                        Buy Now
-                                    </button>
+                                    <button className="py-5 uppercase text-sm tracking-widest">ENROLL NOW →</button>
                                 </div>
-                            </article>
+                            </div>
                         ))}
                     </div>
-
                     {/* Trust/Security Footer */}
                     <div
                         className={`${cinzel.className} mt-12 text-center text-xs font-display tracking-[0.25em] uppercase flex items-center justify-center gap-2 flex-wrap`}
@@ -2088,7 +2245,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Premium Catalog Section */}
-            <section className="py-20 md:py-28 relative overflow-hidden" style={{ background: "var(--background)" }}>
+            <section className="py-10 md:py-10 relative overflow-hidden" style={{ background: "var(--background)" }}>
                 {/* Background Radial Glow */}
                 <div
                     className="absolute inset-0 opacity-40 pointer-events-none"
@@ -2159,15 +2316,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     key={index}
                                     className="relative rounded-xl p-4 text-center shadow-card hover:-translate-y-0.5 transition-all duration-300 group"
                                     style={{
-                                        background: "var(--surface-card)",
-                                        border: "1px solid var(--border)",
+                                        background: "linear-gradient(180deg, #0D1525 0%, #131D2F 100%)",
+                                        border: "1px solid rgba(212,166,70,0.18)",
                                     }}
                                 >
                                     <div
                                         className={`${cinzel.className} absolute -top-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 text-[9px] tracking-wider rounded-full uppercase whitespace-nowrap font-medium`}
                                         style={{
                                             background: "var(--gradient-gold)",
-                                            color: "var(--ink)",
+                                            color: "#111111",
                                         }}
                                     >
                                         {item.stage}
@@ -2291,9 +2448,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cinzel.className} px-8 py-4 font-display tracking-wider text-sm uppercase rounded-xl hover:shadow-gold transition-all duration-300 inline-flex items-center gap-2 font-semibold`}
                             style={{
                                 background: "var(--gradient-gold)",
+                                color: "#111111", // Black text
                             }}
                         >
-                            Talk to Counsellor &amp; Pick Your Course
+                            Talk to Counsellor & Pick Your Course
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="18"
@@ -2314,7 +2472,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Career Opportunity Section */}
-            <section className="py-20 md:py-28 relative overflow-hidden" style={{ background: "var(--background)" }}>
+            <section className="py-10 md:py-10 relative overflow-hidden" style={{ background: "var(--background)" }}>
                 {/* Background Radial Glow Overlay */}
                 <div
                     className="absolute inset-0 opacity-50 pointer-events-none"
@@ -2370,11 +2528,12 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     }}
                                 >
                                     <div
-                                        className="w-10 h-10 rounded-lg flex items-center justify-center shadow-card mb-3"
+                                        className="w-12 h-12 rounded-xl flex items-center justify-center mb-3 transition-all duration-300"
                                         style={{
-                                            background: "var(--ink)",
-                                            border: "1px solid oklch(82% 0.15 80 / 0.4)",
-                                            color: "var(--gold)",
+                                            background: "rgba(255,255,255,0.06)",
+                                            border: "1px solid rgba(212,175,55,0.25)",
+                                            color: "#D4AF37",
+                                            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
                                         }}
                                     >
                                         {card.icon}
@@ -2609,7 +2768,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Course Benefits Section */}
-            <section className="py-20 md:py-28" style={{ background: "var(--surface-mid)" }}>
+            <section className="py-10 md:py-12" style={{ background: "var(--surface-mid)" }}>
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Main Component Header */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -2767,7 +2926,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             {/* Learning Journey Section */}
             <section
                 id="journey"
-                className="relative overflow-hidden py-20 lg:py-28"
+                className="relative overflow-hidden py-12 lg:py-12"
                 style={{ background: "var(--background)" }}
             >
                 {/* Background Glow */}
@@ -2908,7 +3067,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Bio & Stats Section */}
-            <section className="py-20 md:py-28" style={{ background: "var(--surface-mid)" }}>
+            <section className="py-10 md:py-10" style={{ background: "var(--surface-mid)" }}>
                 <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
                     {/* Left Side: Media Display with Decorative Elements */}
                     <div className="relative">
@@ -3059,7 +3218,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="py-20 md:py-28" style={{ background: "var(--background)" }}>
+            <section className="py-10 md:py-8" style={{ background: "var(--background)" }}>
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Heading */}
                     <div className="max-w-3xl mx-auto text-center mb-14">
@@ -3156,7 +3315,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Student Success Section */}
-            <section id="testimonials" className="py-20 md:py-28" style={{ background: "var(--surface-mid)" }}>
+            <section id="testimonials" className="py-10 md:py-10" style={{ background: "var(--surface-mid)" }}>
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Header Block */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -3270,7 +3429,7 @@ export default function CertifiedAstrologyCourse({ data }) {
 
             {/* Glimpses Of Trust Section */}
             <section
-                className="relative overflow-hidden py-20 md:py-28"
+                className="relative overflow-hidden py-10 md:py-8"
                 style={{
                     background: "linear-gradient(160deg, oklch(0.18 0.04 265) 0%, oklch(0.22 0.05 280) 100%)",
                 }}
@@ -3367,7 +3526,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* FAQ Section */}
-            <section id="faq" className="py-20 md:py-28" style={{ background: "var(--background)" }}>
+            <section id="faq" className="py-10 md:py-8" style={{ background: "var(--background)" }}>
                 <div className="max-w-4xl mx-auto px-5 md:px-8">
                     {/* Section Typography Header */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -3497,7 +3656,7 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Enroll Now Section */}
-            <section className="relative overflow-hidden py-20 md:py-28" style={{ background: "var(--surface-mid)" }}>
+            <section className="relative overflow-hidden py-14 md:py-8" style={{ background: "var(--surface-mid)" }}>
                 {/* Gold Glow */}
                 <div className="absolute inset-0" style={{ background: "var(--gradient-radial-gold)" }} />
 
