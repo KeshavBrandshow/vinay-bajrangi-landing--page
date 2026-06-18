@@ -1031,11 +1031,13 @@ export default function LibraDemo() {
           top: 50%;
           transform: translateY(-50%);
           font-size: 30vw;
-          color: rgba(85,88,168,0.05);
+          color: var(--sign-primary);
           line-height: 1;
           pointer-events: none;
           font-family: var(--font-display);
           user-select: none;
+          z-index: 1;
+          opacity: 0.05;
         }
 
         /* Balance arcs */
@@ -1303,7 +1305,9 @@ export default function LibraDemo() {
         }
         .report-callout::before {
           content: '♎'; position: absolute; right: 40%; top: 50%; transform: translateY(-50%);
-          font-size: 200px; color: rgba(85,88,168,0.04); font-family: var(--font-display); pointer-events: none; line-height: 1;
+          font-size: 200px; color: var(--sign-primary); font-family: var(--font-display); pointer-events: none; line-height: 1;
+          z-index: -1;
+          opacity: 0.1;
         }
         @media (max-width: 760px) { .report-callout { grid-template-columns: 1fr; padding: 32px 24px; } .report-callout::before { display: none; } }
         .rc-tag { display: inline-block; background: var(--sign-pale); color: var(--sign-primary); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 4px 14px; border-radius: 50px; margin-bottom: 16px; border: 1px solid rgba(85,88,168,0.15); }
