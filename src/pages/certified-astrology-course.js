@@ -128,7 +128,7 @@ const stages = [
 const coursesData = [
     {
         stage: "STAGE 1",
-        icon: "lotus",
+        icon: "/img/certified-astrology/lotus.png",
         footerIcon: "book",
 
         bgGradient: "linear-gradient(180deg, #001F70 0%, #00164D 45%, #000C2A 100%)",
@@ -154,7 +154,7 @@ const coursesData = [
 
     {
         stage: "STAGE 2",
-        icon: "om",
+        icon: "/img/certified-astrology/om.png",
         footerIcon: "leaf",
 
         bgGradient: "linear-gradient(180deg, #00463C 0%, #002E27 45%, #001510 100%)",
@@ -184,7 +184,7 @@ const coursesData = [
 
     {
         stage: "STAGE 3",
-        icon: "yantra",
+        icon: "/img/certified-astrology/yantra.png",
         footerIcon: "graduation",
 
         bgGradient: "linear-gradient(180deg, #44138A 0%, #2A0B58 45%, #16052F 100%)",
@@ -1444,33 +1444,16 @@ export default function CertifiedAstrologyCourse({ data }) {
         switch (type) {
             case "lotus":
                 return (
-                    <svg viewBox="0 0 64 64" className="w-10 h-10">
-                        <g fill="none" stroke={stroke} strokeWidth="2">
-                            <path d="M32 16c-5 6-8 12-8 18 0 9 4 15 8 20 4-5 8-11 8-20 0-6-3-12-8-18Z" />
-                            <path d="M20 24c-4 4-6 9-6 15 0 7 4 12 10 14" />
-                            <path d="M44 24c4 4 6 9 6 15 0 7-4 12-10 14" />
-                            <path d="M14 36c4-2 8-2 12 0" />
-                            <path d="M50 36c-4-2-8-2-12 0" />
-                            <path d="M22 52h20" />
-                        </g>
-                    </svg>
+                    <img src="/img/certified-astrology/lotus.png" alt="Lotus" className="w-20 h-20 object-contain" />
                 );
 
             case "om":
-                return <div className="text-[#D4AF37] text-[42px] leading-none font-serif">ॐ</div>;
+                return <img src="img/certified-astrology/om.png" alt="Om" className="w-20 h-20 object-contain" />;
 
             case "yantra":
                 return (
-                    <svg viewBox="0 0 64 64" className="w-10 h-10">
-                        <g fill="none" stroke={stroke} strokeWidth="2">
-                            <circle cx="32" cy="32" r="18" />
-                            <polygon points="32,16 46,32 32,48 18,32" />
-                            <polygon points="32,22 40,32 32,42 24,32" />
-                            <circle cx="32" cy="32" r="4" />
-                        </g>
-                    </svg>
+                    <img src="img/certified-astrology/yantra.png" alt="Yantra" className="w-20 h-20 object-contain" />
                 );
-
             case "book":
                 return (
                     <svg viewBox="0 0 24 24" className="w-12 h-12">
@@ -2279,30 +2262,30 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 <div className="absolute bottom-4 right-4 w-6 h-6 border-r border-b border-[#c8a04d]" />
 
                                 {/* Header */}
-                                <div className="relative z-10 px-8 pt-8 text-center">
-                                    <div className="mx-auto relative w-20 h-20 rounded-full border border-[#c8a04d] flex items-center justify-center">
-                                        <div className="absolute inset-[8px] rounded-full border border-[#c8a04d]/70" />
+                                <div className="relative z-10 px-4 pt-4 text-center">
+                                    <div className="mx-auto relative w-24 h-24 flex items-center justify-center">
+                                        <div className="absolute inset-0 rounded-full opacity-30 bg-[radial-gradient(circle,_rgba(212,175,55,0.25)_0%,_transparent_70%)]" />
 
-                                        <div className="absolute inset-0 rounded-full opacity-20 bg-[radial-gradient(circle,_rgba(212,175,55,0.25)_0%,_transparent_70%)]" />
-
-                                        <CardIcon type={topIcons[index]} />
+                                        <img
+                                            src={course.icon}
+                                            alt={course.title}
+                                            className="relative z-10 w-20 h-20 object-contain"
+                                        />
                                     </div>
 
-                                    <div className="inline-block mt-5 px-5 py-1 border border-[#c8a04d] rounded-full">
-                                        <span className="text-[#d4af37] text-sm tracking-[0.2em] uppercase">
-                                            {course.badge}
-                                        </span>
+                                    <div className="inline-block mt-2 px-5 py-1 border border-[#c8a04d] rounded-full">
+                                        <span className="text-[#d4af37] text-sm uppercase">{course.stage}</span>
                                     </div>
 
-                                    <h3 className="mt-6 text-[30px] leading-[1.15] text-[#f4eee4] font-serif">
+                                    <h3 className="mt-3 text-[30px] leading-[1.15] text-[#f4eee4] font-serif">
                                         {course.title}
                                     </h3>
 
-                                    <p className="mt-3 text-[#d4af37] tracking-[0.15em] text-sm uppercase">
+                                    <p className="mt-1 text-[#d4af37] tracking-[0.15em] text-sm uppercase">
                                         {course.subtitle}
                                     </p>
 
-                                    <div className="flex items-center justify-center gap-3 my-6">
+                                    <div className="flex items-center justify-center gap-3 my-3">
                                         <div className="w-12 h-px bg-[#c8a04d]/50" />
                                         <div className="w-2 h-2 rotate-45 border border-[#c8a04d]" />
                                         <div className="w-12 h-px bg-[#c8a04d]/50" />
@@ -2310,20 +2293,20 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                                     <p className="text-[#f4eee4] text-lg">{course.tagline}</p>
 
-                                    <p className="text-[#d8c8a7] italic mt-4">{course.quote}</p>
+                                    <p className="text-[#d8c8a7] italic mt-2">{course.quote}</p>
                                 </div>
 
                                 {/* Features */}
-                                <div className="relative z-10 px-6 mt-8 flex-1">
-                                    <h4 className="text-center text-[#d4af37] text-sm tracking-[0.2em] uppercase mb-5">
+                                <div className="relative z-10 px-4 mt-4 flex-1">
+                                    <h4 className="text-center text-[#d4af37] text-sm tracking-[0.2em] uppercase mb-2">
                                         WHAT YOU'LL GET
                                     </h4>
 
                                     {course.content.map((section, idx) => (
-                                        <div key={idx} className="border border-[#c8a04d]/40 rounded-[18px] p-5 mb-4">
-                                            <h5 className="text-[#d4af37] text-sm uppercase mb-4">{section.heading}</h5>
+                                        <div key={idx} className="border border-[#c8a04d]/40 rounded-[18px] p-3 mb-2">
+                                            <h5 className="text-[#d4af37] text-sm uppercase mb-2">{section.heading}</h5>
 
-                                            <ul className="space-y-3">
+                                            <ul className="space-y-2">
                                                 {section.items.map((item, i) => (
                                                     <li key={i} className="flex gap-3 text-[#f4eee4] text-sm">
                                                         <span className="text-[#d4af37]">◉</span>
@@ -2336,7 +2319,7 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 </div>
 
                                 {/* Footer */}
-                                <div className="relative z-10 px-6 mb-6">
+                                <div className="relative z-10 px-4 mb-2">
                                     <div className="border border-[#c8a04d]/40 rounded-xl py-4 text-center">
                                         <div className="flex items-center justify-center gap-3 px-6">
                                             <CardIcon type={footerIcons[index]} />
@@ -2348,11 +2331,11 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                                 {/* CTA */}
                                 <div className="grid grid-cols-2 bg-[#d4af37] text-[#1b1b1b] relative z-10">
-                                    <button className="py-5 border-r border-black/20 uppercase text-sm tracking-widest">
+                                    <button className="py-3 border-r border-black/20 uppercase text-sm tracking-widest">
                                         KNOW MORE →
                                     </button>
 
-                                    <button className="py-5 uppercase text-sm tracking-widest">ENROLL NOW →</button>
+                                    <button className="py-3 uppercase text-sm tracking-widest">ENROLL NOW →</button>
                                 </div>
                             </div>
                         ))}
