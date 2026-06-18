@@ -18,6 +18,7 @@ import {
     Briefcase,
     Crown,
     X,
+    Lock,
 } from "lucide-react";
 import { Sparkles, ShieldCheck, BadgeCheck } from "lucide-react";
 import Image from "next/image";
@@ -1127,6 +1128,19 @@ const dmSans = DM_Sans({
 export default function CertifiedAstrologyCourse({ data }) {
     const [openIndex, setOpenIndex] = useState(0); // Sets the first item open by default as per your original HTML snippet
     const [showEligibilityModal, setShowEligibilityModal] = useState(false);
+    const [modalStep, setModalStep] = useState(1);
+
+    const handleEligibilitySubmit = (e) => {
+        e.preventDefault();
+
+        // form validation or API call later
+        setModalStep(2); // move to payment step
+    };
+
+    const handlePayment = () => {
+        // Razorpay later here
+        setModalStep(3); // move to video step
+    };
 
     const EligibilityModal = () => {
         if (!showEligibilityModal) return null;
@@ -1160,135 +1174,260 @@ export default function CertifiedAstrologyCourse({ data }) {
                     </button>
 
                     <div className="p-8 md:p-12">
-                        {/* Header */}
-                        <div className="text-center mb-7">
-                            <div
-                                className={`${cinzel.className} inline-block px-3 py-1 mb-4 text-[10px] tracking-[0.25em] uppercase rounded-full`}
-                                style={{
-                                    color: "var(--gold)",
-                                    border: "1px solid oklch(82% 0.15 80 / 0.4)",
-                                }}
-                            >
-                                Course Eligibility
+                        {/* STEP 1 */}
+                        {modalStep === 1 && (
+                            <>
+                                <div className="text-center mb-7">
+                                    <div
+                                        className={`${cinzel.className} inline-block px-3 py-1 mb-4 text-[10px] tracking-[0.25em] uppercase rounded-full`}
+                                        style={{
+                                            color: "var(--gold)",
+                                            border: "1px solid oklch(82% 0.15 80 / 0.4)",
+                                        }}
+                                    >
+                                        Course Eligibility
+                                    </div>
+
+                                    <h3
+                                        className={`${cinzel.className} text-2xl md:text-3xl mb-3`}
+                                        style={{ color: "var(--ink)" }}
+                                    >
+                                        Know Your Eligibility for the Course
+                                    </h3>
+
+                                    <p
+                                        className={`${cormorant.className} italic text-[15px] md:text-base max-w-lg mx-auto leading-relaxed`}
+                                        style={{ color: "var(--muted-ink)" }}
+                                    >
+                                        Fill the form below and instantly unlock the eligibility video.
+                                    </p>
+                                </div>
+
+                                <form className="grid md:grid-cols-2 gap-4" onSubmit={handleEligibilitySubmit}>
+                                    <label className="block">
+                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                            Full Name
+                                        </span>
+                                        <input type="text" required className="w-full px-4 py-3 rounded-lg" />
+                                    </label>
+
+                                    <label className="block">
+                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                            Email Address
+                                        </span>
+                                        <input type="email" required className="w-full px-4 py-3 rounded-lg" />
+                                    </label>
+
+                                    <label className="block">
+                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                            Mobile Number
+                                        </span>
+                                        <input type="tel" required className="w-full px-4 py-3 rounded-lg" />
+                                    </label>
+
+                                    <label className="block">
+                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                            Date of Birth
+                                        </span>
+                                        <input type="date" required className="w-full px-4 py-3 rounded-lg" />
+                                    </label>
+
+                                    <button
+                                        type="submit"
+                                        className={`${cinzel.className} md:col-span-2 mt-2 px-8 py-4 rounded-xl flex items-center justify-center gap-2`}
+                                        style={{
+                                            background: "var(--gradient-gold)",
+                                            color: "black",
+                                        }}
+                                    >
+                                        Unlock Eligibility Video
+                                        <ChevronRight size={18} />
+                                    </button>
+
+                                    <p className={`${dmSans.className} md:col-span-2 text-center text-[11px] mt-1`}>
+                                        🔒 Your details are 100% private.
+                                    </p>
+                                </form>
+                            </>
+                        )}
+
+                        {/* STEP 2 */}
+                        {modalStep === 2 && (
+                            <div className="text-center py-4 md:py-8">
+                                {/* Lock Icon */}
+                                <div
+                                    className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
+                                    style={{
+                                        border: "1px solid rgba(212,175,55,0.45)",
+                                        background: "rgba(212,175,55,0.06)",
+                                    }}
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="#D4AF37"
+                                        strokeWidth="1.8"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    >
+                                        <rect x="4" y="11" width="16" height="9" rx="2" />
+                                        <path d="M8 11V8a4 4 0 1 1 8 0v3" />
+                                    </svg>
+                                </div>
+
+                                {/* Heading */}
+                                <h2
+                                    className={`${cinzel.className} text-3xl leading-tight mb-4`}
+                                    style={{ color: "var(--ink)" }}
+                                >
+                                    Almost There — Complete Your
+                                    <br />
+                                    Enrollment
+                                </h2>
+
+                                {/* Subtitle */}
+                                <p
+                                    className={`${cormorant.className} italic text-lg max-w-2xl mx-auto mb-10`}
+                                    style={{ color: "var(--muted-ink)" }}
+                                >
+                                    Complete a one-time enrollment to unlock the full eligibility video library and
+                                    proceed to your personalized course path
+                                </p>
+
+                                {/* Pricing Card */}
+                                <div
+                                    className="max-w-xl mx-auto rounded-2xl p-6 md:p-8 mb-8"
+                                    style={{
+                                        background: "rgba(255,255,255,0.03)",
+                                        border: "1px solid rgba(212,175,55,0.25)",
+                                    }}
+                                >
+                                    <div
+                                        className="flex justify-between items-center pb-4 mb-4"
+                                        style={{
+                                            borderBottom: "1px solid rgba(212,175,55,0.15)",
+                                        }}
+                                    >
+                                        <span style={{ color: "var(--muted-ink)" }}>Eligibility Assessment</span>
+
+                                        <span className="font-semibold" style={{ color: "var(--ink)" }}>
+                                            ₹499
+                                        </span>
+                                    </div>
+
+                                    <div
+                                        className="flex justify-between items-center pb-4 mb-4"
+                                        style={{
+                                            borderBottom: "1px solid rgba(212,175,55,0.15)",
+                                        }}
+                                    >
+                                        <span style={{ color: "var(--muted-ink)" }}>Personal Stage Report</span>
+
+                                        <span className="font-semibold" style={{ color: "#D4AF37" }}>
+                                            Included
+                                        </span>
+                                    </div>
+
+                                    <div className="flex justify-between items-center">
+                                        <span
+                                            className={`${cinzel.className} uppercase text-lg`}
+                                            style={{ color: "var(--ink)" }}
+                                        >
+                                            Total
+                                        </span>
+
+                                        <span className={`${cinzel.className} text-4xl`} style={{ color: "#D4AF37" }}>
+                                            ₹499
+                                        </span>
+                                    </div>
+                                </div>
+
+                                {/* CTA */}
+                                <button
+                                    onClick={handlePayment}
+                                    className={`${cinzel.className} px-12 py-5 rounded-2xl text-sm uppercase tracking-[2px] transition hover:scale-105`}
+                                    style={{
+                                        background: "var(--gradient-gold)",
+                                        color: "#111827",
+                                        minWidth: "280px",
+                                    }}
+                                >
+                                    Pay Securely & Unlock →
+                                </button>
+
+                                {/* Footer */}
+                                <p className={`${dmSans.className} mt-5 text-xs`} style={{ color: "var(--muted-ink)" }}>
+                                    Secured by Razorpay · 256-bit encryption
+                                </p>
                             </div>
+                        )}
 
-                            <h3
-                                className={`${cinzel.className} text-2xl md:text-3xl mb-3`}
-                                style={{ color: "var(--ink)" }}
-                            >
-                                Know Your Eligibility for the Course
-                            </h3>
-
-                            <p
-                                className={`${cormorant.className} italic text-[15px] md:text-base max-w-lg mx-auto leading-relaxed`}
-                                style={{ color: "var(--muted-ink)" }}
-                            >
-                                Fill the form below and instantly unlock the eligibility video to see if this course is
-                                the right fit for you.
-                            </p>
-                        </div>
-
-                        {/* Form */}
-                        <form className="grid md:grid-cols-2 gap-4">
-                            <label className="block">
-                                <span
-                                    className={`${cinzel.className} block text-[10px] tracking-[0.2em] uppercase mb-2`}
-                                    style={{ color: "var(--gold)" }}
-                                >
-                                    Full Name
-                                </span>
-
-                                <input
-                                    type="text"
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg text-sm transition outline-none"
+                        {/* STEP 3 */}
+                        {modalStep === 3 && (
+                            <div className="text-center py-2">
+                                {/* Badge */}
+                                <div
+                                    className={`${cinzel.className} inline-flex items-center gap-2 px-4 py-1 rounded-full mb-5 text-[10px] tracking-[0.2em] uppercase`}
                                     style={{
-                                        background: "var(--surface-lift)",
-                                        border: "1px solid var(--border)",
-                                        color: "var(--ink)",
+                                        color: "#D4AF37",
+                                        border: "1px solid rgba(212,175,55,0.4)",
+                                        background: "rgba(212,175,55,0.05)",
                                     }}
-                                />
-                            </label>
-
-                            <label className="block">
-                                <span
-                                    className={`${cinzel.className} block text-[10px] tracking-[0.2em] uppercase mb-2`}
-                                    style={{ color: "var(--gold)" }}
                                 >
-                                    Email Address
-                                </span>
+                                    <span className="w-2 h-2 rounded-full bg-[#D4AF37]" />
+                                    Eligibility Video Unlocked
+                                </div>
 
-                                <input
-                                    type="email"
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg text-sm transition outline-none"
-                                    style={{
-                                        background: "var(--surface-lift)",
-                                        border: "1px solid var(--border)",
-                                        color: "var(--ink)",
-                                    }}
-                                />
-                            </label>
-
-                            <label className="block">
-                                <span
-                                    className={`${cinzel.className} block text-[10px] tracking-[0.2em] uppercase mb-2`}
-                                    style={{ color: "var(--gold)" }}
+                                {/* Heading */}
+                                <h2
+                                    className={`${cinzel.className} text-3xl leading-tight mb-3`}
+                                    style={{ color: "var(--ink)" }}
                                 >
-                                    Mobile Number
-                                </span>
+                                    Are You Eligible to Learn Astrology?
+                                </h2>
 
-                                <input
-                                    type="tel"
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg text-sm transition outline-none"
+                                {/* Duration */}
+                                <p className={`${dmSans.className} text-sm mb-8`} style={{ color: "var(--muted-ink)" }}>
+                                    Duration: 12:47
+                                </p>
+
+                                {/* Video Container */}
+                                <div
+                                    className="rounded-2xl overflow-hidden mb-8"
                                     style={{
-                                        background: "var(--surface-lift)",
-                                        border: "1px solid var(--border)",
-                                        color: "var(--ink)",
+                                        border: "1px solid rgba(212,175,55,0.35)",
+                                        background: "rgba(255,255,255,0.03)",
                                     }}
-                                />
-                            </label>
-
-                            <label className="block">
-                                <span
-                                    className={`${cinzel.className} block text-[10px] tracking-[0.2em] uppercase mb-2`}
-                                    style={{ color: "var(--gold)" }}
                                 >
-                                    Date of Birth
-                                </span>
+                                    <video controls className="w-full aspect-video bg-black">
+                                        <source src="/videos/eligibility.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
 
-                                <input
-                                    type="date"
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg text-sm transition outline-none"
+                                {/* Description */}
+                                <p
+                                    className={`${cormorant.className} text-lg leading-relaxed max-w-2xl mx-auto mb-8`}
+                                    style={{ color: "var(--muted-ink)" }}
+                                >
+                                    A complete walk-through by Dr. Vinay Bajrangi — discover your true starting point
+                                    and the right course for your stage.
+                                </p>
+
+                                {/* CTA */}
+                                <button
+                                    className={`${cinzel.className} w-full py-5 rounded-2xl text-sm uppercase tracking-[2px]`}
                                     style={{
-                                        background: "var(--surface-lift)",
-                                        border: "1px solid var(--border)",
-                                        color: "var(--ink)",
+                                        background: "var(--gradient-gold)",
+                                        color: "#111827",
                                     }}
-                                />
-                            </label>
-
-                            <button
-                                type="submit"
-                                className={`${cinzel.className} md:col-span-2 mt-2 px-8 py-4 rounded-xl tracking-wider text-sm uppercase transition-all flex items-center justify-center gap-2`}
-                                style={{
-                                    background: "var(--gradient-gold)",
-                                    color: "oklch(0.14 0.04 270)",
-                                }}
-                            >
-                                Unlock Eligibility Video
-                                <ChevronRight size={18} />
-                            </button>
-
-                            <p
-                                className={`${dmSans.className} md:col-span-2 text-center text-[11px] mt-1`}
-                                style={{ color: "var(--muted-ink)" }}
-                            >
-                                🔒 Your details are 100% private. We respect your sacred journey.
-                            </p>
-                        </form>
+                                >
+                                    Continue to Choose Your Course →
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
