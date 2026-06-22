@@ -1609,18 +1609,18 @@ export default function CertifiedAstrologyCourse({ data }) {
                     <div className="h-[74px] flex items-center justify-between">
                         {/* Left Logo Section */}
                         <div className="flex items-center">
-                            <Link href="https://www.vinaybajrangi.com/">
+                        <Link href="https://www.vinaybajrangi.com/">
+                            <div className="w-[60px] h-[60px] rounded-full border-2 border-[#d89b3d] overflow-hidden flex items-center justify-center">
                                 <Image
                                     src="/img/logo.webp"
-                                    alt="Vinay Bajrangi Logo"
-                                    width={90}
-                                    height={90}
-                                    priority
-                                    className="w-auto h-[60px] object-contain cursor-pointer"
+                                    alt="Logo"
+                                    width={60}
+                                    height={60}
+                                    className="w-full h-full object-cover rounded-full"
                                 />
-                            </Link>
+                            </div>
+                        </Link>
                         </div>
-
                         {/* Center Menu */}
                         <nav className="hidden lg:flex items-center gap-10">
                             {["Stages", "Courses", "Journey", "Students", "FAQ"].map((item, index) => (
