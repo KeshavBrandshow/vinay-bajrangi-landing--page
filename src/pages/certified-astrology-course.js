@@ -62,10 +62,16 @@ const mediaLogos = [
     { name: "Zee News", img: "/img/media-coverage/z-newshindi.webp" },
     { name: "Amar Ujala", img: "/img/media-coverage/amar-ujala.webp" },
     { name: "The Week", img: "/img/media-coverage/The-Week-Logo-Big.webp" },
-    { name: "Press Trust India", img: "/img/media-coverage/press-trust-india.webp" },
+    {
+        name: "Press Trust India",
+        img: "/img/media-coverage/press-trust-india.webp",
+    },
     { name: "OneIndia", img: "/img/media-coverage/oneindia-lm-logo.webp" },
     { name: "OpenPR", img: "/img/media-coverage/openpr-logo-slogan.webp" },
-    { name: "Tribun Gorontalo", img: "/img/media-coverage/TribunGorontalo.webp" },
+    {
+        name: "Tribun Gorontalo",
+        img: "/img/media-coverage/TribunGorontalo.webp",
+    },
     { name: "News", img: "/img/media-coverage/cropped-logo.webp" },
 ];
 
@@ -101,7 +107,8 @@ const stages = [
         description:
             "You've heard of zodiac signs. You may have read articles or watched videos. But you've never formally studied a Vedic chart.",
         levels: ["Level 1: Foundation"],
-        strategy: "Start from absolute basics. Build a strong base before anything else.",
+        strategy:
+            "Start from absolute basics. Build a strong base before anything else.",
     },
     {
         badge: "Practitioner",
@@ -121,7 +128,8 @@ const stages = [
         description:
             "You have working knowledge and consult clients. You're ready for advanced research, Pre-PhD, and PhD-level Jyotish mastery.",
         levels: ["Pre-PhD (1 → 2 Level)", "PhD (2 Level)"],
-        strategy: "Specialize in research, rare yogas, and authoritative practice.",
+        strategy:
+            "Specialize in research, rare yogas, and authoritative practice.",
     },
 ];
 
@@ -131,7 +139,8 @@ const coursesData = [
         icon: "/img/certified-astrology/lotus.png",
         footerIcon: "book",
 
-        bgGradient: "linear-gradient(180deg, #001F70 0%, #00164D 45%, #000C2A 100%)",
+        bgGradient:
+            "linear-gradient(180deg, #001F70 0%, #00164D 45%, #000C2A 100%)",
 
         title: "Graduate in Jyotish",
         subtitle: "Vedic Astrology Mastery",
@@ -157,7 +166,8 @@ const coursesData = [
         icon: "/img/certified-astrology/om.png",
         footerIcon: "leaf",
 
-        bgGradient: "linear-gradient(180deg, #00463C 0%, #002E27 45%, #001510 100%)",
+        bgGradient:
+            "linear-gradient(180deg, #00463C 0%, #002E27 45%, #001510 100%)",
 
         title: "Post Graduation in Jyotish",
         subtitle: "From Beej to Pushpa",
@@ -187,7 +197,8 @@ const coursesData = [
         icon: "/img/certified-astrology/yantra.png",
         footerIcon: "graduation",
 
-        bgGradient: "linear-gradient(180deg, #44138A 0%, #2A0B58 45%, #16052F 100%)",
+        bgGradient:
+            "linear-gradient(180deg, #44138A 0%, #2A0B58 45%, #16052F 100%)",
 
         title: "Pre-PhD Programme in Jyotish",
         subtitle: "Jyotish Vriksha",
@@ -219,12 +230,42 @@ const coursesData = [
 
 // Data Array for the Core Learning Path Stages
 const coreStages = [
-    { stage: "Stage 1", num: "01", name: "Jyotish Beej", desc: "Foundation Level" },
-    { stage: "Stage 1", num: "02", name: "Jyotish Ankur", desc: "Early Learning" },
-    { stage: "Stage 1", num: "03", name: "Jyotish Pallav", desc: "Intermediate Level" },
-    { stage: "Stage 2", num: "04", name: "Jyotish Taru", desc: "Post Graduate" },
-    { stage: "Stage 2", num: "05", name: "Jyotish Pushpa", desc: "Master in Post Graduate" },
-    { stage: "Stage 3", num: "06", name: "Jyotish Vriksha", desc: "Pre-PhD · Bhrigu Chakra" },
+    {
+        stage: "Stage 1",
+        num: "01",
+        name: "Jyotish Beej",
+        desc: "Foundation Level",
+    },
+    {
+        stage: "Stage 1",
+        num: "02",
+        name: "Jyotish Ankur",
+        desc: "Early Learning",
+    },
+    {
+        stage: "Stage 1",
+        num: "03",
+        name: "Jyotish Pallav",
+        desc: "Intermediate Level",
+    },
+    {
+        stage: "Stage 2",
+        num: "04",
+        name: "Jyotish Taru",
+        desc: "Post Graduate",
+    },
+    {
+        stage: "Stage 2",
+        num: "05",
+        name: "Jyotish Pushpa",
+        desc: "Master in Post Graduate",
+    },
+    {
+        stage: "Stage 3",
+        num: "06",
+        name: "Jyotish Vriksha",
+        desc: "Pre-PhD · Bhrigu Chakra",
+    },
 ];
 
 // Data Array for the Specialty Library
@@ -573,9 +614,21 @@ const specialtyCourses = [
 ];
 
 const earningsMetrics = [
-    { label: "Beginner Practitioner", range: "₹40K – ₹80K /mo", fillWidth: "w-[45%]" },
-    { label: "Established Astrologer", range: "₹1.2L – ₹1.8L /mo", fillWidth: "w-[70%]" },
-    { label: "Master / Celebrity Consult", range: "₹2.5L – ₹4L+ /mo", fillWidth: "w-[95%]" },
+    {
+        label: "Beginner Practitioner",
+        range: "₹40K – ₹80K /mo",
+        fillWidth: "w-[45%]",
+    },
+    {
+        label: "Established Astrologer",
+        range: "₹1.2L – ₹1.8L /mo",
+        fillWidth: "w-[70%]",
+    },
+    {
+        label: "Master / Celebrity Consult",
+        range: "₹2.5L – ₹4L+ /mo",
+        fillWidth: "w-[95%]",
+    },
 ];
 
 const opportunityCards = [
@@ -953,7 +1006,8 @@ const journeySteps = [
     {
         number: "01",
         title: "Watch the Video",
-        description: "Know your current astrology stage with our short eligibility video.",
+        description:
+            "Know your current astrology stage with our short eligibility video.",
         icon: Play,
     },
     {
@@ -965,7 +1019,8 @@ const journeySteps = [
     {
         number: "03",
         title: "Complete the Course",
-        description: "Attend recorded sessions, complete assignments & case studies.",
+        description:
+            "Attend recorded sessions, complete assignments & case studies.",
         icon: BookOpen,
     },
     {
@@ -977,7 +1032,8 @@ const journeySteps = [
     {
         number: "05",
         title: "Start Earning",
-        description: "Begin consulting and build your career as a practitioner.",
+        description:
+            "Begin consulting and build your career as a practitioner.",
         icon: TrendingUp,
     },
 ];
@@ -999,32 +1055,38 @@ const chooseUsFeatures = [
     {
         icon: Sparkles,
         title: "Authentic Vedic Methodology",
-        description: "Pure Parashari & Jaimini systems — no modern dilution, no shortcuts.",
+        description:
+            "Pure Parashari & Jaimini systems — no modern dilution, no shortcuts.",
     },
     {
         icon: Flame,
         title: "Proven Teaching Framework",
-        description: "A stage-based architecture refined across 25 years and 15,000+ students.",
+        description:
+            "A stage-based architecture refined across 25 years and 15,000+ students.",
     },
     {
         icon: MessageCircle,
         title: "Personal Mentorship",
-        description: "Direct Q&A access to Dr. Bajrangi — not a faceless platform.",
+        description:
+            "Direct Q&A access to Dr. Bajrangi — not a faceless platform.",
     },
     {
         icon: Trophy,
         title: "Real Practitioner Outcomes",
-        description: "Graduates running successful consulting practices across India.",
+        description:
+            "Graduates running successful consulting practices across India.",
     },
     {
         icon: ShieldCheck,
         title: "Stage-Based, Not One-Size",
-        description: "Every student starts at their actual level — not a generic syllabus.",
+        description:
+            "Every student starts at their actual level — not a generic syllabus.",
     },
     {
         icon: Briefcase,
         title: "Career-Ready Outcomes",
-        description: "We don't just teach — we prepare you to consult and earn.",
+        description:
+            "We don't just teach — we prepare you to consult and earn.",
     },
 ];
 
@@ -1199,37 +1261,65 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         className={`${cormorant.className} italic text-[15px] md:text-base max-w-lg mx-auto leading-relaxed`}
                                         style={{ color: "var(--muted-ink)" }}
                                     >
-                                        Fill the form below and instantly unlock the eligibility video.
+                                        Fill the form below and instantly unlock
+                                        the eligibility video.
                                     </p>
                                 </div>
 
-                                <form className="grid md:grid-cols-2 gap-4" onSubmit={handleEligibilitySubmit}>
+                                <form
+                                    className="grid md:grid-cols-2 gap-4"
+                                    onSubmit={handleEligibilitySubmit}
+                                >
                                     <label className="block">
-                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                        <span
+                                            className={`${cinzel.className} block text-[10px] uppercase mb-2`}
+                                        >
                                             Full Name
                                         </span>
-                                        <input type="text" required className="w-full px-4 py-3 rounded-lg" />
+                                        <input
+                                            type="text"
+                                            required
+                                            className="w-full px-4 py-3 rounded-lg"
+                                        />
                                     </label>
 
                                     <label className="block">
-                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                        <span
+                                            className={`${cinzel.className} block text-[10px] uppercase mb-2`}
+                                        >
                                             Email Address
                                         </span>
-                                        <input type="email" required className="w-full px-4 py-3 rounded-lg" />
+                                        <input
+                                            type="email"
+                                            required
+                                            className="w-full px-4 py-3 rounded-lg"
+                                        />
                                     </label>
 
                                     <label className="block">
-                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                        <span
+                                            className={`${cinzel.className} block text-[10px] uppercase mb-2`}
+                                        >
                                             Mobile Number
                                         </span>
-                                        <input type="tel" required className="w-full px-4 py-3 rounded-lg" />
+                                        <input
+                                            type="tel"
+                                            required
+                                            className="w-full px-4 py-3 rounded-lg"
+                                        />
                                     </label>
 
                                     <label className="block">
-                                        <span className={`${cinzel.className} block text-[10px] uppercase mb-2`}>
+                                        <span
+                                            className={`${cinzel.className} block text-[10px] uppercase mb-2`}
+                                        >
                                             Date of Birth
                                         </span>
-                                        <input type="date" required className="w-full px-4 py-3 rounded-lg" />
+                                        <input
+                                            type="date"
+                                            required
+                                            className="w-full px-4 py-3 rounded-lg"
+                                        />
                                     </label>
 
                                     <button
@@ -1244,7 +1334,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         <ChevronRight size={18} />
                                     </button>
 
-                                    <p className={`${dmSans.className} md:col-span-2 text-center text-[11px] mt-1`}>
+                                    <p
+                                        className={`${dmSans.className} md:col-span-2 text-center text-[11px] mt-1`}
+                                    >
                                         🔒 Your details are 100% private.
                                     </p>
                                 </form>
@@ -1273,7 +1365,13 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                     >
-                                        <rect x="4" y="11" width="16" height="9" rx="2" />
+                                        <rect
+                                            x="4"
+                                            y="11"
+                                            width="16"
+                                            height="9"
+                                            rx="2"
+                                        />
                                         <path d="M8 11V8a4 4 0 1 1 8 0v3" />
                                     </svg>
                                 </div>
@@ -1293,8 +1391,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     className={`${cormorant.className} italic text-lg max-w-2xl mx-auto mb-10`}
                                     style={{ color: "var(--muted-ink)" }}
                                 >
-                                    Complete a one-time enrollment to unlock the full eligibility video library and
-                                    proceed to your personalized course path
+                                    Complete a one-time enrollment to unlock the
+                                    full eligibility video library and proceed
+                                    to your personalized course path
                                 </p>
 
                                 {/* Pricing Card */}
@@ -1308,12 +1407,22 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     <div
                                         className="flex justify-between items-center pb-4 mb-4"
                                         style={{
-                                            borderBottom: "1px solid rgba(212,175,55,0.15)",
+                                            borderBottom:
+                                                "1px solid rgba(212,175,55,0.15)",
                                         }}
                                     >
-                                        <span style={{ color: "var(--muted-ink)" }}>Eligibility Assessment</span>
+                                        <span
+                                            style={{
+                                                color: "var(--muted-ink)",
+                                            }}
+                                        >
+                                            Eligibility Assessment
+                                        </span>
 
-                                        <span className="font-semibold" style={{ color: "var(--ink)" }}>
+                                        <span
+                                            className="font-semibold"
+                                            style={{ color: "var(--ink)" }}
+                                        >
                                             ₹499
                                         </span>
                                     </div>
@@ -1321,12 +1430,22 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     <div
                                         className="flex justify-between items-center pb-4 mb-4"
                                         style={{
-                                            borderBottom: "1px solid rgba(212,175,55,0.15)",
+                                            borderBottom:
+                                                "1px solid rgba(212,175,55,0.15)",
                                         }}
                                     >
-                                        <span style={{ color: "var(--muted-ink)" }}>Personal Stage Report</span>
+                                        <span
+                                            style={{
+                                                color: "var(--muted-ink)",
+                                            }}
+                                        >
+                                            Personal Stage Report
+                                        </span>
 
-                                        <span className="font-semibold" style={{ color: "#D4AF37" }}>
+                                        <span
+                                            className="font-semibold"
+                                            style={{ color: "#D4AF37" }}
+                                        >
                                             Included
                                         </span>
                                     </div>
@@ -1339,7 +1458,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             Total
                                         </span>
 
-                                        <span className={`${cinzel.className} text-4xl`} style={{ color: "#D4AF37" }}>
+                                        <span
+                                            className={`${cinzel.className} text-4xl`}
+                                            style={{ color: "#D4AF37" }}
+                                        >
                                             ₹499
                                         </span>
                                     </div>
@@ -1359,7 +1481,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 </button>
 
                                 {/* Footer */}
-                                <p className={`${dmSans.className} mt-5 text-xs`} style={{ color: "var(--muted-ink)" }}>
+                                <p
+                                    className={`${dmSans.className} mt-5 text-xs`}
+                                    style={{ color: "var(--muted-ink)" }}
+                                >
                                     Secured by Razorpay · 256-bit encryption
                                 </p>
                             </div>
@@ -1390,7 +1515,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 </h2>
 
                                 {/* Duration */}
-                                <p className={`${dmSans.className} text-sm mb-8`} style={{ color: "var(--muted-ink)" }}>
+                                <p
+                                    className={`${dmSans.className} text-sm mb-8`}
+                                    style={{ color: "var(--muted-ink)" }}
+                                >
                                     Duration: 12:47
                                 </p>
 
@@ -1402,8 +1530,14 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         background: "rgba(255,255,255,0.03)",
                                     }}
                                 >
-                                    <video controls className="w-full aspect-video bg-black">
-                                        <source src="/videos/eligibility.mp4" type="video/mp4" />
+                                    <video
+                                        controls
+                                        className="w-full aspect-video bg-black"
+                                    >
+                                        <source
+                                            src="/videos/eligibility.mp4"
+                                            type="video/mp4"
+                                        />
                                     </video>
                                 </div>
 
@@ -1412,7 +1546,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     className={`${cormorant.className} text-lg leading-relaxed max-w-2xl mx-auto mb-8`}
                                     style={{ color: "var(--muted-ink)" }}
                                 >
-                                    A complete walk-through by Dr. Vinay Bajrangi — discover your true starting point
+                                    A complete walk-through by Dr. Vinay
+                                    Bajrangi — discover your true starting point
                                     and the right course for your stage.
                                 </p>
 
@@ -1444,15 +1579,29 @@ export default function CertifiedAstrologyCourse({ data }) {
         switch (type) {
             case "lotus":
                 return (
-                    <img src="/img/certified-astrology/lotus.png" alt="Lotus" className="w-20 h-20 object-contain" />
+                    <img
+                        src="/img/certified-astrology/lotus.png"
+                        alt="Lotus"
+                        className="w-20 h-20 object-contain"
+                    />
                 );
 
             case "om":
-                return <img src="img/certified-astrology/om.png" alt="Om" className="w-20 h-20 object-contain" />;
+                return (
+                    <img
+                        src="img/certified-astrology/om.png"
+                        alt="Om"
+                        className="w-20 h-20 object-contain"
+                    />
+                );
 
             case "yantra":
                 return (
-                    <img src="img/certified-astrology/yantra.png" alt="Yantra" className="w-20 h-20 object-contain" />
+                    <img
+                        src="img/certified-astrology/yantra.png"
+                        alt="Yantra"
+                        className="w-20 h-20 object-contain"
+                    />
                 );
             case "book":
                 return (
@@ -1554,7 +1703,11 @@ export default function CertifiedAstrologyCourse({ data }) {
                         oklch(82% 0.15 80 / 0.22),
                         transparent 70%
                     );
-                    --gradient-ink: linear-gradient(180deg, oklch(8% 0.03 265 / 0.85), oklch(8% 0.03 265 / 0));
+                    --gradient-ink: linear-gradient(
+                        180deg,
+                        oklch(8% 0.03 265 / 0.85),
+                        oklch(8% 0.03 265 / 0)
+                    );
                 }
 
                 @keyframes marquee {
@@ -1604,26 +1757,33 @@ export default function CertifiedAstrologyCourse({ data }) {
                 }
             `}</style>
 
+            {/* Header */}
             <header className="w-full bg-[#020c26] border-b border-[#8f6a2f]/40">
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
                     <div className="h-[74px] flex items-center justify-between">
                         {/* Left Logo Section */}
                         <div className="flex items-center">
-                        <Link href="https://www.vinaybajrangi.com/">
-                            <div className="w-[60px] h-[60px] rounded-full border-2 border-[#d89b3d] overflow-hidden flex items-center justify-center">
-                                <Image
-                                    src="/img/logo.webp"
-                                    alt="Logo"
-                                    width={60}
-                                    height={60}
-                                    className="w-full h-full object-cover rounded-full"
-                                />
-                            </div>
-                        </Link>
+                            <Link href="https://www.vinaybajrangi.com/">
+                                <div className="w-[60px] h-[60px] rounded-full border-2 border-[#d89b3d] overflow-hidden flex items-center justify-center">
+                                    <Image
+                                        src="/img/logo.webp"
+                                        alt="Logo"
+                                        width={60}
+                                        height={60}
+                                        className="w-full h-full object-cover rounded-full"
+                                    />
+                                </div>
+                            </Link>
                         </div>
                         {/* Center Menu */}
                         <nav className="hidden lg:flex items-center gap-10">
-                            {["Stages", "Courses", "Journey", "Students", "FAQ"].map((item, index) => (
+                            {[
+                                "Stages",
+                                "Courses",
+                                "Journey",
+                                "Students",
+                                "FAQ",
+                            ].map((item, index) => (
                                 <a
                                     key={index}
                                     href="#"
@@ -1646,7 +1806,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                 <div
                     className={`${cinzel.className} text-center text-base tracking-[1px] font-medium uppercase font-serif`}
                 >
-                    ★ New Batch Opens 15 June 2026 · Only 100 Seats · Certified Vedic Astrology Programs ★
+                    ★ New Batch Opens 15 June 2026 · Only 100 Seats · Certified
+                    Vedic Astrology Programs ★
                 </div>
             </div>
 
@@ -1713,10 +1874,14 @@ export default function CertifiedAstrologyCourse({ data }) {
                             style={{ color: "var(--muted-ink)" }}
                         >
                             Learn from{" "}
-                            <span className="font-semibold" style={{ color: "var(--gold-light)" }}>
+                            <span
+                                className="font-semibold"
+                                style={{ color: "var(--gold-light)" }}
+                            >
                                 Dr. Vinay Bajrangi
                             </span>{" "}
-                            and master Vedic astrology with techniques that bring real-life accuracy and powerful
+                            and master Vedic astrology with techniques that
+                            bring real-life accuracy and powerful
                             transformations.
                         </p>
 
@@ -1733,8 +1898,14 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             border: "1px solid var(--border)",
                                         }}
                                     >
-                                        <Icon className="h-4 w-4 flex-shrink-0" style={{ color: "var(--gold)" }} />
-                                        <span className={`${dmSans.className} text-xs`} style={{ color: "var(--ink)" }}>
+                                        <Icon
+                                            className="h-4 w-4 flex-shrink-0"
+                                            style={{ color: "var(--gold)" }}
+                                        />
+                                        <span
+                                            className={`${dmSans.className} text-xs`}
+                                            style={{ color: "var(--ink)" }}
+                                        >
                                             {item.title}
                                         </span>
                                     </div>
@@ -1755,7 +1926,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             border: "1px solid var(--border)",
                                         }}
                                     >
-                                        <Icon className="h-5 w-5" style={{ color: "var(--gold)" }} />
+                                        <Icon
+                                            className="h-5 w-5"
+                                            style={{ color: "var(--gold)" }}
+                                        />
 
                                         <div>
                                             <div
@@ -1765,7 +1939,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                                 {item.label}
                                             </div>
 
-                                            <div className="text-sm font-semibold" style={{ color: "var(--ink)" }}>
+                                            <div
+                                                className="text-sm font-semibold"
+                                                style={{ color: "var(--ink)" }}
+                                            >
                                                 {item.value}
                                             </div>
                                         </div>
@@ -1781,7 +1958,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 background: "var(--gradient-gold)",
                                 color: "oklch(14% 0.04 270)",
                                 minHeight: "64px",
-                                boxShadow: "0 8px 24px rgba(212, 166, 70, 0.25)",
+                                boxShadow:
+                                    "0 8px 24px rgba(212, 166, 70, 0.25)",
                             }}
                         >
                             Know Your Stage & Enroll
@@ -1801,9 +1979,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 ))}
                             </div>
 
-                            <span className={`${dmSans.className} text-xs font-normal`} style={{ color: "white" }}>
+                            <span
+                                className={`${dmSans.className} text-xs font-normal`}
+                                style={{ color: "white" }}
+                            >
                                 Trusted by{" "}
-                                <span className="font-semibold" style={{ color: "var(--ink)" }}>
+                                <span
+                                    className="font-semibold"
+                                    style={{ color: "var(--ink)" }}
+                                >
                                     50,000+
                                 </span>{" "}
                                 Students
@@ -1825,9 +2009,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
                             <div className="absolute bottom-0 left-0 right-0 p-5">
-                                <div className={`${cinzel.className} text-xl text-white`}>Dr. Vinay Bajrangi</div>
+                                <div
+                                    className={`${cinzel.className} text-xl text-white`}
+                                >
+                                    Dr. Vinay Bajrangi
+                                </div>
 
-                                <div className={`${cormorant.className} italic text-gold-pale text-sm`}>
+                                <div
+                                    className={`${cormorant.className} italic text-gold-pale text-sm`}
+                                >
                                     India's Most Trusted Jyotish Educator
                                 </div>
                             </div>
@@ -1893,9 +2083,12 @@ export default function CertifiedAstrologyCourse({ data }) {
                                                 style={{
                                                     width: 0,
                                                     height: 0,
-                                                    borderTop: "5px solid transparent",
-                                                    borderBottom: "5px solid transparent",
-                                                    borderLeft: "8px solid #1A1A1A",
+                                                    borderTop:
+                                                        "5px solid transparent",
+                                                    borderBottom:
+                                                        "5px solid transparent",
+                                                    borderLeft:
+                                                        "8px solid #1A1A1A",
                                                 }}
                                             />
                                         </div>
@@ -1908,16 +2101,26 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         style={{ color: "var(--ink)" }}
                                     >
                                         Are You Eligible to Learn{" "}
-                                        <span className="italic" style={{ color: "var(--gold-light)" }}>
+                                        <span
+                                            className="italic"
+                                            style={{
+                                                color: "var(--gold-light)",
+                                            }}
+                                        >
                                             Astrology?
                                         </span>
                                     </div>
 
                                     <div
-                                        className={`${dmSans.className} text-[12px] flex items-center gap-1 font-normal`}
+                                        onClick={() => setShowEligibilityModal(true)}
+                                        className={`${dmSans.className} text-[12px] flex items-center gap-1 font-normal cursor-pointer`}
                                         style={{ color: "var(--muted-ink)" }}
                                     >
-                                        <Play size={9} fill="currentColor" style={{ color: "var(--gold)" }} />
+                                        <Play
+                                            size={9}
+                                            fill="currentColor"
+                                            style={{ color: "var(--gold)" }}
+                                        />
                                         Watch · 19:30 min
                                     </div>
                                 </div>
@@ -1960,30 +2163,37 @@ export default function CertifiedAstrologyCourse({ data }) {
                         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[color:var(--surface-card)] to-transparent z-10" />
 
                         <div className="flex gap-8 w-max animate-marquee hover:[animation-play-state:paused]">
-                            {[...mediaLogos, ...mediaLogos].map((media, index) => (
-                                <div key={index} className="flex flex-col items-center gap-3 shrink-0 group">
+                            {[...mediaLogos, ...mediaLogos].map(
+                                (media, index) => (
                                     <div
-                                        className="w-[140px] h-[80px] sm:w-[160px] sm:h-[90px] rounded-xl flex items-center justify-center p-4 transition-all duration-300"
-                                        style={{
-                                            background: "#fff",
-                                            border: "1px solid var(--border)",
-                                        }}
+                                        key={index}
+                                        className="flex flex-col items-center gap-3 shrink-0 group"
                                     >
-                                        <img
-                                            src={media.img}
-                                            alt={media.name}
-                                            className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-105"
-                                        />
-                                    </div>
+                                        <div
+                                            className="w-[140px] h-[80px] sm:w-[160px] sm:h-[90px] rounded-xl flex items-center justify-center p-4 transition-all duration-300"
+                                            style={{
+                                                background: "#fff",
+                                                border: "1px solid var(--border)",
+                                            }}
+                                        >
+                                            <img
+                                                src={media.img}
+                                                alt={media.name}
+                                                className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-105"
+                                            />
+                                        </div>
 
-                                    <span
-                                        className={`${cinzel.className} text-[10px] uppercase tracking-[0.2em]`}
-                                        style={{ color: "var(--muted-ink)" }}
-                                    >
-                                        {media.name}
-                                    </span>
-                                </div>
-                            ))}
+                                        <span
+                                            className={`${cinzel.className} text-[10px] uppercase tracking-[0.2em]`}
+                                            style={{
+                                                color: "var(--muted-ink)",
+                                            }}
+                                        >
+                                            {media.name}
+                                        </span>
+                                    </div>
+                                )
+                            )}
                         </div>
                     </div>
                 </div>
@@ -2001,8 +2211,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                     {stats.map((item, index) => {
                         const Icon = item.icon;
                         return (
-                            <div key={index} className="flex items-center gap-2 text-xs md:text-sm">
-                                <Icon size={16} aria-hidden="true" style={{ color: "var(--gold)" }} />
+                            <div
+                                key={index}
+                                className="flex items-center gap-2 text-xs md:text-sm"
+                            >
+                                <Icon
+                                    size={16}
+                                    aria-hidden="true"
+                                    style={{ color: "var(--gold)" }}
+                                />
 
                                 <span
                                     style={{
@@ -2019,7 +2236,10 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Know Your Stage Section */}
-            <section className="py-16 px-6 overflow-hidden" style={{ background: "var(--background)" }}>
+            <section
+                className="py-16 px-6 overflow-hidden"
+                style={{ background: "var(--background)" }}
+            >
                 <div className="max-w-[1250px] mx-auto">
                     {/* Heading */}
                     <div className="text-center max-w-4xl mx-auto mb-28">
@@ -2052,8 +2272,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg mt-8 leading-8 font-normal`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Most students fail because they pick the wrong course. Identify your true learning stage
-                            first — then choose the right path.
+                            Most students fail because they pick the wrong
+                            course. Identify your true learning stage first —
+                            then choose the right path.
                         </p>
                     </div>
 
@@ -2074,9 +2295,11 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     <div
                                         className={`${cinzel.className} flex items-center gap-2 px-4 py-1.5 text-[11px] uppercase tracking-[1.5px] rounded-full font-medium`}
                                         style={{
-                                            background: "linear-gradient(135deg, #F2D06B 0%, #D4A646 100%)",
+                                            background:
+                                                "linear-gradient(135deg, #F2D06B 0%, #D4A646 100%)",
                                             color: "#1A1A1A",
-                                            boxShadow: "0 10px 20px rgba(212, 166, 70, 0.25)",
+                                            boxShadow:
+                                                "0 10px 20px rgba(212, 166, 70, 0.25)",
                                             border: "1px solid rgba(255, 224, 130, 0.6)",
                                         }}
                                     >
@@ -2089,7 +2312,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 <div className="flex items-center gap-3 mb-4 mt-2">
                                     <div className="w-12 h-12 rounded-full border-2 border-[#d4a646]/50 bg-[#041124] flex items-center justify-center shrink-0">
                                         <div className="w-12 h-12 rounded-full border-2 border-[#d4a646]/50 bg-[#041124] flex items-center justify-center shrink-0">
-                                            <item.icon className="w-5 h-5 text-[#d4a646]" strokeWidth={2} />
+                                            <item.icon
+                                                className="w-5 h-5 text-[#d4a646]"
+                                                strokeWidth={2}
+                                            />
                                         </div>
                                     </div>
 
@@ -2137,7 +2363,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                                         "linear-gradient(135deg, rgba(212,166,70,0.18), rgba(212,166,70,0.08))",
                                                     border: "1px solid rgba(212,166,70,0.35)",
                                                     color: "#F8F3E8",
-                                                    boxShadow: "0 4px 12px rgba(212,166,70,0.12)",
+                                                    boxShadow:
+                                                        "0 4px 12px rgba(212,166,70,0.12)",
                                                 }}
                                             >
                                                 {level}
@@ -2153,7 +2380,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         background:
                                             "linear-gradient(135deg, rgba(212,166,70,0.12), rgba(212,166,70,0.04))",
                                         borderColor: "rgba(212,166,70,0.25)",
-                                        boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+                                        boxShadow:
+                                            "0 8px 24px rgba(0,0,0,0.15)",
                                     }}
                                 >
                                     <div
@@ -2172,7 +2400,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 </div>
 
                                 <button
-                                    onClick={() => setShowEligibilityModal(true)}
+                                    onClick={() =>
+                                        setShowEligibilityModal(true)
+                                    }
                                     className={`${cinzel.className} mt-6 w-full py-3 border border-[#d4a646]/50 text-[#d4a646] uppercase tracking-[2px] text-xs rounded-lg transition-all hover:bg-[#d4a646]/10 font-normal flex items-center justify-center gap-2`}
                                 >
                                     Confirm My Stage
@@ -2227,7 +2457,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                         <p
                             className={`${cormorant.className} text-lg text-[var(--muted-ink)] italic leading-relaxed font-normal`}
                         >
-                            Three sacred paths — built across 25 years and chosen by 15,000+ students. Pick the one that
+                            Three sacred paths — built across 25 years and
+                            chosen by 15,000+ students. Pick the one that
                             matches your stage.
                         </p>
                     </div>
@@ -2274,7 +2505,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     </div>
 
                                     <div className="inline-block mt-2 px-5 py-1 border border-[#c8a04d] rounded-full">
-                                        <span className="text-[#d4af37] text-sm uppercase">{course.stage}</span>
+                                        <span className="text-[#d4af37] text-sm uppercase">
+                                            {course.stage}
+                                        </span>
                                     </div>
 
                                     <h3 className="mt-3 text-[30px] leading-[1.15] text-[#f4eee4] font-serif">
@@ -2291,9 +2524,13 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         <div className="w-12 h-px bg-[#c8a04d]/50" />
                                     </div>
 
-                                    <p className="text-[#f4eee4] text-lg">{course.tagline}</p>
+                                    <p className="text-[#f4eee4] text-lg">
+                                        {course.tagline}
+                                    </p>
 
-                                    <p className="text-[#d8c8a7] italic mt-2">{course.quote}</p>
+                                    <p className="text-[#d8c8a7] italic mt-2">
+                                        {course.quote}
+                                    </p>
                                 </div>
 
                                 {/* Features */}
@@ -2303,16 +2540,28 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     </h4>
 
                                     {course.content.map((section, idx) => (
-                                        <div key={idx} className="border border-[#c8a04d]/40 rounded-[18px] p-3 mb-2">
-                                            <h5 className="text-[#d4af37] text-sm uppercase mb-2">{section.heading}</h5>
+                                        <div
+                                            key={idx}
+                                            className="border border-[#c8a04d]/40 rounded-[18px] p-3 mb-2"
+                                        >
+                                            <h5 className="text-[#d4af37] text-sm uppercase mb-2">
+                                                {section.heading}
+                                            </h5>
 
                                             <ul className="space-y-2">
-                                                {section.items.map((item, i) => (
-                                                    <li key={i} className="flex gap-3 text-[#f4eee4] text-sm">
-                                                        <span className="text-[#d4af37]">◉</span>
-                                                        {item}
-                                                    </li>
-                                                ))}
+                                                {section.items.map(
+                                                    (item, i) => (
+                                                        <li
+                                                            key={i}
+                                                            className="flex gap-3 text-[#f4eee4] text-sm"
+                                                        >
+                                                            <span className="text-[#d4af37]">
+                                                                ◉
+                                                            </span>
+                                                            {item}
+                                                        </li>
+                                                    )
+                                                )}
                                             </ul>
                                         </div>
                                     ))}
@@ -2322,9 +2571,13 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 <div className="relative z-10 px-4 mb-2">
                                     <div className="border border-[#c8a04d]/40 rounded-xl py-4 text-center">
                                         <div className="flex items-center justify-center gap-3 px-6">
-                                            <CardIcon type={footerIcons[index]} />
+                                            <CardIcon
+                                                type={footerIcons[index]}
+                                            />
 
-                                            <p className="text-[#d4af37] italic text-sm">{course.footerText}</p>
+                                            <p className="text-[#d4af37] italic text-sm">
+                                                {course.footerText}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -2335,7 +2588,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         KNOW MORE →
                                     </button>
 
-                                    <button className="py-3 uppercase text-sm tracking-widest">ENROLL NOW →</button>
+                                    <button className="py-3 uppercase text-sm tracking-widest">
+                                        ENROLL NOW →
+                                    </button>
                                 </div>
                             </div>
                         ))}
@@ -2361,13 +2616,17 @@ export default function CertifiedAstrologyCourse({ data }) {
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
                             <path d="m9 12 2 2 4-4" />
                         </svg>
-                        Secure Enrollment · EMI Available · Lifetime Access · Certified Programme
+                        Secure Enrollment · EMI Available · Lifetime Access ·
+                        Certified Programme
                     </div>
                 </div>
             </section>
 
             {/* Premium Catalog Section */}
-            <section className="py-10 md:py-10 relative overflow-hidden" style={{ background: "var(--background)" }}>
+            <section
+                className="py-10 md:py-10 relative overflow-hidden"
+                style={{ background: "var(--background)" }}
+            >
                 {/* Background Radial Glow */}
                 <div
                     className="absolute inset-0 opacity-40 pointer-events-none"
@@ -2408,8 +2667,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg italic leading-relaxed font-normal`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Beyond the core Graduate, PG &amp; Pre-PhD path — a complete library of specialty programs
-                            by Dr. Vinay Bajrangi.
+                            Beyond the core Graduate, PG &amp; Pre-PhD path — a
+                            complete library of specialty programs by Dr. Vinay
+                            Bajrangi.
                         </p>
                     </div>
 
@@ -2438,7 +2698,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     key={index}
                                     className="relative rounded-xl p-4 text-center shadow-card hover:-translate-y-0.5 transition-all duration-300 group"
                                     style={{
-                                        background: "linear-gradient(180deg, #0D1525 0%, #131D2F 100%)",
+                                        background:
+                                            "linear-gradient(180deg, #0D1525 0%, #131D2F 100%)",
                                         border: "1px solid rgba(212,166,70,0.18)",
                                     }}
                                 >
@@ -2491,7 +2752,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                             Specialty Library
                         </span>
 
-                        <h3 className={`${cinzel.className} text-2xl md:text-3xl mt-2`} style={{ color: "var(--ink)" }}>
+                        <h3
+                            className={`${cinzel.className} text-2xl md:text-3xl mt-2`}
+                            style={{ color: "var(--ink)" }}
+                        >
                             Deep-Dive Programs · Top Rated
                         </h3>
 
@@ -2499,8 +2763,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${dmSans.className} text-sm mt-2 max-w-2xl mx-auto font-normal`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Curated programs on the rare, the powerful, and the most-asked subjects in Vedic astrology —
-                            every one taught personally by Dr. Bajrangi.
+                            Curated programs on the rare, the powerful, and the
+                            most-asked subjects in Vedic astrology — every one
+                            taught personally by Dr. Bajrangi.
                         </p>
                     </div>
 
@@ -2594,7 +2859,10 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Career Opportunity Section */}
-            <section className="py-10 md:py-10 relative overflow-hidden" style={{ background: "var(--background)" }}>
+            <section
+                className="py-10 md:py-10 relative overflow-hidden"
+                style={{ background: "var(--background)" }}
+            >
                 {/* Background Radial Glow Overlay */}
                 <div
                     className="absolute inset-0 opacity-50 pointer-events-none"
@@ -2634,7 +2902,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} italic text-lg mb-8 max-w-xl`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Real students. Real income. Here is what your potential earning looks like as a certified
+                            Real students. Real income. Here is what your
+                            potential earning looks like as a certified
                             practitioner.
                         </p>
 
@@ -2652,10 +2921,12 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center mb-3 transition-all duration-300"
                                         style={{
-                                            background: "rgba(255,255,255,0.06)",
+                                            background:
+                                                "rgba(255,255,255,0.06)",
                                             border: "1px solid rgba(212,175,55,0.25)",
                                             color: "#D4AF37",
-                                            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+                                            boxShadow:
+                                                "0 4px 12px rgba(0,0,0,0.18)",
                                         }}
                                     >
                                         {card.icon}
@@ -2686,7 +2957,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 color: "var(--primary-foreground)",
                             }}
                         >
-                            <span className={`${cinzel.className} text-sm uppercase tracking-wider font-normal`}>
+                            <span
+                                className={`${cinzel.className} text-sm uppercase tracking-wider font-normal`}
+                            >
                                 Become a Certified Astrologer
                             </span>
 
@@ -2719,7 +2992,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                             {/* Box Background Radial Glow */}
                             <div
                                 className="absolute inset-0 opacity-50 pointer-events-none"
-                                style={{ background: "var(--gradient-radial-gold)" }}
+                                style={{
+                                    background: "var(--gradient-radial-gold)",
+                                }}
                             />
 
                             {/* Decorative Zodiac Graphic */}
@@ -2784,14 +3059,18 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             <div className="flex justify-between items-baseline mb-1.5">
                                                 <span
                                                     className={`${dmSans.className} text-xs font-medium`}
-                                                    style={{ color: "var(--ink)" }}
+                                                    style={{
+                                                        color: "var(--ink)",
+                                                    }}
                                                 >
                                                     {metric.label}
                                                 </span>
 
                                                 <span
                                                     className={`${cinzel.className} text-xs font-normal`}
-                                                    style={{ color: "var(--gold)" }}
+                                                    style={{
+                                                        color: "var(--gold)",
+                                                    }}
                                                 >
                                                     {metric.range}
                                                 </span>
@@ -2800,13 +3079,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             <div
                                                 className="h-2 rounded-full overflow-hidden"
                                                 style={{
-                                                    background: "var(--surface-lift)",
+                                                    background:
+                                                        "var(--surface-lift)",
                                                 }}
                                             >
                                                 <div
                                                     className={`h-full rounded-full ${metric.fillWidth}`}
                                                     style={{
-                                                        background: "var(--gradient-gold)",
+                                                        background:
+                                                            "var(--gradient-gold)",
                                                     }}
                                                 />
                                             </div>
@@ -2845,7 +3126,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         className={`${dmSans.className} text-xs`}
                                         style={{ color: "var(--muted-ink)" }}
                                     >
-                                        Multiple income streams · Lifetime career
+                                        Multiple income streams · Lifetime
+                                        career
                                     </span>
                                 </div>
                             </div>
@@ -2890,7 +3172,10 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Course Benefits Section */}
-            <section className="py-10 md:py-12" style={{ background: "var(--surface-mid)" }}>
+            <section
+                className="py-10 md:py-12"
+                style={{ background: "var(--surface-mid)" }}
+            >
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Main Component Header */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -2923,8 +3208,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg italic leading-relaxed`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            A complete premium learning ecosystem — refined over 25 years and trusted by 15,000+
-                            students.
+                            A complete premium learning ecosystem — refined over
+                            25 years and trusted by 15,000+ students.
                         </p>
                     </div>
 
@@ -2951,8 +3236,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             <div
                                                 className="w-14 h-14 rounded-xl flex items-center justify-center"
                                                 style={{
-                                                    background: "var(--gradient-gold)",
-                                                    boxShadow: "0 10px 25px rgba(212,175,55,.25)",
+                                                    background:
+                                                        "var(--gradient-gold)",
+                                                    boxShadow:
+                                                        "0 10px 25px rgba(212,175,55,.25)",
                                                 }}
                                             >
                                                 {benefit.icon}
@@ -2961,7 +3248,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             <span
                                                 className={`${cinzel.className} text-[9px] px-2 py-0.5 rounded uppercase tracking-wider font-normal`}
                                                 style={{
-                                                    background: "var(--surface-card)",
+                                                    background:
+                                                        "var(--surface-card)",
                                                     color: "var(--gold)",
                                                     border: "1px solid oklch(82% 0.15 80 / 0.4)",
                                                 }}
@@ -3085,8 +3373,12 @@ export default function CertifiedAstrologyCourse({ data }) {
                             </span>
                         </h2>
 
-                        <p className={`${cormorant.className} text-lg italic`} style={{ color: "var(--muted-ink)" }}>
-                            From your first video to your first paying client — in 5 clear, guided steps.
+                        <p
+                            className={`${cormorant.className} text-lg italic`}
+                            style={{ color: "var(--muted-ink)" }}
+                        >
+                            From your first video to your first paying client —
+                            in 5 clear, guided steps.
                         </p>
                     </div>
 
@@ -3106,26 +3398,33 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 const Icon = step.icon;
 
                                 return (
-                                    <div key={step.number} className="relative flex flex-col items-center text-center">
+                                    <div
+                                        key={step.number}
+                                        className="relative flex flex-col items-center text-center"
+                                    >
                                         {/* Circle */}
                                         <div className="relative z-10 mb-5">
                                             <div
                                                 className="group w-24 h-24 rounded-full flex items-center justify-center shadow-elevated transition-all duration-300 hover:shadow-gold"
                                                 style={{
-                                                    background: "var(--surface-card)",
+                                                    background:
+                                                        "var(--surface-card)",
                                                     border: "2px solid oklch(82% 0.15 80 / 0.4)",
                                                 }}
                                             >
                                                 <Icon
                                                     className="w-8 h-8 transition-transform duration-300 group-hover:scale-110"
-                                                    style={{ color: "var(--gold)" }}
+                                                    style={{
+                                                        color: "var(--gold)",
+                                                    }}
                                                 />
                                             </div>
 
                                             <div
                                                 className={`${cinzel.className} absolute -top-2 -right-2 w-9 h-9 rounded-full text-sm flex items-center justify-center shadow-gold font-normal`}
                                                 style={{
-                                                    background: "var(--gradient-gold)",
+                                                    background:
+                                                        "var(--gradient-gold)",
                                                     color: "oklch(0.14 0.04 270)",
                                                 }}
                                             >
@@ -3137,7 +3436,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                                         <div
                                             className="w-full rounded-xl p-4 shadow-card transition-all duration-300 hover:border-gold/50"
                                             style={{
-                                                background: "var(--surface-card)",
+                                                background:
+                                                    "var(--surface-card)",
                                                 border: "1px solid var(--border)",
                                             }}
                                         >
@@ -3150,7 +3450,9 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                                             <p
                                                 className={`${dmSans.className} text-xs leading-relaxed`}
-                                                style={{ color: "var(--muted-ink)" }}
+                                                style={{
+                                                    color: "var(--muted-ink)",
+                                                }}
                                             >
                                                 {step.description}
                                             </p>
@@ -3189,7 +3491,10 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Bio & Stats Section */}
-            <section className="py-10 md:py-10" style={{ background: "var(--surface-mid)" }}>
+            <section
+                className="py-10 md:py-10"
+                style={{ background: "var(--surface-mid)" }}
+            >
                 <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
                     {/* Left Side: Media Display with Decorative Elements */}
                     <div className="relative">
@@ -3224,9 +3529,15 @@ export default function CertifiedAstrologyCourse({ data }) {
                                 color: "oklch(0.14 0.04 270)",
                             }}
                         >
-                            <div className={`${cinzel.className} text-2xl font-normal leading-none`}>25+</div>
+                            <div
+                                className={`${cinzel.className} text-2xl font-normal leading-none`}
+                            >
+                                25+
+                            </div>
 
-                            <div className={`${cinzel.className} text-[10px] tracking-wider uppercase mt-0.5`}>
+                            <div
+                                className={`${cinzel.className} text-[10px] tracking-wider uppercase mt-0.5`}
+                            >
                                 Years of Mastery
                             </div>
                         </div>
@@ -3263,26 +3574,29 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg italic mb-5 leading-relaxed`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            “The secret to mastering astrology is not studying more — it is studying what is right for
-                            your stage.”
+                            “The secret to mastering astrology is not studying
+                            more — it is studying what is right for your stage.”
                         </blockquote>
 
                         <p
                             className={`${dmSans.className} leading-relaxed mb-5 text-sm md:text-base`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Dr. Vinay Bajrangi is India's most trusted Vedic Jyotish educator with over 25 years of
-                            structured teaching experience. He has trained 15,000+ students across India and abroad,
-                            written several authoritative books on Jyotish, and consulted for celebrities,
-                            industrialists, and political leaders.
+                            Dr. Vinay Bajrangi is India's most trusted Vedic
+                            Jyotish educator with over 25 years of structured
+                            teaching experience. He has trained 15,000+ students
+                            across India and abroad, written several
+                            authoritative books on Jyotish, and consulted for
+                            celebrities, industrialists, and political leaders.
                         </p>
 
                         <p
                             className={`${dmSans.className} leading-relaxed mb-6 text-sm md:text-base`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            His stage-based curriculum is the first of its kind — a methodical, no-shortcut path from
-                            absolute beginner to research-level Jyotish master.
+                            His stage-based curriculum is the first of its kind
+                            — a methodical, no-shortcut path from absolute
+                            beginner to research-level Jyotish master.
                         </p>
 
                         {/* Quick Metrics Grid */}
@@ -3340,7 +3654,10 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="py-10 md:py-8" style={{ background: "var(--background)" }}>
+            <section
+                className="py-10 md:py-8"
+                style={{ background: "var(--background)" }}
+            >
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Heading */}
                     <div className="max-w-3xl mx-auto text-center mb-14">
@@ -3373,8 +3690,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg italic leading-relaxed`}
                             style={{ color: "var(--muted-ink)" }}
                         >
-                            Six clear reasons serious students choose Dr. Bajrangi over any other Jyotish program in
-                            India.
+                            Six clear reasons serious students choose Dr.
+                            Bajrangi over any other Jyotish program in India.
                         </p>
                     </div>
 
@@ -3399,7 +3716,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             border: "1px solid oklch(82% 0.15 80 / 0.4)",
                                         }}
                                     >
-                                        <Icon className="w-5 h-5" style={{ color: "var(--gold)" }} />
+                                        <Icon
+                                            className="w-5 h-5"
+                                            style={{ color: "var(--gold)" }}
+                                        />
                                     </div>
 
                                     <h4
@@ -3437,7 +3757,11 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Student Success Section */}
-            <section id="testimonials" className="py-10 md:py-10" style={{ background: "var(--surface-mid)" }}>
+            <section
+                id="testimonials"
+                className="py-10 md:py-10"
+                style={{ background: "var(--surface-mid)" }}
+            >
                 <div className="max-w-7xl mx-auto px-5 md:px-8">
                     {/* Header Block */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -3537,7 +3861,9 @@ export default function CertifiedAstrologyCourse({ data }) {
 
                                         <div
                                             className={`${dmSans.className} text-[11px]`}
-                                            style={{ color: "var(--muted-ink)" }}
+                                            style={{
+                                                color: "var(--muted-ink)",
+                                            }}
                                         >
                                             {item.role}
                                         </div>
@@ -3553,7 +3879,8 @@ export default function CertifiedAstrologyCourse({ data }) {
             <section
                 className="relative overflow-hidden py-10 md:py-8"
                 style={{
-                    background: "linear-gradient(160deg, oklch(0.18 0.04 265) 0%, oklch(0.22 0.05 280) 100%)",
+                    background:
+                        "linear-gradient(160deg, oklch(0.18 0.04 265) 0%, oklch(0.22 0.05 280) 100%)",
                 }}
             >
                 {/* Glow */}
@@ -3595,7 +3922,8 @@ export default function CertifiedAstrologyCourse({ data }) {
                             className={`${cormorant.className} text-lg italic`}
                             style={{ color: "oklch(82% 0.06 80 / 0.9)" }}
                         >
-                            Dr. Bajrangi has guided India's most respected creators, journalists, and public figures.{" "}
+                            Dr. Bajrangi has guided India's most respected
+                            creators, journalists, and public figures.{" "}
                             {/* color is not available */}
                         </p>
                     </div>
@@ -3603,35 +3931,38 @@ export default function CertifiedAstrologyCourse({ data }) {
                     {/* Celebrity Marquee */}
                     <div className="relative overflow-hidden py-4">
                         <div className="flex gap-5 w-max animate-marquee hover:[animation-play-state:paused]">
-                            {[...celebrities, ...celebrities].map((person, index) => (
-                                <div
-                                    key={index}
-                                    className="group relative overflow-hidden rounded-3xl shrink-0"
-                                    style={{
-                                        width: "280px",
-                                        background: "var(--surface-card)",
-                                        border: "1px solid var(--border)",
-                                        boxShadow: "0 20px 40px rgba(0,0,0,.35)",
-                                    }}
-                                >
-                                    <div className="aspect-[4/5] overflow-hidden">
-                                        <img
-                                            src={person.img}
-                                            alt={`Celebrity ${index + 1}`}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            {[...celebrities, ...celebrities].map(
+                                (person, index) => (
+                                    <div
+                                        key={index}
+                                        className="group relative overflow-hidden rounded-3xl shrink-0"
+                                        style={{
+                                            width: "280px",
+                                            background: "var(--surface-card)",
+                                            border: "1px solid var(--border)",
+                                            boxShadow:
+                                                "0 20px 40px rgba(0,0,0,.35)",
+                                        }}
+                                    >
+                                        <div className="aspect-[4/5] overflow-hidden">
+                                            <img
+                                                src={person.img}
+                                                alt={`Celebrity ${index + 1}`}
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                            />
+                                        </div>
+
+                                        {/* Luxury Overlay */}
+                                        <div
+                                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                            style={{
+                                                background:
+                                                    "linear-gradient(to top, rgba(212,175,55,.25), transparent 60%)",
+                                            }}
                                         />
                                     </div>
-
-                                    {/* Luxury Overlay */}
-                                    <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                                        style={{
-                                            background:
-                                                "linear-gradient(to top, rgba(212,175,55,.25), transparent 60%)",
-                                        }}
-                                    />
-                                </div>
-                            ))}
+                                )
+                            )}
                         </div>
                     </div>
 
@@ -3648,7 +3979,11 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* FAQ Section */}
-            <section id="faq" className="py-10 md:py-8" style={{ background: "var(--background)" }}>
+            <section
+                id="faq"
+                className="py-10 md:py-8"
+                style={{ background: "var(--background)" }}
+            >
                 <div className="max-w-4xl mx-auto px-5 md:px-8">
                     {/* Section Typography Header */}
                     <div className="text-center mb-14 max-w-3xl mx-auto">
@@ -3720,7 +4055,11 @@ export default function CertifiedAstrologyCourse({ data }) {
                                                 style={{ color: "var(--gold)" }}
                                                 aria-hidden="true"
                                             >
-                                                <circle cx="12" cy="12" r="10" />
+                                                <circle
+                                                    cx="12"
+                                                    cy="12"
+                                                    r="10"
+                                                />
                                                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
                                                 <path d="M12 17h.01" />
                                             </svg>
@@ -3745,7 +4084,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
                                             className={`flex-shrink-0 transition-transform duration-300 ${
-                                                isOpen ? "rotate-180" : "rotate-0"
+                                                isOpen
+                                                    ? "rotate-180"
+                                                    : "rotate-0"
                                             }`}
                                             style={{ color: "var(--gold)" }}
                                             aria-hidden="true"
@@ -3757,7 +4098,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     {/* Smooth Expandable Content Panel */}
                                     <div
                                         className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                                            isOpen ? "max-h-[500px] opacity-100 border-t" : "max-h-0 opacity-0"
+                                            isOpen
+                                                ? "max-h-[500px] opacity-100 border-t"
+                                                : "max-h-0 opacity-0"
                                         }`}
                                         style={{
                                             borderColor: "var(--border)",
@@ -3765,7 +4108,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                                     >
                                         <div
                                             className={`${dmSans.className} px-5 pb-5 pl-14 pt-4 text-sm leading-relaxed font-normal`}
-                                            style={{ color: "var(--muted-ink)" }}
+                                            style={{
+                                                color: "var(--muted-ink)",
+                                            }}
                                         >
                                             {faq.answer}
                                         </div>
@@ -3778,9 +4123,15 @@ export default function CertifiedAstrologyCourse({ data }) {
             </section>
 
             {/* Enroll Now Section */}
-            <section className="relative overflow-hidden py-14 md:py-8" style={{ background: "var(--surface-mid)" }}>
+            <section
+                className="relative overflow-hidden py-14 md:py-8"
+                style={{ background: "var(--surface-mid)" }}
+            >
                 {/* Gold Glow */}
-                <div className="absolute inset-0" style={{ background: "var(--gradient-radial-gold)" }} />
+                <div
+                    className="absolute inset-0"
+                    style={{ background: "var(--gradient-radial-gold)" }}
+                />
 
                 <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center">
                     {/* Label */}
@@ -3792,7 +4143,10 @@ export default function CertifiedAstrologyCourse({ data }) {
                     </span>
 
                     {/* Icon */}
-                    <Sparkles className="w-9 h-9 mx-auto mt-4 mb-4" style={{ color: "var(--gold)" }} />
+                    <Sparkles
+                        className="w-9 h-9 mx-auto mt-4 mb-4"
+                        style={{ color: "var(--gold)" }}
+                    />
 
                     {/* Heading */}
                     <h2
@@ -3820,8 +4174,9 @@ export default function CertifiedAstrologyCourse({ data }) {
                         className={`${cormorant.className} text-lg md:text-xl italic max-w-2xl mx-auto mb-10 font-normal`}
                         style={{ color: "var(--muted-ink)" }}
                     >
-                        Don't waste another year studying the wrong material. Identify your stage, learn the right
-                        course, and step into your authentic astrology career.
+                        Don't waste another year studying the wrong material.
+                        Identify your stage, learn the right course, and step
+                        into your authentic astrology career.
                     </p>
 
                     {/* CTA */}
@@ -3843,22 +4198,178 @@ export default function CertifiedAstrologyCourse({ data }) {
                         style={{ color: "var(--muted-ink)" }}
                     >
                         <span className="flex items-center gap-1.5">
-                            <ShieldCheck className="w-4 h-4" style={{ color: "var(--gold)" }} />
+                            <ShieldCheck
+                                className="w-4 h-4"
+                                style={{ color: "var(--gold)" }}
+                            />
                             Secure Enrollment
                         </span>
 
                         <span className="flex items-center gap-1.5">
-                            <Users className="w-4 h-4" style={{ color: "var(--gold)" }} />
+                            <Users
+                                className="w-4 h-4"
+                                style={{ color: "var(--gold)" }}
+                            />
                             15,000+ Students
                         </span>
 
                         <span className="flex items-center gap-1.5">
-                            <Award className="w-4 h-4" style={{ color: "var(--gold)" }} />
+                            <Award
+                                className="w-4 h-4"
+                                style={{ color: "var(--gold)" }}
+                            />
                             Certified Programs
                         </span>
                     </div>
                 </div>
             </section>
+
+            {/* Footer */}
+            <footer
+                className="pt-14 pb-6"
+                style={{ background: "var(--surface-mid)" }}
+            >
+                <div className="max-w-7xl mx-auto px-5 md:px-8">
+                    {/* Top Section */}
+                    <div className="grid md:grid-cols-4 gap-10 mb-10">
+                        {/* Brand */}
+                        <div className="md:col-span-1">
+                            <h3
+                                className={`${cinzel.className} text-2xl font-normal mb-2`}
+                                style={{ color: "var(--ink)" }}
+                            >
+                                Dr. Vinay Bajrangi
+                            </h3>
+
+                            <p
+                                className={`${cormorant.className} italic text-lg mb-4`}
+                                style={{ color: "var(--gold)" }}
+                            >
+                                Vedic Jyotish Mastery
+                            </p>
+
+                            <p
+                                className={`${dmSans.className} text-sm leading-relaxed`}
+                                style={{ color: "var(--muted-ink)" }}
+                            >
+                                India's most trusted structured Vedic astrology
+                                education. From absolute beginner to
+                                research-level Jyotish master.
+                            </p>
+                        </div>
+
+                        {/* Programs */}
+                        <div>
+                            <h4
+                                className={`${cinzel.className} text-[10px] tracking-[0.25em] uppercase mb-4`}
+                                style={{ color: "var(--gold)" }}
+                            >
+                                Programs
+                            </h4>
+
+                            <div
+                                className={`${dmSans.className} flex flex-col gap-3`}
+                            >
+                                {[
+                                    "Graduate Course",
+                                    "Post Graduate",
+                                    "Pre-PhD Programme",
+                                    "Eligibility Test",
+                                ].map((item) => (
+                                    <a
+                                        key={item}
+                                        href="#"
+                                        className="text-sm transition hover:opacity-80"
+                                        style={{ color: "var(--muted-ink)" }}
+                                    >
+                                        {item}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Quick Links */}
+                        <div>
+                            <h4
+                                className={`${cinzel.className} text-[10px] tracking-[0.25em] uppercase mb-4`}
+                                style={{ color: "var(--gold)" }}
+                            >
+                                Quick Links
+                            </h4>
+
+                            <div
+                                className={`${dmSans.className} flex flex-col gap-3`}
+                            >
+                                {[
+                                    "About Dr. Bajrangi",
+                                    "Testimonials",
+                                    "FAQ",
+                                    "Contact",
+                                ].map((item) => (
+                                    <a
+                                        key={item}
+                                        href="#"
+                                        className="text-sm transition hover:opacity-80"
+                                        style={{ color: "var(--muted-ink)" }}
+                                    >
+                                        {item}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Legal */}
+                        <div>
+                            <h4
+                                className={`${cinzel.className} text-[10px] tracking-[0.25em] uppercase mb-4`}
+                                style={{ color: "var(--gold)" }}
+                            >
+                                Legal
+                            </h4>
+
+                            <div
+                                className={`${dmSans.className} flex flex-col gap-3`}
+                            >
+                                {[
+                                    "Privacy Policy",
+                                    "Terms of Service",
+                                    "Refund Policy",
+                                    "Disclaimer",
+                                ].map((item) => (
+                                    <a
+                                        key={item}
+                                        href="#"
+                                        className="text-sm transition hover:opacity-80"
+                                        style={{ color: "var(--muted-ink)" }}
+                                    >
+                                        {item}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bottom Section */}
+                    <div
+                        className="pt-6 border-t flex flex-col md:flex-row justify-between gap-4"
+                        style={{ borderColor: "var(--border)" }}
+                    >
+                        <p
+                            className={`${dmSans.className} text-xs`}
+                            style={{ color: "var(--muted-ink)" }}
+                        >
+                            © 2026 Dr. Vinay Bajrangi · All rights reserved.
+                        </p>
+
+                        <p
+                            className={`${dmSans.className} text-xs`}
+                            style={{ color: "var(--muted-ink)" }}
+                        >
+                            Made with care for serious astrology students.
+                        </p>
+                    </div>
+                </div>
+            </footer>
 
             <EligibilityModal />
         </>
